@@ -666,6 +666,93 @@ h6 {
   background: #0067d5;
   cursor: pointer;
 }
+/*------------------------------*/
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+   color:#004a99;
+  font-family: "Montserrat", sans-serif;
+    font-size:16px;
+}
+
+.contact-text {
+
+  letter-spacing: 1.9px;
+  color:#004a99;
+  float: right;
+  font-family: "Montserrat", sans-serif;
+}
+
+.place {
+  margin-left: 50px;
+     color:#004a99;
+  font-family: "Montserrat", sans-serif;
+    font-size:16px;
+	font-weight: bold;
+}
+
+.phone {
+  margin-left: 50px;
+     color:#004a99;
+  font-family: "Montserrat", sans-serif;
+    font-size:16px;
+	font-weight: bold;
+}
+
+.gmail {
+  margin-left: 50px;
+     color:#004a99;
+  font-family: "Montserrat", sans-serif;
+    font-size:16px;
+	font-weight: bold;
+}
+
+.contact-text a {
+   color:#004a99;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  font-size:16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-text a:hover {
+  color: #f9c306;
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+ 
+
+
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Footer
