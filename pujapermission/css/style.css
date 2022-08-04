@@ -1,0 +1,666 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #213546;
+    background: #eeeeee;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #4F84C4;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #00539C;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1050px;
+}
+
+
+/*******************************/
+/********** Header CSS *********/
+/*******************************/
+.header h2 {
+  font-size: 52px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #07246d;
+  text-align: center;
+  text-shadow: #ccc 0 1px 0, #c9c9c9 0 2px 0, #bbb 0 3px 0, #b9b9b9 0 4px 0, #aaa 0 5px 0,rgba(0,0,0,.1) 0 6px 1px, rgba(0,0,0,.1) 0 0 5px, rgba(0,0,0,.3) 0 1px 3px, rgba(0,0,0,.15) 0 3px 5px, rgba(0,0,0,.2) 0 5px 10px, rgba(0,0,0,.2) 0 10px 10px, rgba(0,0,0,.1) 0 20px 20px;
+}
+
+
+.header {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+	background:#E3F1F9;
+}
+
+@media (min-width: 1200px) {
+    .header .container-fluid {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+.header .brand {
+    position: relative;
+}
+
+/*.header .brand img {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    max-height: 100px;
+}*/
+
+.header .topbar {
+    position: relative;
+    text-align: right;
+}
+
+.header .topbar .topbar-col {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.header .topbar-col a {
+    color: #fff;
+    font-size: 13px;
+}
+
+.header .topbar-col a i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+
+.header .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #bbbbbb;
+}
+
+.header .dropdown-menu a.active {
+    color: #4F84C4;
+}
+
+@media (min-width: 992px) {
+    .header .navbar {
+       /* background: #ffffff !important;*/
+    }
+    
+    .header .navbar-brand {
+        display: none;
+    }
+    
+    .header .navbar-light a.nav-link {
+        position: relative;
+        padding: 5px 15px;
+        color: #213546;
+        font-size: 14px;
+        z-index: 1;
+		text-transform: uppercase;
+font-weight: bold;
+margin-left: 4px;
+    }
+    
+    .header .navbar-light a.nav-link:hover,
+    .header .navbar-light a.nav-link.active {
+        color:#FFFFFF;
+		background-color:#059BD8;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .brand {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .topbar {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .topbar .topbar-col {
+        margin: 0;
+    }
+    
+
+    
+    .header .navbar {
+        background: #ffffff !important;
+        border: 1px solid #eeeeee;
+        z-index: 1;
+    }
+    
+    .header a.nav-link {
+        padding: 5px 0;
+    }
+    
+    .header .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+.header .btn {
+    position: relative;
+    margin-left: 15px;
+    padding: 12px 25px 10px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(#4F84C4, #00539C);
+    transition: .5s;
+}
+
+.header .btn:hover {
+    background: linear-gradient(#00539C, #4F84C4);
+}
+
+.header .btn i {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+@media (max-width: 992px) {
+    .header .btn {
+        margin: 15px 0 10px 0;
+    }
+}
+
+
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(to right, #00539C, #4F84C4 50%);
+}
+
+.page-header h2 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.page-header a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.page-header a::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    top: 6.5px;
+    right: -6px;
+    border-radius: 7px;
+    background: #ffffff;
+}
+
+.page-header a:last-child::after {
+    display: none;
+}
+
+
+/*******************************/
+/*********** Hero CSS **********/
+/*******************************/
+.hero {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+.intro {
+  display: block;
+  padding: 15px;
+  background-color: #EEEEEE;
+}
+.intro img{
+	   width: 100%;
+	   height:100%;
+	}
+.intro h3 {
+  margin: 0 0 15px 0;
+  padding: 0 0 8px 0;
+  font-size: 22px;
+  font-weight:800;
+  color:#0f3684;
+  font-family: 'Raleway', sans-serif;
+  text-transform:uppercase;
+
+  border-bottom: 1px solid #333333;
+}
+.intro p {
+  margin: 0 0 15px 0;
+  padding: 0 0 8px 0;
+  font-size: 16px;
+  font-weight:500;
+  font-family: 'Raleway', sans-serif;
+}
+@media (min-width: 768px) {
+    .hero {
+        padding: 45px 60px;
+    }
+}
+.btn-section-bottom{
+	width:100%;
+	height:auto;
+	float:left;
+	margin-top:20px;
+	
+	}
+.hero h2 {
+    margin: 0;
+    font-size:38px;
+    font-weight: 800;
+	padding: 5px 15px;
+	text-transform: uppercase;
+margin-bottom: 30px;
+}
+
+.hero h2 span {
+    color: #4F84C4;
+}
+
+.hero p {
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero a.btn {
+    position: relative;
+    padding: 10px 35px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(#4F84C4, #00539C);
+    transition: .5s;
+}
+
+.hero a.btn:hover {
+    background: linear-gradient(#00539C, #4F84C4);
+}
+
+.hero img {
+    max-width: 100%;
+    max-height: 600px;
+}
+
+@media (max-width: 767.98px) {
+    .hero img {
+        margin-top: 30px;
+    }
+}
+
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    left: calc(50% - 30px);
+    bottom: 0;
+    background: linear-gradient(to left, #4F84C4, #00539C, #4F84C4);
+    border-radius: 100%;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-header p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+
+/*******************************/
+/*********** FAQs CSS **********/
+/*******************************/
+.faqs {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+@media (min-width: 768px) {
+    .faqs .container-fluid {
+        padding: 0;
+    }
+    
+    .faqs .row {
+        margin: 0;
+    }
+    
+    .faqs .col-md-6:first-child {
+        padding: 0 60px;
+    }
+    
+    .faqs .col-md-6:last-child {
+        padding: 0;
+    }
+}
+
+.faqs h2.section-title {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.faqs h2.section-title::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, #4F84C4, #00539C, #4F84C4);
+    border-radius: 0 100% 100% 0;
+}
+
+.faqs .card {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 0;
+}
+
+.faqs .card:last-child {
+    margin-bottom: 0;
+}
+
+.faqs .card-header {
+    padding: 0;
+    border: none;
+    background: #ffffff;
+}
+
+.faqs .card-header a {
+    display: block;
+    width: 100%;
+    padding: 15px 20px 12px 20px;
+    color: #213546;
+    font-size: 16px;
+    font-weight: 400;
+    background: #ffffff;
+    border: 2px solid #4F84C4;
+    border-radius: 0 30px 30px 0;
+}
+
+.faqs .card-header [data-toggle="collapse"]:after {
+    font-family: 'font Awesome 5 Free';
+    content: "\f067";
+    float: right;
+    color: #00539C;
+    font-size: 12px;
+    font-weight: 900;
+    transition: .3s;
+}
+
+.faqs .card-header [data-toggle="collapse"][aria-expanded="true"]:after {
+    font-family: 'font Awesome 5 Free';
+    content: "\f068";
+    float: right;
+    color: #00539C;
+    font-size: 12px;
+    font-weight: 900;
+    transition: .3s;
+}
+
+.faqs .card-body {
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background: #ffffff;
+}
+
+.faqs a.btn {
+    margin-top: 40px;
+    padding: 10px 35px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(#4F84C4, #00539C);
+    transition: .5s;
+}
+
+.faqs a.btn:hover {
+    background: linear-gradient(#00539C, #4F84C4);
+}
+
+.faqs img {
+    max-width: 100%;
+    border-radius: 30px 0 0 30px;
+}
+
+@media (max-width: 767.98px) {
+    .faqs img {
+        margin-top: 30px;
+        border-radius: 0 0 30px 30px;
+    }
+}
+
+
+
+
+
+/*******************************/
+/******* Call to Action ********/
+/*******************************/
+.call-to-action {
+    position: relative;
+    padding: 50px 40px;
+    background: linear-gradient(to right, #00539C, #4F84C4 50%);
+	color:#fff;
+}
+.call-to-action h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.call-to-action ul li{
+	list-style-type:none;
+	line-height:30px;
+	
+}
+.call-to-action li:before {
+  content: "\f0da";
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #fff;
+}
+.call-to-action ul li a::before {
+ 
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.call-to-action h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  border-bottom: 2px dotted #fff;
+  padding-bottom: 20px;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-top: 1px solid #fff;
+}
+.service-page .call-to-action {
+    margin-top: 45px;
+}
+
+.call-to-action h2 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.call-to-action p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.call-to-action a {
+    float: right;
+    padding: 10px 50px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #2c3035;
+    background: #ffffff;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .call-to-action a {
+        float: left;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    position: relative;
+    padding-top: 10px;
+    background: #2c3035;
+}
+
+
+
+@media(min-width: 992px) {
+
+    
+
+.footer p {
+    padding: 15px;
+   color: #fff!important;
+}
+.copyright p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+.footer .copyright p {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+.copyright ul{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+	text-align: right;
+}
+.copyright ul li{
+	padding:2px 19px;
+	display:inline-block;
+}
+.copyright ul li a{
+	text-decoration:none;
+	color:#fff;
+}
+.copyright ul li a:hover{
+	color:#09F;
+}
+.copyright ul li a:before {
+  content: "\f0d9";
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1em;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer .copyright p
+     {
+        margin: 5px 0;
+        text-align: center;
+		 color: #fff!important;
+    }
+}
