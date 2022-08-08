@@ -53,7 +53,7 @@ a:focus {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  line-height: 8px;
+  line-height: auto;
 }
 .header {
     position: relative;
@@ -62,7 +62,37 @@ a:focus {
     border-bottom: 1px solid #eeeeee;
 	background:#E3F1F9;
 }
+.navbar-toggle {
+  border-color: #333;
+}
+.navbar-toggle .icon-bar {
+  background-color: #000;
+}
+/*.navbar-collapse{
 
+
+}*/
+.navbar-collapse li a.active {
+  color: #FFFFFF;
+  background-color: #059BD8;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-nav>li>a {
+  padding: 10px 15px;
+  color: #213546;
+  font-size: 14px;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 4px;
+}
+.navbar-nav>li>a:hover {
+  color: #FFFFFF;
+  background-color: #059BD8;
+}
 @media (min-width: 1200px) {
     .header .container-fluid {
         padding-left: 60px;
@@ -441,6 +471,7 @@ margin-bottom: 30px;
     padding: 0;
     border: none;
     background: #ffffff;
+	position:relative;
 }
 
 .faqs .card-header a {
