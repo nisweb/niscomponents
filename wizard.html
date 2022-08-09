@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>wizard box</title>
+
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.wizard-box-main {
+	width: 100%;
+	margin-top:20px;
+}
+.wizard-box {
+	width: 100%;
+	border: 1px solid #ccc;
+	background: #fff;
+	box-shadow: -1px 3px 6px -1px rgba(167,167,167,0.75);
+	-webkit-box-shadow: -1px 3px 6px -1px rgba(167,167,167,0.75);
+	-moz-box-shadow: -1px 3px 6px -1px rgba(167,167,167,0.75);
+	border-radius: 54px;
+}
+.wizard-box .card {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: 6px;
+	font-weight: 800;
+}
+.wizard-box .card-header {
+ padding: .75rem 1.25rem;
+	margin-bottom: 0;
+	background-color: #08459d;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	color: #fff;
+	font-weight: 800;
+	font-family:"Arial Black", Gadget, sans-serif;
+}
+.wizard-box .list-group {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+		font-weight: 800;
+	font-family:"Arial Black", Gadget, sans-serif;
+	color:#08459d;
+	text-transform:uppercase;
+}
+.wizard-box .list-group-item {
+	position: relative;
+	display: block;
+background: #f6feff;
+}
+
+.wizard-box .badge-pill {
+	padding-right: .6em;
+	padding-left: .6em;
+	border-radius: 10rem;
+}
+.wizard-box .badge-pill i {
+	font-size:15px;
+	color:#fff;
+	background:#091585;
+	padding:5px;
+	border-radius:5px;
+}
+
+.wizard-box .badge-pill .success{
+	font-size:15px;
+	color:#fff;
+	background:#28a745;
+	padding:5px;
+	border-radius:5px;
+}
+.wizard-box .badge-pill .danger{
+	font-size:15px;
+	color:#fff;
+	background:#dc3545;
+	padding:5px;
+	border-radius:5px;
+}
+.wizard-box .badge-pill .warning{
+	font-size:15px;
+	color:#fff;
+	background:#ffc107;
+	padding:5px;
+	border-radius:5px;
+}
+
+.wizard-box .list-group-item > .badge {
+	float: right;
+}
+
+.wizard-box .media-body {
+	-ms-flex: 1;
+	flex: 1;
+}
+.wizard-box .align-items-center {
+	-ms-flex-align: center !important;
+	align-items: center !important;
+}
+.wizard-box .justify-content-between {
+	-ms-flex-pack: justify !important;
+	justify-content: space-between !important;
+}
+.wizard-box .flex-row {
+	-ms-flex-direction: row !important;
+	flex-direction: row !important;
+}
+.wizard-box .d-flex {
+	display: -ms-flexbox !important;
+	display: flex !important;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="wizard-box-main">
+      <div class="col-md-4">
+        <div class="card wizard-box">
+          <div class="card-header"> Durga Puja 2022 </div>
+          <ul class="list-group">
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+              <div class="media-body"> Application </div>
+              <span class="badge-pill"> <i class="fa fa-check-circle" aria-hidden="true"></i> </i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+            <div class="media-body">
+            Land </div>
+            <span  class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Electric
+            </div>
+             <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Fire
+            </div>
+             <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Police
+            </div>
+             <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Sound 
+            </div>
+            <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            PCB
+            </div>
+             <span class="badge-pill"><i class="fa fa-times-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            BDO/SDO 
+            </div>
+            <span class="badge-pill"><i class="fa fa-times-circle" aria-hidden="true"></i> </span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card wizard-box">
+          <div class="card-header"> Durga Puja 2023 </div>
+          <ul class="list-group">
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+              <div class="media-body"> Application </div>
+              <span class="badge-pill"> <i class="fa fa-check-circle" aria-hidden="true"></i> </i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+            <div class="media-body">
+            Land </div>
+            <span  class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Electric
+            </div>
+             <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Fire
+            </div>
+             <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Police
+            </div>
+             <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Sound 
+            </div>
+            <span class="badge-pill"><i class="fa fa-check-circle success" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            PCB
+            </div>
+             <span class="badge-pill"><i class="fa fa-times-circle danger" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            BDO/SDO 
+            </div>
+            <span class="badge-pill"><i class="fa fa-times-circle warning" aria-hidden="true"></i> </span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card wizard-box">
+          <div class="card-header"> Durga Puja 2024 </div>
+          <ul class="list-group">
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+              <div class="media-body"> Application </div>
+              <span class="badge-pill"> <i class="fa fa-check-circle" aria-hidden="true"></i> </i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+            <div class="media-body">
+            Land </div>
+            <span  class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Electric
+            </div>
+             <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Fire
+            </div>
+             <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Police
+            </div>
+             <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            Sound 
+            </div>
+            <span class="badge-pill"><i class="fa fa-check-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            PCB
+            </div>
+             <span class="badge-pill"><i class="fa fa-times-circle" aria-hidden="true"></i> </span></li>
+            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+             <div class="media-body">
+            BDO/SDO 
+            </div>
+            <span class="badge-pill"><i class="fa fa-times-circle" aria-hidden="true"></i> </span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!-- Latest compiled and minified JavaScript --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
