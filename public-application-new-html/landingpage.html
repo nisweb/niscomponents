@@ -1,0 +1,658 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap Core CSS -->
+        <!--<link href="https://www.janasanjogs24p.in/html/css/bootstrap.css" rel="stylesheet">-->
+        
+            <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Select2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+        
+        
+        <!--font-aswome-->
+        <link rel="stylesheet" href="https://www.janasanjogs24p.in/html/css/font-awesome.css" type="text/css">
+
+        <link href="https://www.janasanjogs24p.in/html/css/style.css" rel="stylesheet">
+        <link href="https://www.janasanjogs24p.in/html/css/responsive.css" rel="stylesheet">
+        <link href="https://www.janasanjogs24p.in/html/css/css.css" rel="stylesheet"> 
+    
+          <link href="css/main.css" rel="stylesheet"> 
+<style>
+body {
+  background: url(https://preview.colorlib.com/theme/eclipse/img/home-banner-bg.png.webp);
+  font-family: Helvetica, Arial, sans-serif;
+  color: #424249;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  color: #4d4db5;
+  margin: 30px 0;
+}
+
+p {
+  color: #424249;
+  line-height: 24px;
+}
+
+p.ingres {
+  font-weight: bold;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a i {
+  margin-right: 7px;
+}
+
+.public-container {
+ max-width: 900px;
+/*  max-width: 65%;*/
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+#modal-1 {}
+
+.box-menu {
+  background: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-align:left;
+  position: static;
+  display: table;
+  width: 100%;
+}
+
+.box-menu ul {
+  list-style: none;
+  width: 100%;
+}
+
+.box-menu ul li {
+  padding: 0;
+  float: left;
+width: 33.3%;
+  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #333360;
+  transition: all 0.2s ease-in-out;
+}
+
+.box-menu ul li:last-child {
+  box-shadow: none;
+}
+
+.box-menu ul li.active {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
+  border-bottom: 3px solid #4d4db5;
+}
+
+.box-menu ul li a {
+padding: 20px 0 18px;
+height: 70px;
+display: block;
+/*color: #232526;*/
+color:#4d4db5;
+text-decoration: none;
+text-align: center;
+font-size: 17px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.box-menu ul li a:hover {
+  color: #646a6d;
+}
+
+.box-menu ul li a:active {
+  color: #4d4db5;
+}
+
+.box-menu ul li.active a,
+.box-menu ul li.active a:hover {
+  color: #4d4db5;
+}
+
+.box-menu ul li:last-child {
+  border-right: none;
+}
+
+@media(max-width:460px) {
+  .box-menu ul li i {
+    display: none;
+  }
+}
+
+.box {
+  background: #fff;
+  padding: 48px 20px;
+ /* border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;*/
+   border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+  box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width:100%;
+  float:left;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box img.grow {
+  width: 105.3%;
+  margin: 0 -20px 0 -20px;
+}
+
+@media(max-width:800px) {
+  .box img.grow {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.box form {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.box form input {
+  width: 100%;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.box form input:focus {
+  outline: none;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  border: 2px solid #4d4db5;
+}
+
+.box form button {
+  width: 100%;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.box#about,
+.box#settings {
+  display: none;
+}
+
+.openit {
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  top: 110px;
+  background: #fff;
+  padding: 15px;
+  text-decoration: none;
+  color: #4d4db5;
+  border-radius: 3px;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.outAnimation {
+  transition: all 1s ease;
+  transform: translateY(-1000px) scale(0.1);
+  opacity: 0;
+}
+
+.inAnimation {
+  transition: all 1s ease;
+  transform: translateY(0px) scale(1);
+  opacity: 1;
+}
+.welimg{
+	width:100%;
+	float:left;
+	height:auto;
+}
+
+.caption h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #2654A8;
+  text-align: left;
+  margin-top:26%;
+  text-transform: uppercase;
+  line-height: 43px;
+}
+.mt{
+	margin-top: 34px;
+}
+
+
+.container .select2 {
+  width: 100% !important;
+  /* force fluid responsive */
+}
+.container .select2-container .select2-selection--single {
+  height: 56px;
+  position: relative;
+}
+.container .select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 56px;
+}
+.container .select2-container .select2-selection--single .select2-selection__arrow {
+  top: 16px;
+  right: 8px;
+}
+.container .select2-container .select2-selection--single .select2-container--default .select2-results > .select2-results__options {
+  -webkit-overflow-scrolling: touch;
+  /* use momentum scrolling */
+}
+/*=======================================================*/
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #444;
+  line-height: 28px;
+  float: left;
+}
+.select2-container--default .select2-results__option .select2-results__option {
+  padding-left: 1em;
+  display: block;
+  text-align: left;
+  float: left;
+  width: 100%;
+}
+.select2-container .select2-selection--single {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 45px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #444;
+  line-height: 42px;
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #888 transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  height: 0;
+  left: 50%;
+  margin-left: -4px;
+  margin-top: -2px;
+  position: absolute;
+  top: 79%;
+  width: 0;
+}
+.select2-container--default .select2-results__option[role="group"] {
+  padding: 0;
+  width: 100%;
+}
+
+/*
+=============*/
+
+#button{
+  display:block;
+  margin:20px auto;
+  padding:10px 30px;
+  background-color:#eee;
+  border:solid #ccc 1px;
+  cursor: pointer;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0,0,0,0.6);
+  left: 0%;
+}
+
+.cv-spinner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px #ddd solid;
+  border-top: 4px #2e93e6 solid;
+  border-radius: 50%;
+  animation: sp-anime 0.8s infinite linear;
+}
+@keyframes sp-anime {
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+.is-hide{
+  display:none;
+}
+
+</style>
+</head>
+
+<body>
+<div class="public-container">
+  <div id="modal-1">
+    <div class="box-menu">
+      <ul>
+        <li class="active"><a href="#start"><i class="fa fa-home" aria-hidden="true"></i> Start</a></li>
+        <li><a href="#about"><i class="fa fa-cog" aria-hidden="true"></i> Register Complaint</a></li>
+        <li><a href="#settings"><i class="fa fa-cog" aria-hidden="true"></i> Find Complaint Status</a></li>
+       <!-- <li><a href="#close" id="close"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>-->
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div class="box" id="start">
+        <div class="col-md-7 col-xs-12 caption">
+        <h1>Welcome To Public Application</h1>
+        </div>
+          <div class="col-md-5 col-xs-12">
+      <img src="images/weimage.png" class="welimg">
+      </div>
+       </div>
+      <div class="box" id="about">
+        <form class="mobile-otp" action="" autocomplete="off" method="post" accept-charset="utf-8" id="loginFrm">
+                                        
+                                            <div class="form-group col-md-12">
+                                                <label for="username" class="control-label">Registered Mobile No: </label>
+                                                
+                                              <input type="text" class="form-control" placeholder="Mobile No" required>
+                                              
+                                               
+
+                      
+
+                                         </div>
+                                         
+                                         <div class="form-row">
+                                         
+                                         <div class="form-group col-md-6">
+                                                <label for="username" class="control-label">OTP No: </label>
+                                                
+                                             
+                                              
+                                               <input type="text" class="form-control" placeholder="OTP No" required>
+
+                      
+
+                                         </div>
+                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt">
+                                          <div class="form-group col-md-6 ">
+                                           <button type="button" class="btn btn-transparent">Get OTP</button>
+                                          </div>
+                                           <div class="form-group col-md-6 ">
+                                          <button type="button" class="btn btn-blue popup-youtube" >Resend OTP </button>
+                                          </div>
+                                      
+                                          </div>
+                                         </div>
+                                      
+                               
+
+                                    </form>
+                        
+      </div>
+      <div class="box" id="settings">
+         <div class="col-md-12 success">
+                        <div class="alert alert-success" role="alert">
+  This is a success alert—check it out!
+</div>
+</div>
+
+                    <form class="signup-form">
+
+                        <h2 class="text-center">Registration Now</h2>
+
+                        <hr>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+
+   <select class="select2" name="country" style=" width:100%; float:left;">
+    
+    <optgroup label="District ">
+     <option value="AF">District </option>
+      <option value="AX"> South 24pgs </option>
+      <option value="AL"> South 24pgs </option>
+      <option value="DZ">South 24pgs </option>
+
+      
+    </optigroup>
+  
+
+
+  </select>
+
+                        </div>
+
+                        <div class="form-group">
+                        
+                        
+                           <select class="select2" name="country" style=" width:100%; float:left;">
+    
+    <optgroup label="AC ">
+     <option value="AF">AC </option>
+      <option value="AX"> 344</option>
+      <option value="AL"> 544 </option>
+      <option value="DZ">677 </option>
+
+      
+    </optigroup>
+ 
+  </select>
+
+
+
+                        </div>
+
+                        <div class="form-group">
+                        
+                                                   <select class="select2" name="country" style=" width:100%; float:left;">
+    
+    <optgroup label="Block / Town">
+     <option value="AF">Block / Town </option>
+      <option value="AX"> Block / Town </option>
+      <option value="AL"> Block / Town </option>
+      <option value="DZ">Block / Town </option>
+
+      
+    </optigroup>
+ 
+  </select>
+
+
+
+                        </div>
+                        
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="GP / Ward" required>
+
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                           <div class="form-group">
+                                           
+                                           
+                                            <select class="select2" name="country" style=" width:100%; float:left;">
+    
+    <optgroup label="Issue Category">
+     <option value="AF">Issue Category </option>
+      <option value="AX"> Issue Category </option>
+      <option value="AL"> Issue Category </option>
+      <option value="DZ">Issue Category </option>
+
+      
+    </optigroup>
+ 
+  </select>
+
+                           
+
+                        </div>
+                        
+                          <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Police Station" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+     <select class="select2" name="country" style=" width:100%; float:left;">
+    
+    <optgroup label="Subdivision">
+     <option value="AF">Subdivision </option>
+      <option value="AX"> Subdivision </option>
+      <option value="AL"> Subdivision </option>
+      <option value="DZ">Subdivision </option>
+
+      
+    </optigroup>
+ 
+  </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Problem</textarea>
+
+                        </div>
+
+                        
+                        </div>
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group text-center">
+
+                            <button type="submit" class="btn btn-blue btn-block">Submit</button>
+
+                        </div>
+                         </div>
+                    </form>
+                    
+                    
+<button id="button" type="button">Click</button>
+
+<div id="overlay">
+  <div class="cv-spinner">
+    <span class="spinner"></span>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="landing-page">
+
+<!--
+
+
+<a href="#" class="openit"><i class="fa fa-sign-in" aria-hidden="true"></i>  Login</a>-->
+
+</div>
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+    <!-- Select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>-->
+<script src="https://use.fontawesome.com/7ad89d9866.js"></script>
+
+<script>
+jQuery(function($){
+  $(document).ajaxSend(function() {
+    $("#overlay").fadeIn(300);　
+  });
+		
+  $('#button').click(function(){
+    $.ajax({
+      type: 'GET',
+      success: function(data){
+        console.log(data);
+      }
+    }).done(function() {
+      setTimeout(function(){
+        $("#overlay").fadeOut(300);
+      },500);
+    });
+  });	
+});
+</script>
+   
+     <script>
+  $('.select2').select2({
+});
+
+    </script>
+<script>
+jQuery(document).ready(function() {
+
+  jQuery('.box-menu a').on('click', function(e) {
+    var currentAttrValue = jQuery(this).attr('href');
+
+    jQuery('.tab-content ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
+    jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+    e.preventDefault();
+  });
+
+  jQuery('#close').click(function(o) {
+    jQuery('#modal-1').addClass('outAnimation');
+    jQuery('#modal-1').removeClass('inAnimation');
+    jQuery('.box-menu ul li:nth(3)').removeClass('active');
+    jQuery('.openit').delay(500).fadeIn();
+  });
+
+  jQuery('.openit').click(function(i) {
+    jQuery('#modal-1').addClass('inAnimation');
+    jQuery('#modal-1').removeClass('outAnimation');
+    jQuery('.box-menu ul li:first-child').addClass('active');
+    jQuery('.box').hide();
+    jQuery('.box#start').show();
+    jQuery('.openit').fadeOut(200);
+  });
+});
+
+</script>
+   
+</body>
+</html>
