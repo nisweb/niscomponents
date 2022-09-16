@@ -314,7 +314,7 @@ font-weight: bold;
   display:block;
   margin:20px auto;
   padding:10px 30px;
-  background-color:#eee;
+/*  background-color:#eee;*/
   border:solid #ccc 1px;
   cursor: pointer;
 }
@@ -352,57 +352,106 @@ font-weight: bold;
 }
 
 /*============Listing css===========================*/
-.items{
-	text-align:left;
-	
-	}
-.items-head p {
-  padding: 5px 20px;
-  margin: 10px;
-  color: #0B5AA2;
-  font-weight: bold;
+
+
+#accordion .panel,
+#accordion .panel-heading,
+#accordion panel-title,
+#accordion .panel-body {
+  border: 0;
+}
+#accordion .panel {
+  box-shadow: none;
+}
+#accordion .panel .panel-heading {
+  border-radius: 0;
+}
+#accordion .panel .panel-heading .panel-title a {
+  text-decoration: none;
+  padding: 1em 0;
+}
+#accordion .panel .panel-heading .panel-title a span {
+  float: right;
+  width: 50px;
+}
+#accordion .panel .panel-heading .panel-title a span:after {
+  content: "\2014";
+  color: #1B5062;
   font-size: 20px;
 }
-
-.items-head hr {
-  width: 20%;
-  margin: 0px 30px;
-  border: 1px solid #0B5AA2;
+#accordion .panel .panel-heading .panel-title a.collapsed span:after {
+  content: "+";
+}
+.box .panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+  text-align: left;
 }
 
-.items-body {
-  padding: 10px;
-/*  margin: 10px;*/
-  display: grid;
-/*  grid-gap: 10px;*/
+.box ul{
+  margin: 0px;
+  padding: 0px;
 }
-
-.items-body-content {
-  padding: 0px 10px;
-  padding-right: 0px;
+.box ul li{
+  list-style-type: none;
   display: block;
-  font-size: 13px;
-  grid-gap: 10px;
-  border-bottom: 1px solid #ccc;
+  text-align: left;
+  padding-bottom: 10px;
+
+}
+
+/* Style the search field */
+
+.box .panel-group {
+  margin-bottom: 20px;
+  float: left;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 50%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+float: left;
+width: auto;
+padding: 10px 20px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
-.items-body-content p {
-	    margin-left: 16px;
-	}
-.items-body-content:hover {
-  border-radius: 15px;
-  border: 1px solid #0B5AA2;
+
+form.example button:hover {
+  background: #0b7dda;
 }
 
-.items-body-content i {
-  align-self: center;
-  font-size: 15px;
-  color: #0B5AA2;
-  font-weight: bold;
-  animation: icon 1.5s infinite forwards;
-      padding-right: 10px;
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-
+.example Label {
+float: left;
+font-size: 17px;
+margin-right: 20px;
+line-height: 40px;
+text-transform:uppercase;
+color:#0a2467;
+}
+.nameid-search{
+	float:right;
+	width: auto;
+}
 </style>
 </head>
 
@@ -587,13 +636,13 @@ font-weight: bold;
                           <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group text-center">
 
-                            <button type="submit" class="btn btn-blue btn-block">Submit</button>
+                            <button id="button" type="submit" class="btn btn-blue btn-block">Submit</button>
 
                         </div>
                          </div>
                     </form>
                     
-                    <button id="button" type="button">Click</button>
+                    <!--<button id="button" type="button">Click</button>-->
 
 <div id="overlay">
   <div class="cv-spinner">
@@ -604,70 +653,196 @@ font-weight: bold;
       </div>
       <div class="box" id="settings">
   
-  <div class="col-md-12">
-  <div class="items">
-    
- 
-      <div class="items-body-content">
-     <i class="fa fa-angle-right"></i>
-        <b>Name :</b>
-         <p>Suman Das</p>
+  <div class="nameid-search">
+  
+  
+  <form class="example" action="action_page.php">
+  <label><b>Name/ Id Search :</b></label>
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+  
+  </div>
+  
 
- 
-      <div class="items-body-content">
-     <i class="fa fa-angle-right"></i>
-        <b>AC :</b>
-         <p>Demo</p>
- </div>
- 
-
- <div class="items-body-content">
-     <i class="fa fa-angle-right"></i>
-        <b>Block / Town :</b>
-         <p>D Block</p>
- </div>
-        <div class="items-body-content">
-     <i class="fa fa-angle-right"></i>
-        <b>GP / Ward :</b>
-         <p>42</p>
- </div>
-          <div class="items-body-content">
-     <i class="fa fa-angle-right"></i>
-        <b>GP / Ward :</b>
-         <p>42</p>
- </div>
- 
- <div class="items-body-content">
-     <i class="fa fa-angle-right"></i>
-        <b>Issue Category :</b>
-         <p>Category Name</p>
- </div>
- 
-         <div class="items-body-content">
-     <i class="fa fa-angle-right"></i>
-        <b> Police Station :</b>
-         <p>Charu Market</p>
- </div>
- 
-
- 
- 
- <div class="items-body-content">
-     <i class="fa fa-angle-right"></i>
-        <b>Subdivision :</b>
-         <p>Division Name</p>
- </div>
- 
-          <div class="items-body-content">
-     <i class="fa fa-angle-right"></i>
-        <b> Problem :</b>
-         <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without </p>
- </div>
- 
- 
-
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         Suman DAs ID:#12346903
+          <span> </span>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+      
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <ul>
+        <li>
+       
+         <p>  <b>Name :</b>Suman Das</p>
+         </li>
+             <li>
+          
+         <p><b>AC :</b>Demo</p>
+         </li>
+             <li>
+         
+         <p><b>Block / Town :</b>D Block</p>
+         </li>
+             <li>
+        
+         <p> <b>GP / Ward :</b>42</p>
+         </li>
+             <li>
+          
+         <p><b>Issue Category :</b>Category Name</p>
+         </li>
+        </ul>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <ul>
+            <li>
+       
+         <p> <b> Police Station :</b>Charu Market</p>
+         </li>
+             <li>
+        
+         <p> <b>Subdivision :</b>Division Name</p>
+         </li>
+             <li>
+        
+         <p> <b> Problem :</b>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without </p>
+         </li>
+        </ul>
+        </div>
+        
+         
+         
+      </div>
     </div>
   </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Avijit Bose ID:#26788901
+         <span></span>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+         <div class="col-md-6 col-sm-6 col-xs-12">
+        <ul>
+        <li>
+       
+         <p>  <b>Name :</b> Avijit Bose</p>
+         </li>
+             <li>
+          
+         <p><b>AC :</b>Demo</p>
+         </li>
+             <li>
+         
+         <p><b>Block / Town :</b>D Block</p>
+         </li>
+             <li>
+        
+         <p> <b>GP / Ward :</b>42</p>
+         </li>
+             <li>
+          
+         <p><b>Issue Category :</b>Category Name</p>
+         </li>
+        </ul>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <ul>
+            <li>
+       
+         <p> <b> Police Station :</b>Charu Market</p>
+         </li>
+             <li>
+        
+         <p> <b>Subdivision :</b>Division Name</p>
+         </li>
+             <li>
+        
+         <p> <b> Problem :</b>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without </p>
+         </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Dip Koy ID:#39874451
+          <span></span>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+         <div class="col-md-6 col-sm-6 col-xs-12">
+        <ul>
+        <li>
+       
+         <p>  <b>Name :</b> Dip Koy</p>
+         </li>
+             <li>
+          
+         <p><b>AC :</b>Demo</p>
+         </li>
+             <li>
+         
+         <p><b>Block / Town :</b>D Block</p>
+         </li>
+             <li>
+        
+         <p> <b>GP / Ward :</b>42</p>
+         </li>
+             <li>
+          
+         <p><b>Issue Category :</b>Category Name</p>
+         </li>
+        </ul>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+        <ul>
+            <li>
+       
+         <p> <b> Police Station :</b>Charu Market</p>
+         </li>
+             <li>
+        
+         <p> <b>Subdivision :</b>Division Name</p>
+         </li>
+             <li>
+        
+         <p> <b> Problem :</b>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without </p>
+         </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+  
+  
+  
+  
+  
   </div>
   
   
@@ -695,12 +870,22 @@ font-weight: bold;
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.usebootstrap.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
     <!-- Select2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <!--<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>-->
 <script src="https://use.fontawesome.com/7ad89d9866.js"></script>
+
+<script>
+$('#myCollapsible').on('hidden.bs.collapse', function () {
+  // do something…
+})
+</script>
+  
+  
+  
 
 <script>
 jQuery(function($){
