@@ -2323,3 +2323,103 @@ font-size: 17px;
   height: 339px;
 
 }
+/*====================Innerpage======================================*/
+/*--------------------------------------------------------------
+inner-sidebar
+--------------------------------------------------------------*/
+.inner-sidebar{
+	margin-bottom:20px;
+	}
+.inner-aboutpage .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height:295px;
+  border:1px solid #12d9e0;
+}
+
+.inner-aboutpage .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #d9f1f2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.inner-aboutpage .icon-box:hover::before {
+/*  background: #00b6fa;*/
+background:#004699;
+  top: 0;
+  border-radius: 0px;
+  color:#fff;
+}
+
+.inner-aboutpage .icon {
+  margin-bottom: 15px;
+}
+
+.inner-aboutpage .icon i {
+  font-size: 48px;
+  line-height: 1;
+  color: #3fbbc0;
+  transition: all 0.3s ease-in-out;
+}
+
+.inner-aboutpage .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.inner-aboutpage .title a {
+  color: #111;
+}
+
+.inner-aboutpage .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.inner-aboutpage .icon-box:hover .title a,
+.inner-aboutpage .icon-box:hover .description {
+  color: #fff;
+}
+
+.inner-aboutpage .icon-box:hover .icon i {
+  color: #fff;
+}
+
+.inner-aboutpage .icon-box:hover .description a{
+  color: #fff;
+}
+.inner-aboutpage ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+.inner-left-content {
+  background: #f1f1f1;
+  padding: 44px;
+  border: 1px solid #d2d2d2;
+}
+
+.inner-left-content h5 {
+  background: #47c7f1;
+  padding: 10px;
+  color: #fff;
+}
+.inner-left-content p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 29px;
+}
