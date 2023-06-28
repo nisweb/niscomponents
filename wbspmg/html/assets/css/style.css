@@ -2732,6 +2732,8 @@ margin-right: 16px;
 	/*font-size:71px;*/
 	font-size:18px;
 	text-align:center;
+	margin:0px;
+	padding:0px;
 }
 #topbar h5{
 	color:#092867;
@@ -2739,6 +2741,8 @@ margin-right: 16px;
 	/*font-size:71px;*/
 	font-size:14px;
 	text-align:center;
+	margin:0px;
+	padding:0px;
 }
 #topbar .form-control {
   display: block;
