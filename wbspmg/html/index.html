@@ -26,87 +26,12 @@
 <!-- Template Main CSS File -->
 <link href="assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-<style>
 
-/*=========================================*/
-.social_nav nav {
-	position: fixed;
-	/*width: 70px;
-	margin-top: 50px;*/
-	width: 39px;
-	margin-top: 47px;
-	transition: all 0.3s linear;
-	box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
-	z-index: 111;
-}
-.social_nav li {
-	/*height: 60px;*/
-	height: 40px;
-	position: relative;
-}
-.social_nav li a {
-	color: white;
-	display: block;
-	height: 100%;
-	width: 100%;
-/*	line-height: 60px;
-	padding-left: 25%;*/
-		line-height: 40px;
-	padding-left: 4%;
-	border-bottom: 1px solid rgba(0,0,0,.4);
-	transition: all .3s linear;
-}
-.social_nav li:nth-child(1) a {
-	background: #4267B2;
-}
-.social_nav li:nth-child(2) a {
-	background: #1DA1F2;
-}
-.social_nav li:nth-child(3) a {
-	background: #E1306C;
-}
-.social_nav li:nth-child(4) a {
-	background: #23c508;
-}
-.social_nav li:nth-child(5) a {
-	background: #fd0836;
-}
-.social_nav li:nth-child(6) a {
-	background: #ff0000;
-}
-.social_nav nav li a i {
-	position: absolute;
-/*	top: 17px;
-	left: 20px;
-	font-size: 27px;*/
-	top: 12px;
-left: 11px;
-font-size: 17px;
-}
-.social_nav ul li a span {
-	display: none;
-	font-weight: bold;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-}
-.social_nav a:hover {
-	z-index: 1;
-	width: 200px;
-}
-.social_nav ul li:hover a span {
-	padding-left: 30%;
-	display: block;
-}
-.social_nav ul {
-	margin: 0px;
-	padding: 0px;
-}
-.social_nav {
-	position: absolute;
-	top: 215px;
-	bottom: 0px;
-	z-index: 111;
-}
+<!--====================Banner slider=======================-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+<style>
 
 </style>
 </head>
@@ -117,25 +42,22 @@ font-size: 17px;
 
 <div id="topbar" class="d-flex align-items-center">
   <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-  <div class="row">
-    <div class="col-lg-3">
-      <div class="d-flex align-items-center logo  d-md-flex logo"> <img src="assets/img/logo.png" width="200" height="113"> </div>
-    </div>
-    <div class="col-lg-7">
-      <div class="align-items-center">
-        <h1>West Bengal State NGRBA Program Management Group – A State wing of 
-National Mission for Clean Ganga
-Ministry of Jal Shakti
-</h1>
-<h5>(Department of Water Resources,River Development & Ganga Rejuvenation) Government of India</h5>
-<p align="center"><img src="assets/img/namamiganga.jpg"></p>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="d-flex align-items-center logo  d-md-flex logo"> <img src="assets/img/logo.png" width="200" height="113"> </div>
       </div>
-    </div>
-    <div class="col-lg-2">
-      <div class="d-flex align-items-center top-search d-none d-md-flex logo">
-      <img src="assets/img/logo1.png" width="95" height="125">
+      <div class="col-lg-7">
+        <div class="align-items-center">
+          <h1>West Bengal State NGRBA Program Management Group – A State wing of 
+            National Mission for Clean Ganga
+            Ministry of Jal Shakti </h1>
+          <h5>(Department of Water Resources,River Development & Ganga Rejuvenation) Government of India</h5>
+          <p align="center"><img src="assets/img/namamiganga.jpg"></p>
+        </div>
       </div>
-    </div>
+      <div class="col-lg-2">
+        <div class="d-flex align-items-center top-search d-none d-md-flex logo"> <img src="assets/img/logo1.png" width="95" height="125"> </div>
+      </div>
     </div>
   </div>
 </div>
@@ -146,42 +68,38 @@ Ministry of Jal Shakti
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="about.html">About us</a></li>
-       
-      
+        <li><a class="nav-link scrollto" href="about.html">About us</a></li>
         <li class="dropdown"><a href="#"><span>Public Outreach </span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="#">In the press</a></li>
-            <li><a href="#">Outreach Event</a></li>
-            <li><a href="#"> Up-coming Activities</a></li>
+            <li><a href="inthe_press.html">In the press</a></li>
+            <li><a href="outreach_event.html">Outreach Event</a></li>
+            <li><a href="up-coming_activities.html"> Up-coming Activities</a></li>
           </ul>
         </li>
-         <li><a class="nav-link scrollto" href="notice_tender.html">Notice / Tender</a></li>
-         <li class="dropdown"><a href="#"><span>Ganga Committee</span> <i class="bi bi-chevron-down"></i></a>
+        <li><a class="nav-link scrollto" href="notice_tender.html">Notice / Tender</a></li>
+        <li class="dropdown"><a href="#"><span>Ganga Committee</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="state_ganga_committee.html"> State Ganga Committee</a></li>
             <li><a href="district_ganga_committee.html"> District Ganga Committee</a></li>
             <li><a href="#">GDPMS Portal</a></li>
           </ul>
         </li>
-        
         <li class="dropdown"><a href="#"><span> Related Links</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="usefullink.html">Useful links</a></li>
             <li><a href="key_officials.html">Key Official</a></li>
           </ul>
         </li>
-        
         <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="sanctioned.html">Sanctioned / Released</a></li>
             <li><a href="projects_related_reports.html">Projects related Report</a></li>
-            <li> <a href="monthly_project_progress_report.html">  Monthly Project Progress</a></li>
+            <li> <a href="monthly_project_progress_report.html"> Monthly Project Progress</a></li>
           </ul>
         </li>
-      
+        <li><a class="nav-link scrollto" href="grievance.html">Grievance</a></li>
         <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-          <li><a class="nav-link scrollto" href="#"> Dashboard</a></li>
+        <li><a class="nav-link scrollto" href="#"> Dashboard</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i> </nav>
     <!-- .navbar --> 
@@ -190,31 +108,93 @@ Ministry of Jal Shakti
 </header>
 <!-- End Header --> 
 
+
 <!-- ======= Hero Section ======= -->
-<section id="hero">
-  <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <ol class="carousel-indicators" id="hero-carousel-indicators">
-    </ol>
-    <div class="carousel-inner" role="listbox"> 
-      
-      <!-- Slide 1 -->
-      <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)"> 
-     
+<section class="hero-slider hero-style">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-inner slide-bg-image" data-background="assets/img/slide/slide-2.jpg" width="1600" height="504">
+          <div class="container">
+            <div data-swiper-parallax="300" class="slide-title">
+               <h2>IEC Event</h2>
+            </div>
+         
+            <div class="clearfix"></div>
+            <div data-swiper-parallax="500" class="slide-btns">
+              <a href="#" class="theme-btn-s2">Register now</a>
+              <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i> Get Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- end slide-inner -->
       </div>
-      
-      <!-- Slide 2 -->
-      <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)"> 
-  
+      <!-- end swiper-slide -->
+
+      <div class="swiper-slide">
+        <div class="slide-inner slide-bg-image" data-background="assets/img/slide/slide-3.jpg" width="1600" height="504">
+          <div class="container">
+            <div data-swiper-parallax="300" class="slide-title">
+               <h2>IEC Event</h2>
+            </div>
+         
+            <div class="clearfix"></div>
+            <div data-swiper-parallax="500" class="slide-btns">
+              
+              <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- end slide-inner -->
       </div>
+      <!-- end swiper-slide -->
       
-      <!-- Slide 3 -->
-      <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)"> 
-  
+        <div class="swiper-slide">
+        <div class="slide-inner slide-bg-image" data-background="assets/img/slide/slide-4.jpg" width="1600" height="504">
+          <div class="container">
+            <div data-swiper-parallax="300" class="slide-title">
+               <h2>IEC Event</h2>
+            </div>
+           
+            <div class="clearfix"></div>
+            <div data-swiper-parallax="500" class="slide-btns">
+              <a href="#" class="theme-btn-s2">Register now</a>
+              <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- end slide-inner -->
       </div>
+      <!-- end swiper-slide -->
+        <div class="swiper-slide">
+        <div class="slide-inner slide-bg-image" data-background="assets/img/slide/slide-5.jpg" width="1600" height="504">
+          <div class="container">
+            <div data-swiper-parallax="300" class="slide-title">
+              <h2>IEC Event</h2>
+            </div>
+            
+            <div class="clearfix"></div>
+            <div data-swiper-parallax="500" class="slide-btns">
+             
+              <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- end slide-inner -->
+      </div>
+      <!-- end swiper-slide -->
     </div>
-    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev"> <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span> </a> <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next"> <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span> </a> </div>
+    <!-- end swiper-wrapper -->
+
+    <!-- swipper controls -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 </section>
-<!-- End Hero -->
+<!-- end of hero slider -->
+
+<!-- End Hero --> 
 
 <!-- ===========Social Nav=====================-->
 
@@ -229,14 +209,8 @@ Ministry of Jal Shakti
     </ul>
   </nav>
 </div>
-
-
-
-
-
-
 <main id="main"> 
-
+  
   <!-- ===========Scroll bar=====================-->
   
   <div class="bar">
@@ -251,7 +225,6 @@ Ministry of Jal Shakti
   <!-- ======= About Us Section ======= -->
   <section id="about" class="about">
     <div class="container" data-aos="fade-up">
-     
       <div class="row">
         <div class="col-lg-3 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
           <div class="uselink1">
@@ -259,111 +232,113 @@ Ministry of Jal Shakti
               <h3>What's New </h3>
             </div>
             <div class="use-body1">
-           
               <ul>
-                <marquee behavior="scroll" direction="up"  scrolldelay="200" scrollamount="1">
+                <marquee behavior="scroll" direction="up"  scrolldelay="100" scrollamount="3">
                 <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-               
-               
                 <li><a href="#"> <i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-            
-              
                 <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-            
-               
                 <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here<br>
                   </a></li>
-            
-            
                 <li><a href="#"> <i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-                  
                 <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-              
-              <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
+                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-                   <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
+                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-                   <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
+                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-                   <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
+                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-                   <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
+                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-                   <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
+                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here
-                 <br>
+                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
                   </a></li>
-                  </marquee>
+                </marquee>
               </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-5 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
-         
-       
           <p> <em>The <b>Ganges </b>also known as <b>Ganga,</b> is a <u>trans-boundary river</u> of <u>Asia</u> which flows through the nations of <u>India</u> and <u>Bangladesh.</u> The 2,525 km (1,569 mi) river rises in the eastern <u>Himalayas</u> in the Indian <u>state</u> of<u> Uttarakhand,</u> and flows south and east through the <u>Gangetic Plain</u> of<u> North India.</u> After entering West Bengal, it is divided into two rivers, one is Hugly river or Adi Ganga, flowing through several districts of West Bengal and finally submerged with Bay of Bengal near <u>Ganga Sagar.</u> The second part is named as<u> Padma</u> which flows into Bangladesh, where it empties into the<u> Bay of Bengal.</u> It is the third<u> largest</u> river in the world by discharge.</u> The Ganges is one of the most sacred rivers to <u>Hindus,</u> although it is not mentioned in either the <u>Rigveda</u> or the <u>Ramayana.</u> It is also a lifeline to millions of Indians who live along its course and depend on it for their daily needs. It is worshipped as the goddess<u> Ganga</u> in <u>Hinduism.</u></em> </p>
-           </div>
-        <div class="col-lg-4 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100"> 
-        <div class="uselink1">
+        </div>
+        <div class="col-lg-4 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
+          <div class="uselink1">
             <div class="use-title1">
               <h3>Who's Who </h3>
             </div>
-            <div class="use-body2">
-           <div class="row">
-             <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100"> 
-             <div class="who-img"><img src="assets/img/whoimg.jpg">
-              
-             </div>
-              <div class="who-title">
-              <h3><b>Executive Chairperson</b></h3>
-              <p>name</p>
-              </div>
-             </div>
-              <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100"> 
-              <div class="who-img"><img src="assets/img/whoimg.jpg">
-             
-              </div>
-               <div class="who-title">
-              <h3><b>Program Director</b></h3>
-              <p>name</p>
-              </div>
-              </div>
-               </div>
-                 <div class="row">
-               <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100"> 
-               <div class="who-img"><img src="assets/img/whoimg.jpg">
-                
-               </div>
-                <div class="who-title">
-              <h3><b>Assistant Project Director</b></h3>
-              <p>name</p>
-              </div>
-               </div>
-                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100"> 
-                <div class="who-img"><img src="assets/img/whoimg.jpg">
-                 
+            <div class="use-body3">
+              <div class="row">
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
+                  <div class="who-img"><img src="assets/img/whoimg.jpg"> </div>
+                  <div class="who-title">
+                    <h3><b>Executive Chairperson</b></h3>
+                    <p>name</p>
+                  </div>
                 </div>
-                 <div class="who-title">
-              <h3><b>Director<br> (Finance & Admin) </b></h3>
-              <p>name</p>
-              </div>
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
+                  <div class="who-img"><img src="assets/img/whoimg.jpg"> </div>
+                  <div class="who-title">
+                    <h3><b>Program Director</b></h3>
+                    <p>name</p>
+                  </div>
                 </div>
-           </div>
-          
-           
+              </div>
+              <div class="row">
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
+                  <div class="who-img"><img src="assets/img/whoimg.jpg"> </div>
+                  <div class="who-title">
+                    <h3><b>Assistant Project Director</b></h3>
+                    <p>name</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
+                  <div class="who-img"><img src="assets/img/whoimg.jpg"> </div>
+                  <div class="who-title">
+                    <h3><b>Director<br>
+                      (Finance & Admin) </b></h3>
+                    <p>name</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-         </div>
+        </div>
       </div>
     </div>
   </section>
   <!-- End About Us Section --> 
+  
+  
+  <!--===============Counter Section=============================-->
+  
+  <div id="counter">
+
+    <div class="item rainbow">
+       <h1 class="count" data-number="50" ></h1>
+       <h3 class="text">Reward</h3>
+    </div>
+    <div class="item rainbow">
+       <h1 class="count" data-number="15" ></h1>
+       <h3 class="text">year+ Eexperience</h3>
+    </div>
+    <div class="item rainbow">
+       <h1 class="count" data-number="2040" ></h1>
+       <h3 class="text">project completed</h3>
+    </div>
+    <div class="item rainbow">
+       <h1 class="count" data-number="1018" ></h1>
+       <h3 class="text">Projects</h3>
+    </div>
+  
+  </div>
+  
   
   
   
@@ -372,33 +347,28 @@ Ministry of Jal Shakti
   <section id="Social" class="social-section">
     <div class="container" data-aos="fade-up">
       <div class="row content">
-      <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="100">
+        <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="100">
           <div class="uselink1">
             <div class="use-title1">
               <h3><i class="fa-brands fa-square-twitter"></i>Follow us on Twitter </h3>
             </div>
-            <div class="use-body2">
-            <img src="assets/img/tweet.jpg" width="570" height="410"> </div>
+            <div class="use-body2"> <img src="assets/img/tweet.jpg" width="570" height="410"> </div>
           </div>
         </div>
-        
         <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
           <div class="uselink1">
             <div class="use-title1">
               <h3><i class="fa-brands fa-square-youtube"></i>Susbcribe us on Youtube</h3>
             </div>
-              <div class="use-body2">
-            <img src="assets/img/youtube.jpg" width="570" height="410"> </div>
+            <div class="use-body2"> <img src="assets/img/youtube.jpg" width="570" height="410"> </div>
           </div>
         </div>
-        
         <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="300">
           <div class="uselink1">
             <div class="use-title1">
               <h3><i class="fa-brands fa-square-facebook"></i>Like us on Facebook </h3>
             </div>
-              <div class="use-body2">
-            <img src="assets/img/facebook.jpg" width="570" height="410"> </div>
+            <div class="use-body2"> <img src="assets/img/facebook.jpg" width="570" height="410"> </div>
           </div>
         </div>
       </div>
@@ -407,109 +377,67 @@ Ministry of Jal Shakti
   
   <!-- End Section --> 
   
-  
-    <!--==============Project status========================-->
+  <!--==============Project status========================-->
   
   <section id="Social" class="social-section">
     <div class="container" data-aos="fade-up">
       <div class="row content">
-      <div class="col-lg-6 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="100">
+        <div class="col-lg-6 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="100">
           <div class="uselink1">
             <div class="use-title1">
               <h3>Projects Status </h3>
             </div>
-            <div class="use-body2">
-        <img src="assets/img/project.jpg" width="500" height="223">
- 
-             </div>
+            <div class="use-body2"> <img src="assets/img/project.jpg" width="500" height="223"> </div>
           </div>
         </div>
-        
         <div class="col-lg-6 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
-         
-          
-           <div class="container">
-	<div class="ombre-externe">
-		<div class="ombre-interne">
-				<div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img src="assets/img/gallery/gallery-1.jpg" class="d-block w-100 peinture-ombre-interne-fine" alt="...">
-							<div class="carousel-caption">
-								<h5>
-									Cultural Programme (Chhou Dance)
-								</h5>
-								<p>
-								</p>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<img src="assets/img/gallery/gallery-2.jpg" class="d-block w-100" alt="...">
-							<div class="carousel-caption">
-								<h5>
-									BCC Activities
-								</h5>
-								<p>
-								</p>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<img src="assets/img/gallery/gallery-3.jpg" class="d-block w-100" alt="...">
-							<div class="carousel-caption">
-								<h5>
-									BCC Activities
-								</h5>
-								<p> 
-								</p>
-							</div>
-						</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
-		</div>
-		<!-- ombre-interne -->
-	</div>
-	<!-- ombre-externe -->
+        <div class="uselink1">
+            <div class="use-title1">
+              <h3>Gallery </h3>
+            </div>
+            <div class="use-body2">
+          <div class="listing-gallery">
+  <div class="grid-noGutter">
+    <div class="col-12 listing-gallery-img-lg">
+      <img id="active-img" src="assets/img/gallery/gallery-3.jpg" class="responsive-img">
+      <div class="caption">
+      <h4>BCC Activities</h4>     </div>
+    </div>
+    <div class="col-12 grid-noGutter">
+      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+        <img src="assets/img/gallery/gallery-3.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
+      </div>      
+      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+        <img src="assets/img/gallery/gallery-2.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
+      </div>      
+      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+        <img src="assets/img/gallery/gallery-4.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
+      </div>      
+      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+        <img src="assets/img/gallery/gallery-5.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
+      </div>      
+    </div>
+  </div>
+</div> 
 </div>
-
-   
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+            <!-- ombre-externe --> 
+          </div>
         </div>
-        
-        
       </div>
     </div>
   </section>
   
-  <!-- End Section --> 
-
-</div>
+  <!-- End Section -->
+  
+  </div>
 </main>
-<!-- End #main -->
-
- 
+<!-- End #main --> 
 
 <!-- ======= Footer ======= -->
+
 <footer id="footer">
-  
   <div class="container">
+  
     <div class="copyright"> &copy; Copyright. 2023. All Rights Reserved </div>
   </div>
 </footer>
@@ -557,7 +485,7 @@ Ministry of Jal Shakti
 
 </script> 
 
-<!--====================hme bottom gallery===========================-->
+<!--====================hme bottom gallery===========================--> 
 
 <script type="text/livescript">
 var toTop = 0;
@@ -577,15 +505,10 @@ function autoPlay(){
 autoPlay();
 
 
-</script>
-
+</script> 
 <script>
 
-</script>
-
-
-
-
+</script> 
 
 <!-- Vendor JS Files --> 
 
@@ -594,9 +517,133 @@ autoPlay();
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> 
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> 
 
-
 <!-- Template Main JS File --> 
 <script src="assets/js/main.js"></script>
+<!--================Banner Slider==========================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+    // HERO SLIDER
+    var menu = [];
+    jQuery('.swiper-slide').each( function(index){
+        menu.push( jQuery(this).find('.slide-inner').attr("data-text") );
+    });
+    var interleaveOffset = 0.5;
+    var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        parallax: true,
+        autoplay: {
+            delay: 6500,
+            disableOnInteraction: false,
+        },
+        watchSlidesProgress: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        on: {
+            progress: function() {
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    var slideProgress = swiper.slides[i].progress;
+                    var innerOffset = swiper.width * interleaveOffset;
+                    var innerTranslate = slideProgress * innerOffset;
+                    swiper.slides[i].querySelector(".slide-inner").style.transform =
+                    "translate3d(" + innerTranslate + "px, 0, 0)";
+                }      
+            },
+
+            touchStart: function() {
+              var swiper = this;
+              for (var i = 0; i < swiper.slides.length; i++) {
+                swiper.slides[i].style.transition = "";
+              }
+            },
+
+            setTransition: function(speed) {
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    swiper.slides[i].style.transition = speed + "ms";
+                    swiper.slides[i].querySelector(".slide-inner").style.transition =
+                    speed + "ms";
+                }
+            }
+        }
+    };
+
+    var swiper = new Swiper(".swiper-container", swiperOptions);
+
+    // DATA BACKGROUND IMAGE
+    var sliderBgSetting = $(".slide-bg-image");
+    sliderBgSetting.each(function(indx){
+        if ($(this).attr("data-background")){
+            $(this).css("background-image", "url(" + $(this).data("background") + ")");
+        }
+    });
+
+
+</script>
+<!--===================counter=======================-->
+<script>
+let count = document.querySelectorAll(".count")
+let arr = Array.from(count)
+
+
+
+arr.map(function(item){
+  let startnumber = 0
+
+  function counterup(){
+  startnumber++
+  item.innerHTML= startnumber
+   
+  if(startnumber == item.dataset.number){
+      clearInterval(stop)
+  }
+}
+
+let stop =setInterval(function(){
+  counterup()
+},50)
+
+})
+
+</script>
+
+<!--============footer gallery=========-->
+<script>
+// selects all elements with the listing-gallery-img class
+const images = document.querySelectorAll(".listing-gallery-img"); 
+// the active (main) image container
+const activeImage = document.getElementById("active-img");
+// selects the first image inside the images array (the collection of elements with the .listing-gallery-img class)
+const firstImage = images[0];
+// adds the 'selected' class to the first image of the array so it's not faded (see CSS)
+firstImage.classList.add("selected");
+
+// We use a JavaScript 'forloop' to iterate over the 'images' array
+images.forEach((image) => {
+  // for each image, listen for a 'click' on it:
+  image.addEventListener("click", function () {
+    // remove the 'selected' class from each image in the 'images' array
+    images.forEach((image) => image.classList.remove("selected")); 
+    // add the 'selected' class to the image which was clicked
+    image.classList.add("selected"); 
+    // check the source attribute value for the image which was clicked
+    const thumbSrc = this.src;
+    // change the value of the active image 'src' attribute to match that of the image clicked
+    activeImage.src = thumbSrc; 
+  });
+});
+</script>
 
 </body>
 </html>
