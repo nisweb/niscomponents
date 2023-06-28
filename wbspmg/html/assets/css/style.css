@@ -3724,7 +3724,7 @@ font-size: 17px;
 --------------------------------------------------------------*/
 .hero-style {
   /*height: 850px;*/
-  height: 500px;
+  height: 550px;
   transition:all .4s ease;
 }
 
@@ -4186,6 +4186,21 @@ width: 40%;
 	width: 100%;
 }
 
+.monthly_search_box input{
+	width:87%;
+
+outline: none;
+font-size: 1rem;
+color: #707070;
+;
+border: 1px solid #ddd;
+border-radius: 6px;
+padding: 0 15px;
+}
+.input-group-text {
+
+padding:1rem .75rem!important;
+}
 
 
 
