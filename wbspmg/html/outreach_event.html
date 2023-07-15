@@ -29,11 +29,186 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.21.1/daterangepicker.min.css" integrity="sha512-nmvKZG8E3dANbZAsJXpdK6IqpfEXbPNbpe3M3Us1qTipq74IpTRShbpCf8lJFapB7e0MkDbNDKxLjS1VWt2vVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+
 <style>
 div.desc {
   padding: 15px;
   text-align: center;
 }
+/*---------------------*/
+#container {
+  margin: auto;
+}
+
+
+.grid-item {
+display: inline-block;
+    height: 259px;
+
+    overflow: hidden;
+    text-align: center;
+    width: 400px;
+}
+.grid-item img{
+	width:100%;
+	height:427px;
+/*	filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);*/
+    transition: 0.9s;
+}
+.grid-item img:hover{
+    filter: none;
+}
+
+.isotope-pager .pager {
+  display: inline-block;
+}
+.filters {
+	width: 90%;
+text-align: center;
+padding-bottom: 15px;
+padding-top: 0;
+margin: 0 auto;
+	
+}
+
+.filters ul {
+	list-style: none;
+    padding: 6px 10px;
+    box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+    margin: 0 40px;
+    border-radius: 30px;
+	background: rgb(15,8,148);
+background: linear-gradient(90deg, rgba(15,8,148,1) 0%, rgba(102,16,183,1) 0%, rgba(20,96,180,1) 49%, rgba(169,8,255,1) 100%);
+}
+
+.filters li {
+	display: inline-block;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.filters li a{
+	color: #fff;
+	text-decoration: none;
+}
+.filters li a:hover{
+	color:#fff;
+}
+
+.filters li:hover {
+	box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+	border-radius: 15px;
+}
+
+.filters li.active a{
+	color: #fff;
+	border: 1px solid #e3ca66;
+	border-radius: 15px;
+	box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+	padding: 10px 25px;
+	
+}
+
+
+
+.isotope-pager a{
+  margin: 6px 1px;
+    display: inline-block;
+    width: 50px;
+    /* height: 60px; */
+    line-height: 31px;
+    color: #b6b6b6;
+    font-weight: 600;
+    transition: 0.3s;
+    /* position: relative; */
+    /* padding-right: 26px; */
+    box-shadow: -1px 1px 11px rgba(0,0,0,.1);
+    border-radius: 25px;
+    background-color: #1d0c77;
+    border: .5px solid #e3ca66;
+	text-decoration:none;
+}
+
+.isotope-pager a:hover{
+  color: #fff;
+  border: .5px solid #ffeeac;
+  box-shadow: -1px 1px 10px 3px rgba(0,0,0,.1);
+}
+
+.isotope-pager .active{
+  color: #e3ca66 !important;
+    box-shadow: -1px 1px 10px 5px rgba(0,0,0,.1);
+    border-radius: 25px;
+    background-color: #161616;
+    border: 1px dotted #e3ca66;
+}
+
+.isotope-pager .prev{
+  border-radius: 30px 0 0 30px;
+}
+
+.isotope-pager .next{
+  border-radius: 0 30px 30px 0;
+}
+
+.isotope-pager a::before,.isotope-pager a:after{
+  content: "";
+  position: absolute;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+.isotope-pager .num::before,.next::before{
+  border-right: 20px solid #2c3e50;
+  right: 100%;
+}
+
+.isotope-pager .num:after,.prev:after{
+  border-right: 20px solid #f1f1f1;
+  right: 0;
+}
+
+
+
+
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.isotope-pager {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+
+
 </style>
 </head>
 
@@ -140,7 +315,7 @@ div.desc {
     
     <section class="project">
      
-<div class="container table-responsive py-5" data-aos="fade-up"> 
+<div class="container table-responsive " data-aos="fade-up"> 
 <div class="monthly_search_box">
 <form method="get" action="http://167.71.235.175/spmg/SiteController/content/upcoming-activities">
 
@@ -162,147 +337,101 @@ div.desc {
 
 
 </div> 
-<div class="gallery1">
- 
-    <div class="container gallery-container">
-        <div class="uk-section" uk-filter="target: .gallery1">
-  <ul class="uk-subnav uk-subnav-pill">
-    <li class="uk-active" uk-filter-control><a  href="#">All</a></li>
-    <li uk-filter-control="[data-category='one']"><a  href="#">Ganga Utsav Mega Event</a></li>
-    <li uk-filter-control="[data-category='two']"><a  href="#">Mission Life</a></li>
-    <li uk-filter-control="[data-category='three']"><a  href="#">Street Drama</a></li>
-     <li uk-filter-control="[data-category='four']"><a  href="#">BCC Activities</a></li>
+
+
+
     
-     
-  </ul>
-  <div class="gallery1 uk-child-width-1-4" uk-grid uk-lightbox>
-  
-    
-    <div data-category="one">
-       <a href="assets/img/gallery/gallery-9.jpeg">
-        <img src="assets/img/gallery/gallery-9.jpeg">
-      </a>
-     
-      </div>
-    <div data-category="four">
-       <a href="assets/img/gallery/gallery-9.jpeg">
-        <img src="assets/img/gallery/gallery-9.jpeg">
-      </a>
-      
-      </div>
-  
-    <div data-category="three">
-       <a href="assets/img/gallery/gallery-11.jpg">
-        <img src="assets/img/gallery/gallery-11.jpg">
-      </a>
-    </div>
+ <div class="gallery1">
    
-    <div data-category="four">
-       <a href="assets/img/gallery/gallery-10.jpeg">
-        <img src="assets/img/gallery/gallery-10.jpeg">
-      </a>
-      
-      </div>
-      
-         <div data-category="three">
-       <a href="assets/img/gallery/gallery-12.jpg">
-        <img src="assets/img/gallery/gallery-12.jpg">
-      </a>
-    </div>
-    
-       <div data-category="three">
-       <a href="assets/img/gallery/gallery-13.jpg">
-        <img src="assets/img/gallery/gallery-13.jpg">
-      </a>
-    </div>
-    
-       <div data-category="three">
-       <a href="assets/img/gallery/gallery-14.jpg">
-        <img src="assets/img/gallery/gallery-14.jpg">
-      </a>
-    </div>
-    
-        <div data-category="four">
-       <a href="assets/img/gallery/gallery-15.jpeg">
-        <img src="assets/img/gallery/gallery-15.jpeg">
-      </a>
-      
-      </div>
-      
-          <div data-category="four">
-       <a href="assets/img/gallery/gallery-16.jpeg">
-        <img src="assets/img/gallery/gallery-16.jpeg">
-      </a>
-      
-      </div>
-    
-      <div data-category="one">
-      <a href="assets/img/gallery/gallery-17.jpg">
-        <img src="assets/img/gallery/gallery-17.jpg">
-      </a>
-    </div>
-    
-      <div data-category="one">
-      <a href="assets/img/gallery/gallery-18.jpeg">
-        <img src="assets/img/gallery/gallery-18.jpeg">
-      </a>
-    </div>
-    
-      <div data-category="one">
-      <a href="assets/img/gallery/gallery-19.jpeg">
-        <img src="assets/img/gallery/gallery-19.jpeg">
-      </a>
-    </div>
-    
-      <div data-category="one">
-      <a href="assets/img/gallery/gallery-20.jpg">
-        <img src="assets/img/gallery/gallery-20.jpg">
-      </a>
-    </div>
-    
-       <div data-category="two">
-        <a href="assets/img/gallery/gallery-21.jpeg">
-        <img src="assets/img/gallery/gallery-21.jpeg">
-      </a>
-    </div>
-      
-      
-       <div data-category="two">
-        <a href="assets/img/gallery/gallery-22.jpg">
-        <img src="assets/img/gallery/gallery-22.jpg">
-      </a>
-    </div>
-      
-       <div data-category="two">
-        <a href="assets/img/gallery/gallery-23.jpg">
-        <img src="assets/img/gallery/gallery-23.jpg">
-      </a>
-    </div>
-      
-       <div data-category="two">
-        <a href="assets/img/gallery/gallery-24.jpg">
-        <img src="assets/img/gallery/gallery-24.jpg">
-      </a>
-    </div>
-      
-       <div data-category="two">
-        <a href="assets/img/gallery/gallery-25.jpg">
-        <img src="assets/img/gallery/gallery-25.jpg">
-      </a>
-    </div>
-    
-    
-    
-      
-      </div>
-  </div>
+<div class="filters filter-button-group">
+	<ul>
+		<li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
+		<li><a href="javascript:void(0);" data-filter="event1">Event1</a></li>
+		<li><a href="javascript:void(0);" data-filter="event2">Event2</a></li>
+        <li><a href="javascript:void(0);" data-filter="event3">Event3</a></li>
+	</ul>
 </div>
+	<div id="container" class="isotope">
     
-  
+		<div class="grid-item" data-filter="event1">
+        <a class="popupimg" href="assets/img/gallery/gallery-9.jpeg">
+        <img src="assets/img/gallery/gallery-9.jpeg">
+        </a>
+        <div class="overlay">Event1</div>
+        </div>
+        
+        
+        <div class="grid-item" data-filter="event3">
+        <a class="popupimg" href="assets/img/gallery/gallery-11.jpg">
+        <img src="assets/img/gallery/gallery-11.jpg">
+        </a>
+        <div class="overlay">Event3</div>
+        </div>
+        
+        
+		<div class="grid-item" data-filter="event1">
+        <a class="popupimg" href="assets/img/gallery/gallery-24.jpg">
+        <img src="assets/img/gallery/gallery-24.jpg">
+        </a>
+        <div class="overlay">Event1</div>
+        </div>
+        
+        
+        <div class="grid-item" data-filter="event3">
+        <a class="popupimg" href="assets/img/gallery/gallery-12.jpg">
+        <img src="assets/img/gallery/gallery-12.jpg">
+        </a>
+        <div class="overlay">Event3</div>
+        </div>
+        
+        
+		<div class="grid-item" data-filter="event1">
+        <a class="popupimg" href="assets/img/gallery/gallery-23.jpg">
+        <img src="assets/img/gallery/gallery-23.jpg">
+        </a>
+        <div class="overlay">Event1</div>
+        </div>
+        
+        
+        <div class="grid-item" data-filter="event2">
+        <a class="popupimg" href="assets/img/gallery/gallery-25.jpg">
+        <img src="assets/img/gallery/gallery-25.jpg">
+        </a>
+        <div class="overlay">Event2</div>
+        </div>
+        
+        
+		<div class="grid-item" data-filter="event2">
+        <a class="popupimg" href="assets/img/gallery/gallery-22.jpg">
+        <img src="assets/img/gallery/gallery-22.jpg">
+        </a>
+        <div class="overlay">Event2</div>
+        </div>
+        
+        
+        <div class="grid-item" data-filter="event3">
+        <a class="popupimg" href="assets/img/gallery/gallery-17.jpg">
+        <img src="assets/img/gallery/gallery-17.jpg">
+        </a>
+        <div class="overlay">Event3</div>
+        </div>
+        
+        
+		<div class="grid-item" data-filter="event2">
+        <a class="popupimg" href="assets/img/gallery/gallery-14.jpg">
+        <img src="assets/img/gallery/gallery-14.jpg">
+        </a>
+        <div class="overlay">Event2</div>
+        </div>
+        
+	
+
+
+	</div>
+
     </div>
     
-    
-    <div class="gallery1">
+   <div class="gallery1">
  
     <div class="container gallery-container">
         <div class="uk-section" uk-filter="target: .gallery1">
@@ -389,6 +518,8 @@ div.desc {
   
 
 
+    
+
 
 
 
@@ -430,6 +561,19 @@ div.desc {
 type="text/javascript"></script>
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
 rel="Stylesheet"type="text/css"/>
+
+
+ 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script><script  src="./script.js"></script>
+
+
+
+
+
+
+
+
 <script type="text/javascript">
 
     $(function () {
@@ -447,6 +591,204 @@ rel="Stylesheet"type="text/css"/>
             });
         }
     });
+
+</script>
+
+
+
+
+
+
+<script>
+$(document).ready( function() {
+
+	var itemSelector = '.grid-item'; 
+
+	var $container = $('#container').isotope({
+		itemSelector: itemSelector,
+		masonry: {
+		  columnWidth: itemSelector,
+		  isFitWidth: true
+		}
+	});
+
+	//Ascending order
+	var responsiveIsotope = [
+		[480, 7],
+		[720, 10]
+	];
+
+	var itemsPerPageDefault = 12;
+	var itemsPerPage = defineItemsPerPage();
+	var currentNumberPages = 1;
+	var currentPage = 1;
+	var currentFilter = '*';
+	var filterAtribute = 'data-filter';
+	var pageAtribute = 'data-page';
+	var pagerClass = 'isotope-pager';
+
+	function changeFilter(selector) {
+		$container.isotope({
+			filter: selector
+		});
+	}
+
+
+	function goToPage(n) {
+		currentPage = n;
+
+		var selector = itemSelector;
+			selector += ( currentFilter != '*' ) ? '['+filterAtribute+'="'+currentFilter+'"]' : '';
+			selector += '['+pageAtribute+'="'+currentPage+'"]';
+
+		changeFilter(selector);
+	}
+
+	function defineItemsPerPage() {
+		var pages = itemsPerPageDefault;
+
+		for( var i = 0; i < responsiveIsotope.length; i++ ) {
+			if( $(window).width() <= responsiveIsotope[i][0] ) {
+				pages = responsiveIsotope[i][1];
+				break;
+			}
+
+			
+
+		}
+
+		return pages;
+	}
+	
+	function setPagination() {
+
+		var SettingsPagesOnItems = function(){
+
+			var itemsLength = $container.children(itemSelector).length;
+			
+			var pages = Math.ceil(itemsLength / itemsPerPage);
+			var item = 1;
+			var page = 1;
+			var selector = itemSelector;
+				selector += ( currentFilter != '*' ) ? '['+filterAtribute+'="'+currentFilter+'"]' : '';
+			
+			$container.children(selector).each(function(){
+				if( item > itemsPerPage ) {
+					page++;
+					item = 1;
+				}
+				$(this).attr(pageAtribute, page);
+				item++;
+			});
+
+			currentNumberPages = page;
+
+		}();
+
+		var CreatePagers = function() {
+
+			var $isotopePager = ( $('.'+pagerClass).length == 0 ) ? $('<div class="'+pagerClass+'"></div>') : $('.'+pagerClass);
+
+			$isotopePager.html('');
+			
+			for( var i = 0; i < currentNumberPages; i++ ) {
+				var $pager = $('<a href="javascript:void(0);" class="pager" '+pageAtribute+'="'+(i+1)+'"></a>');
+					$pager.html(i+1);
+					
+					$pager.click(function(){
+						var page = $(this).eq(0).attr(pageAtribute);
+						goToPage(page);
+					});
+
+				$pager.appendTo($isotopePager);
+			}
+
+			$container.after($isotopePager);
+
+		}();
+
+	}
+
+	setPagination();
+	goToPage(1);
+
+	//Adicionando Event de Click para as categorias
+	$('.filters a').click(function(){
+		var filter = $(this).attr(filterAtribute);
+		currentFilter = filter;
+
+		setPagination();
+		goToPage(1);
+
+
+	});
+
+	//Evento Responsivo
+	$(window).resize(function(){
+		itemsPerPage = defineItemsPerPage();
+		setPagination();
+	});
+
+	
+
+});
+
+
+
+ $(document).ready( function() {   
+
+// filter items on button click
+$('.filter-button-group').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $('.grid').isotope({ filter: filterValue });
+  $('.filter-button-group li').removeClass('active');
+  $(this).addClass('active');
+});
+    })
+	
+
+ $(document).ready( function() {   
+
+// filter items on button click
+$('.isotope-pager').on( 'click', 'a', function() {
+  var filterValue = $(this).attr('data-page');
+
+  $('.isotope-pager a').removeClass('active');
+  $(this).addClass('active');
+});
+    })
+	
+	
+	
+	
+	
+	
+	
+
+$(document).ready(function(){
+$('.popupimg').magnificPopup({
+	type: 'image',
+  mainClass: 'mfp-with-zoom', 
+  gallery:{
+			enabled:true
+		},
+
+  zoom: {
+    enabled: true, 
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function
+
+    opener: function(openerElement) {
+
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+  }
+}
+
+});
+
+});
+
 
 </script>
 
