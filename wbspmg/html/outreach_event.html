@@ -27,8 +27,13 @@
 <link href="assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.21.1/daterangepicker.min.css" integrity="sha512-nmvKZG8E3dANbZAsJXpdK6IqpfEXbPNbpe3M3Us1qTipq74IpTRShbpCf8lJFapB7e0MkDbNDKxLjS1VWt2vVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
-
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 </style>
 </head>
 
@@ -67,7 +72,14 @@
         <li><a class="nav-link scrollto" href="about.html">About us</a></li>
         <li class="dropdown"><a href="#"><span>Public Outreach </span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="inthe_press.html">In the press</a></li>
+            <li class="dropdown"><a href="inthe_press.html"><span>Media Civerage </span> <i class="bi bi-chevron-right"></i></a>
+             <ul>
+          <li><a href="newspaper.html">NewsPaper</a></li>
+          <li><a href="weblinks.html">Weblink</a></li>
+      
+        </ul>
+            
+            </li>
             <li><a href="outreach_event.html">Outreach Event</a></li>
             <li><a href="up-coming_activities.html"> Up-coming Activities</a></li>
           </ul>
@@ -130,50 +142,22 @@
      
 <div class="container table-responsive py-5" data-aos="fade-up"> 
 <div class="monthly_search_box">
-<div class="row">
-  <div class="col-lg-4">
-  <form class="row">
-    <label for="date" class="col-1 col-form-label">Date</label>
-    <div class="col-12">
-      <div class="input-group date" id="datepicker">
-         <input type="text" id="txtFrom" />
-        <span class="input-group-append">
-          <span class="input-group-text bg-light d-block">
-            <i class="fa fa-calendar"></i>
-          </span>
-        </span>
-      </div>
-    </div>
-  </form>
-  </div>
-  <div class="col-lg-4">
-  <form class="row">
-    <label for="date" class="col-1 col-form-label">Date</label>
-    <div class="col-12">
-      <div class="input-group date" id="datepicker">
-        <input type="text" id="txtTo" />
-        <span class="input-group-append">
-          <span class="input-group-text bg-light d-block">
-            <i class="fa fa-calendar"></i>
-          </span>
-        </span>
-      </div>
-    </div>
-  </form>
-  </div>
-  
-    <div class="col-lg-4">
-   <form class="row">
-    <label for="date" class="col-1 col-form-label">Search</label>
-    <div class="col-lg-12">
- 
-  <button type="button" class="btn btn-primary">
-    <i class="fas fa-search">&nbsp;&nbsp;SEARCH</i>
-  </button>
-</div>
-</form>
-  </div>
-</div>
+<form method="get" action="http://167.71.235.175/spmg/SiteController/content/upcoming-activities">
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <input class="subjetfield date_range_format date" autocomplete="off" name="q" value="" type="text" placeholder="Search...">
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <button type="button" value=" Search" onclick="this.form.submit()" class="btn btn-primary">
+                                    <i class="fas fa-search"></i> Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
 </div>
 
 
@@ -193,11 +177,13 @@
   </ul>
   <div class="gallery1 uk-child-width-1-4" uk-grid uk-lightbox>
   
+    
     <div data-category="one">
-      <a href="assets/img/gallery/gallery-1.jpg">
-        <img src="assets/img/gallery/gallery-1.jpg">
+       <a href="assets/img/gallery/gallery-9.jpeg">
+        <img src="assets/img/gallery/gallery-9.jpeg">
       </a>
-    </div>
+     
+      </div>
     <div data-category="four">
        <a href="assets/img/gallery/gallery-9.jpeg">
         <img src="assets/img/gallery/gallery-9.jpeg">
@@ -436,31 +422,32 @@
 <!-- Template Main JS File --> 
 <script src="assets/js/main.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.21.1/jquery.daterangepicker.min.js" integrity="sha512-jM36zj/2doNDqDlSIJ+OAslGvZXkT+HrtMM+MMgVxCqax1AIm1XAfLuUFP7uMSavUxow+z/T2CRnSu7PDaYu2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
 type="text/javascript"></script>
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
 rel="Stylesheet"type="text/css"/>
 <script type="text/javascript">
-$(function () {
-    $("#txtFrom").datepicker({
-        numberOfMonths: 2,
-        onSelect: function (selected) {
-            var dt = new Date(selected);
-            dt.setDate(dt.getDate() + 1);
-            $("#txtTo").datepicker("option", "minDate", dt);
+
+    $(function () {
+        if ($('.date_range_format').length) {
+            $('.date_range_format').dateRangePicker({
+                startOfWeek: 'monday',
+                separator: ' - ',
+                format: 'DD/MM/YYYY',
+                maxDays: 31,
+                autoClose: false,
+                time: {
+                    enabled: false
+                }
+
+            });
         }
     });
-    $("#txtTo").datepicker({
-        numberOfMonths: 2,
-        onSelect: function (selected) {
-            var dt = new Date(selected);
-            dt.setDate(dt.getDate() - 1);
-            $("#txtFrom").datepicker("option", "maxDate", dt);
-        }
-    });
-});
+
 </script>
 
 </body>
