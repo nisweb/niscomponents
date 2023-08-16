@@ -55,7 +55,11 @@
   margin-top: 66px;
    }
   .section-title h1 {
-    font-size: 36px; }
+font-size: 36px;
+font-weight: bold;
+text-transform: uppercase;
+border-bottom: 1px solid #ccc;
+	}
   .section-title p {
     margin-bottom: 0; }
 
@@ -1240,8 +1244,10 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 1; }
 .banner-area .banner-content {
   padding-left: 10px;
-  padding-top: 197px;
-  padding-bottom: 100px;
+padding-top: 89px;
+padding-bottom: 33px;
+width: 100%;
+text-align: center;
 }
    .banner-area .banner-content h4 {
       font-size: 21px;
@@ -1498,7 +1504,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0; }
   .single-product .product-details .prd-bottom {
     position: relative;
-    margin-top: 20px; }
+    
+	}
+	.prd-bottom p{
+		margin:0px;
+		padding:0px;
+	}
     .single-product .product-details .prd-bottom .social-info {
       position: relative;
       display: inline-block;
@@ -1942,7 +1953,7 @@ font-weight: bold;
     box-shadow: 2.828px 2.828px 15px 0px rgba(0, 0, 0, 0.1); }
 
 .category-list .single-product {
-  margin-top: 30px; }
+  }
 
 label {
   margin-bottom: 0; }
@@ -4400,13 +4411,13 @@ label {
   padding-top: 50px;
   background-color: #0e065b;
   color:#fff; 
-  
+  border-top: 5px solid #dfc90c;
   }
 .footer-area .section_gap {
   padding: 100px 0;
 }
   .footer-area h6 {
-    color: #fff;
+    color: #dfc90c;
     margin-bottom: 25px;
     font-size: 18px;
     font-weight: 600; }
@@ -4714,3 +4725,112 @@ section {
 .about-box-main p {
   padding-bottom: 20px;
 }
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .icon-boxes h4 {
+  font-size: 18px;
+  color: #7f6d68;
+  margin-bottom: 15px;
+}
+.about .icon-boxes h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #554945;
+  margin-bottom: 15px;
+}
+.about .icon-box {
+  margin-top: 40px;
+}
+.about .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #ffcbba;
+  border-radius: 50px;
+  transition: 0.5s;
+  background: #fff;
+}
+.about .icon-box .icon i {
+  color: #ff5821;
+  font-size: 32px;
+}
+.about .icon-box:hover .icon {
+  background: #ff5821;
+  border-color: #ff5821;
+}
+.about .icon-box:hover .icon i {
+  color: #fff;
+}
+.about .icon-box .title {
+  margin-left: 85px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.about .icon-box .title a {
+  color: #343a40;
+  transition: 0.3s;
+}
+.about .icon-box .title a:hover {
+  color: #ff5821;
+}
+.about .icon-box .description {
+  margin-left: 85px;
+  line-height: 24px;
+  font-size: 14px;
+}
+/*--------------------------------------------------------------
+# SHG Group slider
+--------------------------------------------------------------*/
+	@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+.category-area .card-img-overlay {
+  position: absolute;
+  top: 75%;
+  /*! right: 0; */
+  /*! bottom: 0; */
+  left: 0;
+  padding:0.6rem;
+  border-radius: calc(.25rem - 1px);
+  z-index: 111;
+  color: #fff;
+  background:rgba(0, 0, 0, 0.5);
+  height: 65px;
+}
+
+
