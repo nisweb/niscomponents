@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SPMG</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+
+<!-- Favicons -->
+<!--<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+<!-- Google Fonts -->
+<link href="https://fonts.cdnfonts.com/css/georgia-2" rel="stylesheet">
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.21.1/daterangepicker.min.css" integrity="sha512-nmvKZG8E3dANbZAsJXpdK6IqpfEXbPNbpe3M3Us1qTipq74IpTRShbpCf8lJFapB7e0MkDbNDKxLjS1VWt2vVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+
+<style>
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/*---------------------*/
+#container {
+  margin: auto;
+}
+
+
+.grid-item {
+display: inline-block;
+    height: 259px;
+
+    overflow: hidden;
+    text-align: center;
+    width: 400px;
+}
+.grid-item img{
+	width:100%;
+	height:427px;
+/*	filter: url(filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);*/
+    transition: 0.9s;
+}
+.grid-item img:hover{
+    filter: none;
+}
+
+.isotope-pager .pager {
+  display: inline-block;
+}
+.filters {
+	width: 90%;
+text-align: center;
+padding-bottom: 15px;
+padding-top: 0;
+margin: 0 auto;
+	
+}
+
+.filters ul {
+	list-style: none;
+    padding: 6px 10px;
+    box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+    margin: 0 40px;
+    border-radius: 30px;
+	background: rgb(15,8,148);
+background: linear-gradient(90deg, rgba(15,8,148,1) 0%, rgba(102,16,183,1) 0%, rgba(20,96,180,1) 49%, rgba(169,8,255,1) 100%);
+}
+
+.filters li {
+	display: inline-block;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.filters li a{
+	color: #fff;
+	text-decoration: none;
+}
+.filters li a:hover{
+	color:#fff;
+}
+
+.filters li:hover {
+	box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+	border-radius: 15px;
+}
+
+.filters li.active a{
+	color: #fff;
+	border: 1px solid #e3ca66;
+	border-radius: 15px;
+	box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+	padding: 10px 25px;
+	
+}
+
+
+
+.isotope-pager a{
+  margin: 6px 1px;
+    display: inline-block;
+    width: 50px;
+    /* height: 60px; */
+    line-height: 31px;
+    color: #b6b6b6;
+    font-weight: 600;
+    transition: 0.3s;
+    /* position: relative; */
+    /* padding-right: 26px; */
+    box-shadow: -1px 1px 11px rgba(0,0,0,.1);
+    border-radius: 25px;
+    background-color: #1d0c77;
+    border: .5px solid #e3ca66;
+	text-decoration:none;
+}
+
+.isotope-pager a:hover{
+  color: #fff;
+  border: .5px solid #ffeeac;
+  box-shadow: -1px 1px 10px 3px rgba(0,0,0,.1);
+}
+
+.isotope-pager .active{
+  color: #e3ca66 !important;
+    box-shadow: -1px 1px 10px 5px rgba(0,0,0,.1);
+    border-radius: 25px;
+    background-color: #161616;
+    border: 1px dotted #e3ca66;
+}
+
+.isotope-pager .prev{
+  border-radius: 30px 0 0 30px;
+}
+
+.isotope-pager .next{
+  border-radius: 0 30px 30px 0;
+}
+
+.isotope-pager a::before,.isotope-pager a:after{
+  content: "";
+  position: absolute;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+}
+.isotope-pager .num::before,.next::before{
+  border-right: 20px solid #2c3e50;
+  right: 100%;
+}
+
+.isotope-pager .num:after,.prev:after{
+  border-right: 20px solid #f1f1f1;
+  right: 0;
+}
+
+
+
+
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.isotope-pager {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- ======= Top Bar ======= -->
+
+<div id="topbar" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="d-flex align-items-center logo  d-md-flex logo"> <img src="assets/img/logo.png" width="200" height="113"> </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="align-items-center">
+          <h1>West Bengal State NGRBA Program Management Group – A State wing of 
+            National Mission for Clean Ganga
+            Ministry of Jal Shakti </h1>
+          <h5>(Department of Water Resources,River Development & Ganga Rejuvenation) Government of India</h5>
+          <p align="center"><img src="assets/img/namamiganga.jpg"></p>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="d-flex align-items-center top-search d-none d-md-flex logo"> <img src="assets/img/logo1.png" width="95" height="125"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======= Header ======= -->
+<header id="header">
+  <div class="container d-flex align-items-center">
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+        <li><a class="nav-link scrollto" href="about.html">About us</a></li>
+        <li class="dropdown"><a href="#"><span>Public Outreach </span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li class="dropdown"><a href="inthe_press.html"><span>Media Civerage </span> <i class="bi bi-chevron-right"></i></a>
+             <ul>
+          <li><a href="newspaper.html">NewsPaper</a></li>
+          <li><a href="weblinks.html">Weblink</a></li>
+      
+        </ul>
+            
+            </li>
+            <li><a href="outreach_event.html">Outreach Event</a></li>
+            <li><a href="up-coming_activities.html"> Up-coming Activities</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="notice_tender.html">Notice / Tender</a></li>
+        <li class="dropdown"><a href="#"><span>Ganga Committee</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="state_ganga_committee.html"> State Ganga Committee</a></li>
+            <li><a href="district_ganga_committee.html"> District Ganga Committee</a></li>
+            <li><a href="#">GDPMS Portal</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#"><span> Related Links</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="usefullink.html">Useful links</a></li>
+            <li><a href="key_officials.html">Key Official</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="sanctioned.html">Sanctioned / Released</a></li>
+            <li><a href="projects_related_reports.html">Projects related Report</a></li>
+            <li> <a href="monthly_project_progress_report.html"> Monthly Project Progress</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="grievance.html">Grievance</a></li>
+        <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        <li><a class="nav-link scrollto" href="#"> Dashboard</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i> </nav>
+    <!-- .navbar --> 
+    
+  </div>
+</header>
+<!-- End Header --> 
+
+
+
+<main id="main"> 
+
+  
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Outreach Event</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+             <li>Public Outreach </li>
+            <li>Outreach Event</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+    
+    
+    <section class="project">
+     
+<div class="container table-responsive " data-aos="fade-up"> 
+<div class="monthly_search_box">
+<form method="get" action="http://167.71.235.175/spmg/SiteController/content/upcoming-activities">
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <input class="subjetfield date_range_format date" autocomplete="off" name="q" value="" type="text" placeholder="Search...">
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="input-group">
+                                <button type="button" value=" Search" onclick="this.form.submit()" class="btn btn-primary">
+                                    <i class="fas fa-search"></i> Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+</div>
+
+
+</div> 
+
+
+
+    
+ <div class="gallery1">
+   
+<div class="filters filter-button-group">
+	<ul>
+		<li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
+		<li><a href="javascript:void(0);" data-filter="event1">Event1</a></li>
+		<li><a href="javascript:void(0);" data-filter="event2">Event2</a></li>
+        <li><a href="javascript:void(0);" data-filter="event3">Event3</a></li>
+	</ul>
+</div>
+	<div id="container" class="isotope">
+    
+		<div class="grid-item" data-filter="event1">
+        <a class="popupimg" href="assets/img/gallery/gallery-9.jpeg">
+        <img src="assets/img/gallery/gallery-9.jpeg">
+        </a>
+        <div class="overlay">Event1</div>
+        </div>
+        
+        
+        <div class="grid-item" data-filter="event3">
+        <a class="popupimg" href="assets/img/gallery/gallery-11.jpg">
+        <img src="assets/img/gallery/gallery-11.jpg">
+        </a>
+        <div class="overlay">Event3</div>
+        </div>
+        
+        
+		<div class="grid-item" data-filter="event1">
+        <a class="popupimg" href="assets/img/gallery/gallery-24.jpg">
+        <img src="assets/img/gallery/gallery-24.jpg">
+        </a>
+        <div class="overlay">Event1</div>
+        </div>
+        
+        
+        <div class="grid-item" data-filter="event3">
+        <a class="popupimg" href="assets/img/gallery/gallery-12.jpg">
+        <img src="assets/img/gallery/gallery-12.jpg">
+        </a>
+        <div class="overlay">Event3</div>
+        </div>
+        
+        
+		<div class="grid-item" data-filter="event1">
+        <a class="popupimg" href="assets/img/gallery/gallery-23.jpg">
+        <img src="assets/img/gallery/gallery-23.jpg">
+        </a>
+        <div class="overlay">Event1</div>
+        </div>
+        
+        
+        <div class="grid-item" data-filter="event2">
+        <a class="popupimg" href="assets/img/gallery/gallery-25.jpg">
+        <img src="assets/img/gallery/gallery-25.jpg">
+        </a>
+        <div class="overlay">Event2</div>
+        </div>
+        
+        
+		<div class="grid-item" data-filter="event2">
+        <a class="popupimg" href="assets/img/gallery/gallery-22.jpg">
+        <img src="assets/img/gallery/gallery-22.jpg">
+        </a>
+        <div class="overlay">Event2</div>
+        </div>
+        
+        
+        <div class="grid-item" data-filter="event3">
+        <a class="popupimg" href="assets/img/gallery/gallery-17.jpg">
+        <img src="assets/img/gallery/gallery-17.jpg">
+        </a>
+        <div class="overlay">Event3</div>
+        </div>
+        
+        
+		<div class="grid-item" data-filter="event2">
+        <a class="popupimg" href="assets/img/gallery/gallery-14.jpg">
+        <img src="assets/img/gallery/gallery-14.jpg">
+        </a>
+        <div class="overlay">Event2</div>
+        </div>
+        
+	
+
+
+	</div>
+
+    </div>
+    
+   <div class="gallery1">
+ 
+    <div class="container gallery-container">
+        <div class="uk-section" uk-filter="target: .gallery1">
+  <ul class="uk-subnav uk-subnav-pill">
+    <li class="uk-active" uk-filter-control><a  href="#">All</a></li>
+    <li uk-filter-control="[data-category='vone']"><a  href="#">Video1</a></li>
+    <li uk-filter-control="[data-category='vtwo']"><a  href="#">Video2</a></li>
+    <li uk-filter-control="[data-category='vthree']"><a  href="#">Video3</a></li>
+   
+    
+     
+  </ul>
+  <div class="gallery1 uk-child-width-1-4" uk-grid uk-lightbox>
+  
+    <div data-category="vone">
+      <a href="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0">
+       <div class="responsive-video">
+    <iframe src="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0" width="600" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+      </a>
+    </div>
+   
+  
+    <div data-category="vthree">
+       <a href="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0">
+        <div class="responsive-video">
+    <iframe src="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0" width="600" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+      </a>
+    </div>
+   
+      
+         <div data-category="vthree">
+       <a href="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0">
+             <div class="responsive-video">
+    <iframe src="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0" width="600" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+      </a>
+    </div>
+    
+       <div data-category="vthree">
+       <a href="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0">
+             <div class="responsive-video">
+    <iframe src="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0" width="600" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+      </a>
+    </div>
+    
+       <div data-category="vthree">
+       <a href="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0">
+            <div class="responsive-video">
+    <iframe src="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0" width="600" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+      </a>
+    </div>
+    
+    
+    
+    
+       <div data-category="vtwo">
+        <a href="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0">
+             <div class="responsive-video">
+    <iframe src="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0" width="600" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+      </a>
+    </div>
+      
+      
+  
+  
+    
+    
+    
+      
+      </div>
+  </div>
+</div>
+    
+  
+    </div>
+ 
+  </section>
+    
+  
+
+
+    
+
+
+
+
+</main>
+<!-- End #main --> 
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  
+  <div class="container">
+    <div class="copyright"> &copy; Copyright. 2023. All Rights Reserved </div>
+  </div>
+</footer>
+
+<!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> 
+
+
+<!-- Vendor JS Files --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script> 
+<script src="assets/vendor/aos/aos.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script> 
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script> 
+<script src="assets/vendor/php-email-form/validate.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+<!-- Template Main JS File --> 
+<script src="assets/js/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.21.1/jquery.daterangepicker.min.js" integrity="sha512-jM36zj/2doNDqDlSIJ+OAslGvZXkT+HrtMM+MMgVxCqax1AIm1XAfLuUFP7uMSavUxow+z/T2CRnSu7PDaYu2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
+type="text/javascript"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
+rel="Stylesheet"type="text/css"/>
+
+
+ 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script><script  src="./script.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    $(function () {
+        if ($('.date_range_format').length) {
+            $('.date_range_format').dateRangePicker({
+                startOfWeek: 'monday',
+                separator: ' - ',
+                format: 'DD/MM/YYYY',
+                maxDays: 31,
+                autoClose: false,
+                time: {
+                    enabled: false
+                }
+
+            });
+        }
+    });
+
+</script>
+
+
+
+
+
+
+<script>
+$(document).ready( function() {
+
+	var itemSelector = '.grid-item'; 
+
+	var $container = $('#container').isotope({
+		itemSelector: itemSelector,
+		masonry: {
+		  columnWidth: itemSelector,
+		  isFitWidth: true
+		}
+	});
+
+	//Ascending order
+	var responsiveIsotope = [
+		[480, 7],
+		[720, 10]
+	];
+
+	var itemsPerPageDefault = 12;
+	var itemsPerPage = defineItemsPerPage();
+	var currentNumberPages = 1;
+	var currentPage = 1;
+	var currentFilter = '*';
+	var filterAtribute = 'data-filter';
+	var pageAtribute = 'data-page';
+	var pagerClass = 'isotope-pager';
+
+	function changeFilter(selector) {
+		$container.isotope({
+			filter: selector
+		});
+	}
+
+
+	function goToPage(n) {
+		currentPage = n;
+
+		var selector = itemSelector;
+			selector += ( currentFilter != '*' ) ? '['+filterAtribute+'="'+currentFilter+'"]' : '';
+			selector += '['+pageAtribute+'="'+currentPage+'"]';
+
+		changeFilter(selector);
+	}
+
+	function defineItemsPerPage() {
+		var pages = itemsPerPageDefault;
+
+		for( var i = 0; i < responsiveIsotope.length; i++ ) {
+			if( $(window).width() <= responsiveIsotope[i][0] ) {
+				pages = responsiveIsotope[i][1];
+				break;
+			}
+
+			
+
+		}
+
+		return pages;
+	}
+	
+	function setPagination() {
+
+		var SettingsPagesOnItems = function(){
+
+			var itemsLength = $container.children(itemSelector).length;
+			
+			var pages = Math.ceil(itemsLength / itemsPerPage);
+			var item = 1;
+			var page = 1;
+			var selector = itemSelector;
+				selector += ( currentFilter != '*' ) ? '['+filterAtribute+'="'+currentFilter+'"]' : '';
+			
+			$container.children(selector).each(function(){
+				if( item > itemsPerPage ) {
+					page++;
+					item = 1;
+				}
+				$(this).attr(pageAtribute, page);
+				item++;
+			});
+
+			currentNumberPages = page;
+
+		}();
+
+		var CreatePagers = function() {
+
+			var $isotopePager = ( $('.'+pagerClass).length == 0 ) ? $('<div class="'+pagerClass+'"></div>') : $('.'+pagerClass);
+
+			$isotopePager.html('');
+			
+			for( var i = 0; i < currentNumberPages; i++ ) {
+				var $pager = $('<a href="javascript:void(0);" class="pager" '+pageAtribute+'="'+(i+1)+'"></a>');
+					$pager.html(i+1);
+					
+					$pager.click(function(){
+						var page = $(this).eq(0).attr(pageAtribute);
+						goToPage(page);
+					});
+
+				$pager.appendTo($isotopePager);
+			}
+
+			$container.after($isotopePager);
+
+		}();
+
+	}
+
+	setPagination();
+	goToPage(1);
+
+	//Adicionando Event de Click para as categorias
+	$('.filters a').click(function(){
+		var filter = $(this).attr(filterAtribute);
+		currentFilter = filter;
+
+		setPagination();
+		goToPage(1);
+
+
+	});
+
+	//Evento Responsivo
+	$(window).resize(function(){
+		itemsPerPage = defineItemsPerPage();
+		setPagination();
+	});
+
+	
+
+});
+
+
+
+ $(document).ready( function() {   
+
+// filter items on button click
+$('.filter-button-group').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $('.grid').isotope({ filter: filterValue });
+  $('.filter-button-group li').removeClass('active');
+  $(this).addClass('active');
+});
+    })
+	
+
+ $(document).ready( function() {   
+
+// filter items on button click
+$('.isotope-pager').on( 'click', 'a', function() {
+  var filterValue = $(this).attr('data-page');
+
+  $('.isotope-pager a').removeClass('active');
+  $(this).addClass('active');
+});
+    })
+	
+	
+	
+	
+	
+	
+	
+
+$(document).ready(function(){
+$('.popupimg').magnificPopup({
+	type: 'image',
+  mainClass: 'mfp-with-zoom', 
+  gallery:{
+			enabled:true
+		},
+
+  zoom: {
+    enabled: true, 
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function
+
+    opener: function(openerElement) {
+
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+  }
+}
+
+});
+
+});
+
+
+</script>
+
+</body>
+</html>

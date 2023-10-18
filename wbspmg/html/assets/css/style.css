@@ -134,9 +134,15 @@ h6 {
   line-height: 0;
 }
 .logo{
-/*	padding-top:50px;*/
+display: flex!impotant;
+  align-items: center!impotant;
+  height: 120px;
+  margin-top: 17px;
 }
+.logo1{
 
+  margin-top: 56px;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -159,6 +165,7 @@ background: linear-gradient(322deg, rgba(149,82,222,1) 0%, rgba(19,171,207,1) 50
  background:-moz-linear-gradient(left,#82009f 0,#5d34af 50%,#00ceab 100%);
  background:-webkit-linear-gradient(left,#82009f 0,#5d34af 50%,#00ceab 100%);
  background:linear-gradient(to right,#82009f 0,#5d34af 50%,#00ceab 100%)
+ margin-bottom: 5px;
 }
 
 @media (max-width: 992px) {
@@ -865,7 +872,7 @@ font-weight: 700;
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   background: rgb(15,8,148);
@@ -2411,7 +2418,7 @@ font-size: 18px;
 .wave-section {
   position: relative;
   width: 100%;
-  height:40vh;
+  height:27vh;
   overflow: hidden;
 background: rgb(56,99,220);
 background: linear-gradient(0deg, rgba(56,99,220,1) 0%, rgba(0,129,255,1) 50%, rgba(49,30,179,1) 100%);
@@ -2722,9 +2729,9 @@ border-radius: 4px;
 .use-body1{
 	background:#a0cdfe;
 	padding-bottom:28px;
-	padding:10px 20px;
+	padding:30px 20px;
 	/*height: 430px;*/
-	height: auto;
+	height: 296px;
 	-webkit-box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
 -moz-box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
 box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
@@ -2809,6 +2816,7 @@ box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
 	color:#000;
 	font-weight:500;
 	text-align:center;
+	margin: 0px;
 	
 }
 /*-----------------------*/
@@ -2833,7 +2841,7 @@ border-radius: 4px;
 	height: 430px;
 }
 .use-body3{
-	background:#78fffd;
+	background:#85cbf3;
 	padding-bottom:28px;
 	padding:9px 17px;
 	/*height: 408px;*/
@@ -2968,7 +2976,7 @@ margin-right: 16px;
 	color:#0e6ead;
 	font-weight:bold;
 	/*font-size:71px;*/
-	font-size:18px;
+	font-size:20px;
 	text-align:center;
 	margin:0px;
 	padding:0px;
@@ -2981,6 +2989,7 @@ margin-right: 16px;
 	text-align:center;
 	margin:0px;
 	padding:0px;
+	letter-spacing: 1px;
 }
 #topbar .form-control {
   display: block;
@@ -3756,7 +3765,7 @@ font-size: 17px;
 	position: absolute;
 	/*top: 215px;*/
 	bottom: 0px;
-	z-index: 111;
+	z-index: 999;
 	top:132px;
 }
 
@@ -3804,6 +3813,13 @@ font-size: 17px;
 }
 
 /*==========================Home page Banner=================================*/
+.hero-slider_back{
+	background:url(../img/header-bg.png);
+	background-repeat:no-repeat;
+	 width: 100%;
+  height: auto;
+  background-size:cover;
+}
 .hero-slider {
   width: 100%;
   height: 700px;
@@ -3812,6 +3828,11 @@ font-size: 17px;
   display: flex;
   position: relative;
   z-index: 0;
+/*-webkit-box-shadow: 1px -2px 13px 3px rgba(168,168,168,1);
+-moz-box-shadow: 1px -2px 13px 3px rgba(168,168,168,1);
+box-shadow: 1px -2px 13px 3px rgba(168,168,168,1);
+border:10px solid #fff;*/
+
 }
 
 @media (max-width: 991px) {
@@ -3969,6 +3990,8 @@ font-size: 17px;
   /*height: 850px;*/
   height: 550px;
   transition:all .4s ease;
+  width:100%;
+  margin:0 auto;l
 }
 
 @media (max-width: 991px) {
@@ -4676,7 +4699,7 @@ background: linear-gradient(90deg, rgba(15,8,148,1) 0%, rgba(102,16,183,1) 0%, r
 text-align: center;
   color: var(--color);
   width: 100%;
-  min-height:80vh;
+  min-height:50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4697,7 +4720,11 @@ text-align: center;
   background-image:url(../img/footer-bg3.png);
 }
 .project h1{
-	font-size: 18px;
+	  font-size: 16px;
+/*  line-height: 36px;*/
+  font-family: "Neco-Variable";
+  font-weight: 700;
+  margin: 0;
 
 }
 .project a{
@@ -4714,5 +4741,145 @@ text-align: center;
 	color:#000;
 }
 .project .img-thumbnail img{
-	height: 206px;
+	height: 180px;
 }
+
+.project .img-thumbnail {
+   border-top: 3px solid #05c1ff;
+}
+
+figure {
+  margin: 0 0 1rem;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #e6faf7;
+  -webkit-box-shadow: -1px 12px 10px -8px rgba(194,194,194,1);
+  -moz-box-shadow: -1px 12px 10px -8px rgba(194,194,194,1);
+  box-shadow: -1px 12px 10px -8px rgba(194,194,194,1);
+}
+
+/*--------keylink----------*/
+.keylink{
+-webkit-box-shadow: 1px 5px 5px -3px rgba(184,184,184,1);
+-moz-box-shadow: 1px 5px 5px -3px rgba(184,184,184,1);
+box-shadow: 1px 5px 5px -3px rgba(184,184,184,1);
+margin-bottom:10px;
+padding: 10px 20px 0px 20px;
+background:#f1f1f1;
+}
+.keylink img{
+	border:1px solid #ccc;
+	width: 180px;
+  height: 180px;
+}
+
+.keylink h3{
+	color:#064382;
+	margin: 0px;
+  padding: 0px;
+}
+.keylink p {
+  color: #626262;
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.keylink h6{
+		margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  
+}
+.keylink h6 i {
+  margin-right: 8px;
+  color: #007eff;
+  font-size: 18px;
+}
+
+.notice-box{
+border: 2px dotted #000;
+padding: 4px 10px;
+}
+.notice-box h4{
+font-size: 1rem;
+line-height: 1.4;
+font-weight: bold;
+text-align: left;
+margin: 0px;
+padding: 5px 0px;
+border-bottom: 2px solid #0d21b4;
+color: #0d21b4;
+}
+
+.start-end-section p{
+  font-size: 14px;
+  text-align: justify;
+  padding: 0px;
+  margin: 0px!important;
+}
+
+.notice-box p {
+  font-size: 18px;
+  text-align: justify;
+  padding: 0px;
+  margin: 0px!important;
+}
+.notice-box p a{
+/*! font-weight: bold; */
+text-align: left;
+margin: 0px;
+padding: 0px;
+color:#000;
+cursor: pointer;
+
+font-size: 18px;
+}
+.more-btn{
+text-align: right;
+}
+.more-btn a{
+cursor: pointer;
+text-align: left;
+margin: 0px;
+padding: 0px;
+text-decoration: underline;
+font-weight: bold;
+font-size: 14px;
+color: #f20441;
+text-align: right;
+}
+
+.btn-deep-lightgreen {
+  background-color:#b5e7a0;
+  color: #fff;
+}
+.btn-deep-green {
+  background-color:#82b74b;
+  color: #fff;
+}
+.btn-deep-pink {
+  background-color:#eca1a6;
+  color: #fff;
+}
+.btn-deep-yellow {
+  background-color: #feb236;
+  color: #fff;
+}
+.btn-deep-lightyellow {
+  background-color: #e3eaa7;
+  color: #fff;
+}
+.btn-deep-skybule {
+  background-color: #80ced6;
+  color: #fff;
+}
+.btn-deep-bule {
+  background-color: #034f84;
+  color: #fff;
+}
+.btn-deep-lightpink {
+  background-color: #f7786b;
+  color: #fff;
+}
+

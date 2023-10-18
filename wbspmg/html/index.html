@@ -1,716 +1,810 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>SPMG</title>
-<meta content="" name="description">
-<meta content="" name="keywords">
+        <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>WBSPMG - West Bengal State NGRBA Program Management Group (WBSPMG)</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
 
-<!-- Favicons -->
-<!--<link href="assets/img/favicon.png" rel="icon">
-<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
+        <!-- Favicons -->
+        <!--<link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
 
-<!-- Google Fonts -->
-<link href="https://fonts.cdnfonts.com/css/georgia-2" rel="stylesheet">
-<!-- Vendor CSS Files -->
-<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-<link href="assets/vendor/aos/aos.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-<!-- Template Main CSS File -->
+        <!-- Google Fonts -->
+        <link href="https://fonts.cdnfonts.com/css/georgia-2" rel="stylesheet">
+        <!-- Vendor CSS Files -->
+        <link href="https://www.wbspmg.org.in/assets/frontend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="https://www.wbspmg.org.in/assets/frontend/vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="https://www.wbspmg.org.in/assets/frontend/vendor/aos/aos.css" rel="stylesheet">
+        <link href="https://www.wbspmg.org.in/assets/frontend/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://www.wbspmg.org.in/assets/frontend/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://www.wbspmg.org.in/assets/frontend/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="https://www.wbspmg.org.in/assets/frontend/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="https://www.wbspmg.org.in/assets/frontend/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <!-- Template Main CSS File -->
+        <!--<link href="https://www.wbspmg.org.in/assets/frontend/css/style.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css">
 
-<!--====================Banner slider=======================-->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-<style>
+        <!--====================Banner slider=======================-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.21.1/daterangepicker.min.css" integrity="sha512-nmvKZG8E3dANbZAsJXpdK6IqpfEXbPNbpe3M3Us1qTipq74IpTRShbpCf8lJFapB7e0MkDbNDKxLjS1VWt2vVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .nopadding {
+                box-sizing: border-box;
+                padding: 0px !important;
+                max-width: 100%;
+            }
 
+        </style>
+    </head>
 
-</style>
-</head>
+    <body>
 
-<body>
+        <!-- ======= Top Bar ======= -->
 
-<!-- ======= Top Bar ======= -->
-
-<div id="topbar" class="d-flex align-items-center">
-  <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-    <div class="row">
-      <div class="col-lg-2">
-        <div class="d-flex align-items-center logo  d-md-flex logo"> 
-        <img src="assets/img/namamiganga.jpg" width="150" height="100">
+        <div id="topbar" class="d-flex align-items-center">
+            <div class="container align-items-center justify-content-center justify-content-md-between">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <div class="d-flex align-items-center d-md-flex logo"> 
+						<img src="https://www.wbspmg.org.in/assets/frontend/img/logo1.png" width="80" height="100">
+						 </div>
+                    </div>
+                    <div class="col-lg-9 nopadding">
+					 <div class="d-flex align-items-center d-md-flex"> 
+					<img src="https://www.wbspmg.org.in/assets/frontend/img/namamiganga.jpg" width="100" height="90" class="align-items-center">
+                      </div>
+					  <div class="align-items-center">
+						
+                            <h1>West Bengal State NGRBA Program Management Group<br />
+                                A State wing of National Mission for Clean Ganga<br />
+                                Ministry of Jal Shakti </h1>
+                            <h5>Department of Water Resources,River Development & Ganga Rejuvenation, Government of India</h5>
+                            <h5>Department of Urban Development & Municipal Affairs, Government of West Bengal</h5>
+<!--                            <p align="center" style="margin-top : 6px;"><img src="https://www.wbspmg.org.in/assets/frontend/img/logo.png" width="140" height=""></p>-->
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-2">
+                        <div class="d-flex align-items-center top-search  d-md-flex logo1"> 
+                            
+                            <img src="https://www.wbspmg.org.in/assets/frontend/img/logo.png" width="100" height="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-lg-8">
-        <div class="align-items-center">
-          <h1>West Bengal State NGRBA Program Management Group – A State wing of 
-            National Mission for Clean Ganga
-            Ministry of Jal Shakti </h1>
-          <h5>(Department of Water Resources,River Development & Ganga Rejuvenation) Government of India</h5>
-          <p align="center">
-          <img src="assets/img/logo.png" width="150" height="100"> 
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-2">
-        <div class="d-flex align-items-center top-search d-none d-md-flex logo1"> <img src="assets/img/logo1.png" width="110" height="140"> </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- ======= Header ======= -->
-<header id="header">
-  <div class="container d-flex align-items-center">
-    <nav id="navbar" class="navbar order-last order-lg-0">
-      <ul>
-        <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-        <li><a class="nav-link scrollto" href="about.html">About us</a></li>
-        <li class="dropdown"><a href="#"><span>Public Outreach </span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li class="dropdown"><a href="inthe_press.html"><span>Media Civerage </span> <i class="bi bi-chevron-right"></i></a>
-             <ul>
-          <li><a href="newspaper.html">NewsPaper</a></li>
-          <li><a href="weblinks.html">Weblink</a></li>
-      
-        </ul>
-            
-            </li>
-            <li><a href="outreach_event.html">Outreach Event</a></li>
-            <li><a href="up-coming_activities.html"> Up-coming Activities</a></li>
-          </ul>
-        </li>
-        <li><a class="nav-link scrollto" href="notice_tender.html">Notice / Tender</a></li>
-        <li class="dropdown"><a href="#"><span>Ganga Committee</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="state_ganga_committee.html"> State Ganga Committee</a></li>
-            <li><a href="district_ganga_committee.html"> District Ganga Committee</a></li>
-            <li><a href="#">GDPMS Portal</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><span> Related Links</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="usefullink.html">Useful links</a></li>
-            <li><a href="key_officials.html">Key Official</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="sanctioned.html">Sanctioned / Released</a></li>
-            <li><a href="projects_related_reports.html">Projects related Report</a></li>
-            <li> <a href="monthly_project_progress_report.html"> Monthly Project Progress</a></li>
-          </ul>
-        </li>
-        <li><a class="nav-link scrollto" href="grievance.html">Grievance</a></li>
-        <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-        <li><a class="nav-link scrollto" href="#"> Dashboard</a></li>
-      </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i> </nav>
-    <!-- .navbar --> 
-    
-  </div>
-</header>
-<!-- End Header --> 
+        <!-- ======= Header ======= -->
+        <header id="header">
+            <div class="container d-flex align-items-center">
+                <nav id="navbar" class="navbar order-last order-lg-0">
+                    <ul>
 
+                        <li><a class="nav-link scrollto " href="https://www.wbspmg.org.in/">Home</a></li>
+                        <li><a class="nav-link scrollto" href="https://www.wbspmg.org.in/SiteController/content/about-us">About us</a></li>
+                        <li class="dropdown"><a href="#"><span>Public Outreach </span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li class="dropdown"><a href="https://www.wbspmg.org.in/SiteController/content/press-release">Media Coverage</a>
+                                    <ul>
+                                        <li><a href="https://www.wbspmg.org.in/SiteController/content/newspaper">Newspaper</a></li>
+                                        <li><a href="https://www.wbspmg.org.in/SiteController/content/weblinks">Weblink</a></li>
+                                    </ul>
+                                </li>
+                                                                <li><a href="https://www.wbspmg.org.in/SiteController/content/gallery">Outreach Event</a></li>
+                                <li><a href="https://www.wbspmg.org.in/SiteController/content/upcoming-activities"> Up-coming Activities</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link scrollto" href="https://www.wbspmg.org.in/SiteController/content/recruitment">Recruitment</a></li>
+                        <li class="dropdown"><a href="#"><span>Ganga Committee</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="https://www.wbspmg.org.in/SiteController/content/state-ganga-committee"> State Ganga Committee</a></li>
+                                <li><a href="https://www.wbspmg.org.in/SiteController/content/district-ganga-committee"> District Ganga Committee</a></li>
+<!--                                <li><a href="#">GDPMS Portal</a></li>-->
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span> Related Links</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="https://www.wbspmg.org.in/SiteController/content/useful-links">Useful links</a></li>
+                                <li><a href="https://www.wbspmg.org.in/SiteController/content/key-officials">Key Official</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                <li><a href="https://www.wbspmg.org.in/SiteController/content/aa-es-projects">AA & ES</a></li>
+                                <li><a href="https://www.wbspmg.org.in/SiteController/content/projects-on-going">Under construction projects</a></li>
+                                <li><a href="https://www.wbspmg.org.in/SiteController/content/projects-completed">Completed projects</a></li>
+                                <li><a href="https://www.wbspmg.org.in/SiteController/content/projects-under-om">Under O&M projects</a></li>
+                                <li><a href="https://www.wbspmg.org.in/SiteController/content/projects-related-reports">Projects related Report</a></li>
+                                <li> <a href="https://www.wbspmg.org.in/SiteController/content/monthly-project-progress-report"> MPR Data</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link scrollto" href="https://www.wbspmg.org.in/SiteController/grievance">Grievance</a></li>
+                        <li><a class="nav-link scrollto" href="https://www.wbspmg.org.in/SiteController/content/rtiact">RTI</a></li>
+                        <li><a class="nav-link scrollto" href="https://www.wbspmg.org.in/SiteController/content/contact">Contact</a></li>
+                        <li><a class="nav-link scrollto" href="https://www.wbspmg.org.in/LoginController"> Dashboard</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i> </nav>
+                <!-- .navbar --> 
+
+            </div>
+        </header>
+        <!-- End Header --> 
 
 <!-- ======= Hero Section ======= -->
-<div class="banner-slider">
- <div class=" container-fluid" data-aos="fade-up">
-      <div class="row">
-        <div class="col-lg-2 pt-4 pt-lg-0  left-banner-img">
-        <ul>
-       <li class="banner-left"><a href="#"> <img class="img-fluid" src="assets/img/gallery/gallery-4.jpg" width="700" height="550"> </a>
-        <div class="t">
-            <h2>Event</h2>
-            <p>In publishing and graphic design</p>
-        </div>
-       </li>
-       <li class="banner-left"><a href="#"> <img class="img-fluid" src="assets/img/gallery/gallery-3.jpg" width="700" height="550">  </a>
-        <div class="t">
-              <h2>Event</h2>
-            <p>In publishing and graphic design</p>
-        </div>
-       </li>
-       <li class="banner-left"><a href="#"> <img class="img-fluid" src="assets/img/gallery/gallery-6.jpg" width="700" height="550">  </a>
-        <div class="t">
-              <h2>Event</h2>
-            <p>In publishing and graphic design</p>
-        </div>
-       </li>
-        </ul>
-        </div>
-          <div class="col-lg-8 pt-4 pt-lg-0">
-  <div class="slider">
-  <div class="slide_viewer">
-    <div class="slide_group">
-      <div class="slide">
-        <img src="assets/img/slide/slide-1.jpg" width="1600" height="504">
-         <div class="carousel-caption d-md-block">
-    <h5>Event</h5>
-    <p>...</p>
+  <div class="container" data-aos="fade-up">
+            <div class="row">
+			<div class="col-lg-9">
+<div id="carouselExampleCaptions" class="carousel slide1">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-        
-         </div>
-      <div class="slide">
-      <img src="assets/img/slide/slide-2.jpg" width="1600" height="504">
-       <div class="carousel-caption  d-md-block">
-    <h5>Event</h5>
-    <p>...</p>
-  </div>
-      </div>
-      <div class="slide">
-      <img src="assets/img/slide/slide-3.jpg" width="1600" height="504">
-       <div class="carousel-caption  d-md-block">
-    <h5>Event</h5>
-    <p>...</p>
-  </div>
-      </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.wbspmg.org.in/uploads/2023/Sep/01/sliderimage2-01-sep-2023-16-44-52.png" class="d-block w-100" alt="...">
+     
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.wbspmg.org.in/uploads/2023/Aug/23/untitled-23-aug-2023-12-31-20.png" class="d-block w-100" alt="...">
+    
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.wbspmg.org.in/uploads/2023/Aug/23/image-23-aug-2023-12-30-29.png" class="d-block w-100" alt="...">
      
     </div>
   </div>
-</div><!-- End // .slider -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+ <div class="col-lg-3 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
+                    <div class="uselink1">
+                        <div class="use-title1">
+                            <h3>What's New </h3>
+                        </div>
+                        <div class="use-body1">
+                            <ul>
+                                <marquee onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="up"  scrolldelay="100" scrollamount="3" style='min-height:395px'>
+                                                                            <li><a href="https://www.wbspmg.org.in/uploads/2023/Jul/24/projectstp-24-jul-2023-12-06-07.pdf" target="_blank"><i class="fa fa-angle-right m-l10"></i>Azadi ka Amrit Mahotsav<br>
+                                            </a></li>
+                                                                            <li><a href="https://www.wbspmg.org.in/uploads/2023/Jul/24/projectstp-24-jul-2023-12-06-30.pdf" target="_blank"><i class="fa fa-angle-right m-l10"></i>Swachhta Hi Seva<br>
+                                            </a></li>
+                                                                            <li><a href="https://www.wbspmg.org.in/uploads/2023/Jul/24/projectstp-24-jul-2023-12-06-48.pdf" target="_blank"><i class="fa fa-angle-right m-l10"></i>Ganga Utsav<br>
+                                            </a></li>
+                                                                    </marquee>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-<div class="slide_buttons">
+</div>
 </div>
 
-<div class="directional_nav">
-  <div class="previous_btn" title="Previous">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
-      <g>
-        <g>
-          <path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
-			c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z" />
-          <path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z" />
-        </g>
-      </g>
-    </svg>
-  </div>
-  <div class="next_btn" title="Next">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
-      <g>
-        <g>
-          <path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z" />
-          <path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z" />
-        </g>
-      </g>
-    </svg>
-  </div>
-</div><!-- End // .directional_nav -->
-  </div>
-  <div class="col-lg-2 pt-4 pt-lg-0  right-banner-img">
-  <ul>
-   <li class="banner-left"><a href="#"> <img class="img-fluid" src="assets/img/gallery/gallery-5.jpg" width="700" height="550"></a>
-      <div class="t">
-            <h2>Event</h2>
-            <p>In publishing and graphic design</p>
-        </div>
-   </li>
-   <li class="banner-left"><a href="#"> <img class="img-fluid" src="assets/img/gallery/gallery-1.jpg" width="700" height="550"> </a>
-      <div class="t">
-            <h2>Event</h2>
-            <p>In publishing and graphic design</p>
-        </div>
-   </li>
-   <li class="banner-left"><a href="#"> <img class="img-fluid" src="assets/img/gallery/gallery-2.jpg" width="700" height="550"></a>
-      <div class="t">
-            <h2>Event</h2>
-            <p>In publishing and graphic design</p>
-        </div>
-   </li>
-    </ul>
-     </div>
-  </div>
-  </div>
-</div>
-<!-- end of hero slider -->
 
 <!-- End Hero --> 
 
 <!-- ===========Social Nav=====================-->
 
 <div class="social_nav">
-  <nav>
-    <ul>
-      <li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-      <li><a href="#"><i class="fab fa-whatsapp"></i><span>Whatsapp</span></a></li>
-      <li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
-    </ul>
-  </nav>
+    <nav>
+        <ul>
+            <li><a href="https://www.facebook.com/cleanganganmcg/" target="_blank"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+            <li><a href="https://twitter.com/cleanganganmcg?lang=en" target="_blank"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i><span>Whatsapp</span></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
+        </ul>
+    </nav>
 </div>
 <main id="main"> 
-  
-  <!-- ===========Scroll bar=====================-->
-  
-  <div class="bar">
-    <div class="bn-label" title="Headlines">Current Affairs </div>
-    <div class="marquee">
-      <marquee behavior="scroll" direction="left" scrollamount="3">
-      <span>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface</span>
-      </marquee>
-    </div>
-  </div>
-  
-  <!-- ======= About Us Section ======= -->
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-      <div class="row">
-        <div class="col-lg-3 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
-          <div class="uselink1">
-            <div class="use-title1">
-              <h3>What's New </h3>
-            </div>
-            <div class="use-body1">
-              <ul>
-                <marquee behavior="scroll" direction="up"  scrolldelay="100" scrollamount="3">
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"> <i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here<br>
-                  </a></li>
-                <li><a href="#"> <i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                <li><a href="#"><i class="fa fa-angle-right m-l10"></i>Sample text 1 goes here <br>
-                  </a></li>
-                </marquee>
-              </ul>
-            </div>
-          </div>
+
+    <!-- ===========Scroll bar=====================-->
+
+    <div class="bar">
+        <div class="bn-label" title="Headlines">Current Affairs </div>
+        <div class="marquee">
+            <marquee behavior="scroll" direction="left" scrollamount="3">
+                <span>Welcome to WBSPMG. Next IEC event is Swachhta hi Seva on the occasion of Gandhi Jayanti (2nd October, 2023)</span>
+            </marquee>
         </div>
-        <div class="col-lg-5 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
-          <p> <em>The <b>Ganges </b>also known as <b>Ganga,</b> is a <u>trans-boundary river</u> of <u>Asia</u> which flows through the nations of <u>India</u> and <u>Bangladesh.</u> The 2,525 km (1,569 mi) river rises in the eastern <u>Himalayas</u> in the Indian <u>state</u> of<u> Uttarakhand,</u> and flows south and east through the <u>Gangetic Plain</u> of<u> North India.</u> After entering West Bengal, it is divided into two rivers, one is Hugly river or Adi Ganga, flowing through several districts of West Bengal and finally submerged with Bay of Bengal near <u>Ganga Sagar.</u> The second part is named as<u> Padma</u> which flows into Bangladesh, where it empties into the<u> Bay of Bengal.</u> It is the third<u> largest</u> river in the world by discharge.</u> The Ganges is one of the most sacred rivers to <u>Hindus,</u> although it is not mentioned in either the <u>Rigveda</u> or the <u>Ramayana.</u> It is also a lifeline to millions of Indians who live along its course and depend on it for their daily needs. It is worshipped as the goddess<u> Ganga</u> in <u>Hinduism.</u></em> </p>
-        </div>
-        <div class="col-lg-4 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
-          <div class="uselink1">
-            <div class="use-title1">
-              <h3>Who's Who </h3>
-            </div>
-            <div class="use-body3">
-              <div class="row">
-                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
-                  <div class="who-img"><img src="assets/img/whoimg.jpg"> </div>
-                  <div class="who-title">
-                    <h3><b>Executive Chairperson</b></h3>
-                    <p>name</p>
-                  </div>
-                </div>
-                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
-                  <div class="who-img"><img src="assets/img/whoimg.jpg"> </div>
-                  <div class="who-title">
-                    <h3><b>Program Director</b></h3>
-                    <p>name</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
-                  <div class="who-img"><img src="assets/img/whoimg.jpg"> </div>
-                  <div class="who-title">
-                    <h3><b>Assistant Project Director</b></h3>
-                    <p>name</p>
-                  </div>
-                </div>
-                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
-                  <div class="who-img"><img src="assets/img/whoimg.jpg"> </div>
-                  <div class="who-title">
-                    <h3><b>Director<br>
-                      (Finance & Admin) </b></h3>
-                    <p>name</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- End About Us Section --> 
-  
-  
-<!--==========Project Summary========================-->
-  <section id="Social" class="social-section">
-    <div class="container" data-aos="fade-up">
-      <div class="row content">
-        <div class="col-lg-7 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="100">
-          <div class="uselink1">
-            <div class="use-title1">
-              <h3>Projects Status </h3>
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+               
+                <div class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+<!--                    <p> <em>The <b>Ganges </b>also known as <b>Ganga,</b> is a <u>trans-boundary river</u> of <u>Asia</u> which flows through the nations of <u>India</u> and <u>Bangladesh.</u> The 2,525 km (1,569 mi) river rises in the eastern <u>Himalayas</u> in the Indian <u>state</u> of<u> Uttarakhand,</u> and flows south and east through the <u>Gangetic Plain</u> of<u> North India.</u> After entering West Bengal, it is divided into two rivers, one is Hugly river or Adi Ganga, flowing through several districts of West Bengal and finally submerged with Bay of Bengal near <u>Ganga Sagar.</u> The second part is named as<u> Padma</u> which flows into Bangladesh, where it empties into the<u> Bay of Bengal.</u> It is the third<u> largest</u> river in the world by discharge.</u> The Ganges is one of the most sacred rivers to <u>Hindus,</u> although it is not mentioned in either the <u>Rigveda</u> or the <u>Ramayana.</u> It is also a lifeline to millions of Indians who live along its course and depend on it for their daily needs. It is worshipped as the goddess<u> Ganga</u> in <u>Hinduism.</u></em> </p>-->
+                    <p> <em>The <b>Ganges </b>also known as <b>Ganga,</b> is a <u>trans-boundary river</u> of <u>Asia</u> which flows through the nations of <u>India</u> and <u>Bangladesh.</u> The 2,525 km (1,569 mi) river rises in the eastern <u>Himalayas</u> in the Indian <u>state</u> of<u> Uttarakhand,</u> and flows south and east through the <u>Gangetic Plain</u> of<u> North India.</u> After entering West Bengal, it is divided into two rivers, one is Hugly river or Adi Ganga, flowing through several districts of West Bengal and finally submerged with Bay of Bengal near <u>Ganga Sagar.</u> The second part is named as<u> Padma</u> which flows into Bangladesh, where it empties into the<u> Bay of Bengal.</u> It is the third<u> largest</u> river in the world by discharge.</u> The Ganges is one of the most sacred rivers to <u>Hindus,</u> although it is not mentioned in either the <u>Rigveda</u> or the <u>Ramayana.</u> It is also a lifeline to millions of Indians who live along its course and depend on it for their daily needs. It is worshipped as the goddess<u> Ganga</u> in <u>Hinduism.</u></em> </p>                </div>
+                <div class="col-lg-4 aos-init aos-animate" data-aos="fade-left"  data-aos-delay="100">
+                    <div class="uselink1">
+
+                        <!-- Begin Tender Notice -->
+                        <div class="use-title1">
+                            <h3>Tender Notice </h3>
+                        </div>
+
+                        <div class="use-body3">
+                                                            <div class="notice-box">
+
+                                    <h4>Notice No. 4776-NGRBA/SPMG/AP NGT-12/2023</h4>
+                                    <p>
+                                        <a href="https://www.wbspmg.org.in/uploads/2023/Jul/19/delayanalysisforkmdahamupto15-19-jul-2023-15-00-02.pdf" target="_blank" >Invitation for tender for purchasing 2 desktops...</a>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                                                                        <p>Start Date:<span>19-07-2023</span></p>
+                                        </div>
+                                                                                <div class="col-lg-6">
+                                            <p>End Date:<span>21-07-2023</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                    </div>
+                                </div>
+                                                        <!-- End of Tender Notice -->
+                            <div class="more-btn"><a href="https://www.wbspmg.org.in/SiteController/content/notice-tender">View More</a></div>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-            <div class="use-body2"> <img src="assets/img/project.jpg" width="500" height="223"> </div>
-          </div>
+    </section>
+    <!-- End About Us Section --> 
+
+
+    <!--===============Counter Section=============================-->
+
+    <!--  <div id="counter">
+    
+        <div class="item rainbow">
+           <h1 class="count" data-number="50" ></h1>
+           <h3 class="text">Reward</h3>
         </div>
-        <div class="col-lg-5 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
-        <div class="uselink1">
-            <div class="use-title1">
-              <h3>IEC Gallery </h3>
+        <div class="item rainbow">
+           <h1 class="count" data-number="15" ></h1>
+           <h3 class="text">year+ Eexperience</h3>
+        </div>
+        <div class="item rainbow">
+           <h1 class="count" data-number="2040" ></h1>
+           <h3 class="text">project completed</h3>
+        </div>
+        <div class="item rainbow">
+           <h1 class="count" data-number="1018" ></h1>
+           <h3 class="text">Projects</h3>
+        </div>
+      
+      </div>-->
+
+
+
+
+
+    <!--==============Project status========================-->
+
+    <section id="Social" class="social-section">
+        <div class="container" data-aos="fade-up">
+            <div class="row content">
+                <div class="col-lg-6 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="100">
+                    <div class="uselink1">
+                        <div class="use-title1">
+                            <h3>Projects Status </h3>
+                        </div>
+                        <div class="use-body2"> 
+                            <figure class="highcharts-figure">
+                                <div id="container"></div>
+
+
+                                <table id="datatable" style="display:none">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            
+                                            <th>Ongoing</th>
+                                            <th>Completed</th>
+                                            <th>Under O&M</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                                            </tbody>
+                                </table>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6 pt-8 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
+                    <div class="uselink1">
+                        <div class="use-title1">
+                            <h3><i class="fa-brands fa-square-youtube"></i>Project Gallery</h3>
+                        </div>
+                        <div class="use-body2"> 
+                            <!--  ======= Hero Section ======= -->
+                            <section class="hero-slider hero-style"style="width:100%;height: 410px;">
+                                <div class="swiper-container">
+
+                                    <div class="swiper-wrapper">
+
+                                        <!-- Begin slider -->
+                                                                                    <div class="swiper-slide">
+
+                                                <div class="slide-inner slide-bg-image" data-background="https://www.wbspmg.org.in/uploads/2023/Aug/23/whatsappimage20230821at5-23-aug-2023-15-00-23.jpeg" width="1600" height="504" alt="Barrackpore STP" >
+                                                    <div class="container">
+                                                        <div data-swiper-parallax="300" class="slide-title">
+                                                            <h2 style="font-size: 28px; padding-top: 240px"class="text-center">Barrackpore STP</h2>;
+                                                        </div>
+                                                        <div class="clearfix"></div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                                                                    <div class="swiper-slide">
+
+                                                <div class="slide-inner slide-bg-image" data-background="https://www.wbspmg.org.in/uploads/2023/Aug/23/img20230731wa0012-23-aug-2023-15-03-33.jpg" width="1600" height="504" alt="STP" >
+                                                    <div class="container">
+                                                        <div data-swiper-parallax="300" class="slide-title">
+                                                            <h2 style="font-size: 28px; padding-top: 240px"class="text-center">STP</h2>;
+                                                        </div>
+                                                        <div class="clearfix"></div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                        <!--  end slide-inner -->
+                                    </div>
+                                    <!-- end swiper-slide -->
+                                </div>
+                                <!-- end swiper-wrapper -->
+                                <!--  swipper controls -->
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                        </div>
+                        </section>
+                        <!--  end of hero slider -->
+                    </div>
+                </div>
+            </div>                
+        </div>
+        </div>
+    </section>
+
+    <!-- End Section -->
+
+    <!--==============Social Section========================-->
+    <div class="wave-section">
+        <h1></h1>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </div>
+
+    <section id="Social" class="social-section blank">
+        <div class="container" data-aos="fade-up">
+            <div class="row content">
+                <!--                <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="100">
+                                    <div class="uselink1">
+                                        <div class="use-title1">
+                                            <h3><i class="fa-brands fa-square-twitter"></i>Follow us on Twitter </h3>
+                                        </div>
+                                        <div class="use-body2"> 
+                                            <a class="twitter-timeline" href="https://twitter.com/cleanganganmcg?lang=en">Tweets by cleanganganmcg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            </div>
+                                    </div>
+                                </div>-->
+                <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
+                    <div class="uselink1">
+                        <div class="use-title1">
+                            <h3><i class="fa-brands fa-square-youtube"></i> NGRBA Program Management Group
+
+ </h3>
+                        </div>
+                        <div class="use-body2"> <iframe  src="https://www.youtube.com/embed/UlxQkaomXZA?si=wOnHwspc0m3NSR55" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:100%;height: 410px;"></iframe> </div>
+                    </div>
+                </div>
+                              
+
+
+       <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
+                    <div class="uselink1">
+                        <div class="use-title1">
+                            <h3><i class="fa-brands fa-square-youtube"></i> FSSM POLICY
+
+ </h3>
+                        </div>
+                        <div class="use-body2"> <iframe  src="https://www.youtube.com/embed/F6i7VNOljPU?si=4rBnl23qDGvbTf9n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:100%;height: 410px;"></iframe> </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
+                    <div class="uselink1">
+                        <div class="use-title1">
+                            <h3>IEC Gallery</h3>
+                        </div>
+                        <div class="use-body2">
+                            <div class="listing-gallery">
+                                <div class="grid-noGutter">
+                                    <div class="col-12 listing-gallery-img-lg">
+                                        <img id="active-img" src="https://www.wbspmg.org.in/uploads/2023/Jun/12/gallery13-12-jun-2023-18-27-07.jpg" class="responsive-img">
+                                        <div class="caption">
+                                            <h4>Street Drama</h4>     
+                                        </div>                                  
+                                    </div>
+                                    <div class="col-12 grid-noGutter">
+                                                                                    <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+                                                <img src="https://www.wbspmg.org.in/uploads/2023/Jun/12/gallery13-12-jun-2023-18-27-07.jpg" alt="Street Drama" class="listing-gallery-img responsive-img">                                           
+                                            </div>
+                                                                                    <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+                                                <img src="https://www.wbspmg.org.in/uploads/2023/Aug/23/2-23-aug-2023-16-50-35.jpeg" alt="Yoga Day" class="listing-gallery-img responsive-img">                                           
+                                            </div>
+                                                                                    <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+                                                <img src="https://www.wbspmg.org.in/uploads/2023/Aug/23/img20230524170259-23-aug-2023-13-51-09.jpg" alt="Mission Life" class="listing-gallery-img responsive-img">                                           
+                                            </div>
+                                                                                    <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
+                                                <img src="https://www.wbspmg.org.in/uploads/2023/Jun/12/gallery16-12-jun-2023-18-28-48.jpeg" alt="BCC Activities" class="listing-gallery-img responsive-img">                                           
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- ombre-externe --> 
+                    </div>
+                </div>
+
             </div>
-            <div class="use-body2">
-          <div class="listing-gallery">
-  <div class="grid-noGutter">
-    <div class="col-12 listing-gallery-img-lg">
-      <img id="active-img" src="assets/img/gallery/gallery-3.jpg" class="responsive-img">
-      <div class="caption">
-      <h4>BCC Activities</h4>     </div>
-    </div>
-    <div class="col-12 grid-noGutter">
-      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
-        <img src="assets/img/gallery/gallery-3.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
-      </div>      
-      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
-        <img src="assets/img/gallery/gallery-2.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
-      </div>      
-      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
-        <img src="assets/img/gallery/gallery-4.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
-      </div>      
-      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
-        <img src="assets/img/gallery/gallery-5.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
-      </div>      
-    </div>
-  </div>
-</div> 
+        </div>
+    </section>
+
+    <!-- End social Section --> 
+
+
 </div>
-          
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!--==============Social Section========================-->
-  <div class="wave-section">
-  <h1>Social Feed</h1>
-  <div class="wave wave1"></div>
-  <div class="wave wave2"></div>
-  <div class="wave wave3"></div>
-  <div class="wave wave4"></div>
-  
-</div>
-  <section id="Social" class="social-section blank ">
-    <div class="container" data-aos="fade-up">
-      <div class="row content">
-        <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="100">
-          <div class="uselink1">
-            <div class="use-title1">
-              <h3><i class="fa-brands fa-square-twitter"></i>Follow us on Twitter </h3>
-            </div>
-            <div class="use-body2"> <img src="assets/img/tweet.jpg" width="570" height="410"> </div>
-          </div>
-        </div>
-        <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
-          <div class="uselink1">
-            <div class="use-title1">
-              <h3><i class="fa-brands fa-square-youtube"></i>Susbcribe us on Youtube</h3>
-            </div>
-            <div class="use-body2"> <img src="assets/img/youtube.jpg" width="570" height="410"> </div>
-          </div>
-        </div>
-        <div class="col-lg-4 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="300">
-          <div class="uselink1">
-            <div class="use-title1">
-              <h3><i class="fa-brands fa-square-facebook"></i>Like us on Facebook </h3>
-            </div>
-            <div class="use-body2"> <img src="assets/img/facebook.jpg" width="570" height="410"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- End Section --> 
-  
-  <!--==============Project status========================-->
-  
- <!--<section id="Social" class="social-section">
-    <div class="container" data-aos="fade-up">
-      <div class="row content">
-        <div class="col-lg-6 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="100">
-          <div class="uselink1">
-            <div class="use-title1">
-              <h3>Projects Status </h3>
-            </div>
-            <div class="use-body2"> <img src="assets/img/project.jpg" width="500" height="223"> </div>
-          </div>
-        </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 aos-init aos-animate"  data-aos="fade-right" data-aos-delay="200">
-        <div class="uselink1">
-            <div class="use-title1">
-              <h3>Gallery </h3>
-            </div>
-            <div class="use-body2">
-          <div class="listing-gallery">
-  <div class="grid-noGutter">
-    <div class="col-12 listing-gallery-img-lg">
-      <img id="active-img" src="assets/img/gallery/gallery-3.jpg" class="responsive-img">
-      <div class="caption">
-      <h4>BCC Activities</h4>     </div>
-    </div>
-    <div class="col-12 grid-noGutter">
-      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
-        <img src="assets/img/gallery/gallery-3.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
-      </div>      
-      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
-        <img src="assets/img/gallery/gallery-2.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
-      </div>      
-      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
-        <img src="assets/img/gallery/gallery-4.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
-      </div>      
-      <div class="col-3_md-4_sm-6 listing-gallery-img-sm">
-        <img src="assets/img/gallery/gallery-5.jpg" alt="A description of the image" class="listing-gallery-img responsive-img">
-      </div>      
-    </div>
-  </div>
-</div> 
-</div>
-          
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>-->
-  
-  <!-- End Section -->
-  
-  </div>
 </main>
 <!-- End #main --> 
-
 <!-- ======= Footer ======= -->
 
 <footer id="footer">
-  <div class="container">
-  
-    <div class="copyright"> &copy; Copyright. 2023. All Rights Reserved </div>
-  </div>
+    <div class="container">
+
+        <div class="copyright"> &copy; Copyright. 2023. All Rights Reserved </div>
+    </div>
 </footer>
 
 <!-- End Footer -->
+<!-- Modal --> 
+
+<div class="modal fade" id="ifmModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="#" id="form_frame">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> 
-<script type="text/livescript">
-  /**
-   * Clients Slider
-   */
-  new Swiper('.clients-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
-      }
-    }
-  });
+<script type="text/javascript">
+    /**
+     * Clients Slider
+     */
+//    new Swiper('.clients-slider', {
+//        speed: 400,
+//        loop: true,
+//        autoplay: {
+//            delay: 5000,
+//            disableOnInteraction: false
+//        },
+//        slidesPerView: 'auto',
+//        pagination: {
+//            el: '.swiper-pagination',
+//            type: 'bullets',
+//            clickable: true
+//        },
+//        breakpoints: {
+//            320: {
+//                slidesPerView: 2,
+//                spaceBetween: 40
+//            },
+//            480: {
+//                slidesPerView: 3,
+//                spaceBetween: 60
+//            },
+//            640: {
+//                slidesPerView: 4,
+//                spaceBetween: 80
+//            },
+//            992: {
+//                slidesPerView: 6,
+//                spaceBetween: 120
+//            }
+//        }
+//    });
 
 </script> 
 
 <!--====================hme bottom gallery===========================--> 
 
-<script type="text/livescript">
-var toTop = 0;
-function autoPlay(){
-  timer = setTimeout(function(){
-    var row = document.getElementById('row');
-    toTop = toTop - 128;
-    if (toTop < -1152){
-      toTop = 0;
-      clearTimeout(timer);
-      row.onmouseover = clearTimeout(timer);
-      }
-  row.style.top = toTop +'px';
-  autoPlay();
-  }, 3000);
-}
-autoPlay();
+
+<!--===================counter=======================-->
 
 
-</script> 
-<script>
 
-</script> 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 <!-- Vendor JS Files --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="assets/vendor/aos/aos.js"></script> 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script> 
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script> 
+<script src="https://www.wbspmg.org.in/assets/frontend/vendor/aos/aos.js"></script> 
+<script src="https://www.wbspmg.org.in/assets/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>  
+<script src="https://www.wbspmg.org.in/assets/frontend/vendor/glightbox/js/glightbox.min.js"></script> 
+<script src="https://www.wbspmg.org.in/assets/frontend/vendor/swiper/swiper-bundle.min.js"></script> 
 
 <!-- Template Main JS File --> 
-<script src="assets/js/main.js"></script>
+<script src="https://www.wbspmg.org.in/assets/frontend/js/main.js"></script>
 <!--================Banner Slider==========================-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+
+<!-- hicharts -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
 
 
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-date-range-picker/0.21.1/jquery.daterangepicker.min.js" integrity="sha512-jM36zj/2doNDqDlSIJ+OAslGvZXkT+HrtMM+MMgVxCqax1AIm1XAfLuUFP7uMSavUxow+z/T2CRnSu7PDaYu2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="4xiWzL7F"></script>
+
+
+
+<script>
+
+    // HERO SLIDER
+    var menu = [];
+    jQuery('.swiper-slide').each(function (index) {
+        menu.push(jQuery(this).find('.slide-inner').attr("data-text"));
+    });
+    var interleaveOffset = 0.5;
+    var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        parallax: true,
+        autoplay: {
+            delay: 6500,
+            disableOnInteraction: false,
+        },
+        watchSlidesProgress: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        on: {
+            progress: function () {
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    var slideProgress = swiper.slides[i].progress;
+                    var innerOffset = swiper.width * interleaveOffset;
+                    var innerTranslate = slideProgress * innerOffset;
+                    swiper.slides[i].querySelector(".slide-inner").style.transform =
+                            "translate3d(" + innerTranslate + "px, 0, 0)";
+                }
+            },
+
+            touchStart: function () {
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    swiper.slides[i].style.transition = "";
+                }
+            },
+
+            setTransition: function (speed) {
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    swiper.slides[i].style.transition = speed + "ms";
+                    swiper.slides[i].querySelector(".slide-inner").style.transition =
+                            speed + "ms";
+                }
+            }
+        }
+    };
+
+    var swiper = new Swiper(".swiper-container", swiperOptions);
+
+    // DATA BACKGROUND IMAGE
+    var sliderBgSetting = $(".slide-bg-image");
+    sliderBgSetting.each(function (indx) {
+        if ($(this).attr("data-background")) {
+            $(this).css("background-image", "url(" + $(this).data("background") + ")");
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    var toTop = 0;
+    function autoPlay() {
+        timer = setTimeout(function () {
+            var row = document.getElementById('row');
+            toTop = toTop - 128;
+            if (toTop < -1152) {
+                toTop = 0;
+                clearTimeout(timer);
+                row.onmouseover = clearTimeout(timer);
+            }
+            if (document.getElementById('check_Terrilyn')) {
+                row.style.top = toTop + 'px';
+            }
+            autoPlay();
+        }, 3000);
+    }
+    autoPlay();
+
+
+</script>
+
+<script>
+    let count = document.querySelectorAll(".count");
+    let arr = Array.from(count);
+
+
+
+    arr.map(function (item) {
+        let startnumber = 0;
+
+        function counterup() {
+            startnumber++;
+            item.innerHTML = startnumber;
+
+            if (startnumber === item.dataset.number) {
+                clearInterval(stop);
+            }
+        }
+
+        let stop = setInterval(function () {
+            counterup();
+        }, 50);
+
+    })
+
+</script>
 
 <!--============footer gallery=========-->
 <script>
 // selects all elements with the listing-gallery-img class
-const images = document.querySelectorAll(".listing-gallery-img"); 
+    const images = document.querySelectorAll(".listing-gallery-img");
+    if (images.length) {
+
 // the active (main) image container
-const activeImage = document.getElementById("active-img");
+        const activeImage = document.getElementById("active-img");
 // selects the first image inside the images array (the collection of elements with the .listing-gallery-img class)
-const firstImage = images[0];
+        const firstImage = images[0];
 // adds the 'selected' class to the first image of the array so it's not faded (see CSS)
-firstImage.classList.add("selected");
+        firstImage.classList.add("selected");
 
 // We use a JavaScript 'forloop' to iterate over the 'images' array
-images.forEach((image) => {
-  // for each image, listen for a 'click' on it:
-  image.addEventListener("click", function () {
-    // remove the 'selected' class from each image in the 'images' array
-    images.forEach((image) => image.classList.remove("selected")); 
-    // add the 'selected' class to the image which was clicked
-    image.classList.add("selected"); 
-    // check the source attribute value for the image which was clicked
-    const thumbSrc = this.src;
-    // change the value of the active image 'src' attribute to match that of the image clicked
-    activeImage.src = thumbSrc; 
-  });
-});
+        images.forEach((image) => {
+            // for each image, listen for a 'click' on it:
+            image.addEventListener("click", function () {
+                // remove the 'selected' class from each image in the 'images' array
+                images.forEach((image) => image.classList.remove("selected"));
+                // add the 'selected' class to the image which was clicked
+                image.classList.add("selected");
+                // check the source attribute value for the image which was clicked
+                const thumbSrc = this.src;
+                // change the value of the active image 'src' attribute to match that of the image clicked
+                activeImage.src = thumbSrc;
+            });
+        });
+    }
 </script>
 
-<!--====================banner slider=======================-->
 <script>
-$('.slider').each(function() {
-  var $this = $(this);
-  var $group = $this.find('.slide_group');
-  var $slides = $this.find('.slide');
-  var bulletArray = [];
-  var currentIndex = 0;
-  var timeout;
-  
-  function move(newIndex) {
-    var animateLeft, slideLeft;
-    
-    advance();
-    
-    if ($group.is(':animated') || currentIndex === newIndex) {
-      return;
-    }
-    
-    bulletArray[currentIndex].removeClass('active');
-    bulletArray[newIndex].addClass('active');
-    
-    if (newIndex > currentIndex) {
-      slideLeft = '100%';
-      animateLeft = '-100%';
-    } else {
-      slideLeft = '-100%';
-      animateLeft = '100%';
-    }
-    
-    $slides.eq(newIndex).css({
-      display: 'block',
-      left: slideLeft
+    $(function () {
+        if ($('.date_range_format').length) {
+            $('.date_range_format').dateRangePicker({
+                startOfWeek: 'monday',
+                separator: ' - ',
+                format: 'DD/MM/YYYY',
+                maxDays: 31,
+                autoClose: false,
+                time: {
+                    enabled: false
+                }
+
+            });
+        }
     });
-    $group.animate({
-      left: animateLeft
-    }, function() {
-      $slides.eq(currentIndex).css({
-        display: 'none'
-      });
-      $slides.eq(newIndex).css({
-        left: 0
-      });
-      $group.css({
-        left: 0
-      });
-      currentIndex = newIndex;
+
+</script>
+
+<script>
+    function popupmodal(url) {
+        //console.log(url);
+        // $('#form_frame').attr('src', '');
+        $('#form_frame').attr('src', url);
+        $('#ifmModal').modal('show');
+    }
+
+</script>
+
+<!-- HiCharts for HomePage Project Reports -->
+<script>
+    Highcharts.chart('container', {
+        data: {
+            table: 'datatable'
+        },
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Category wise project current status'
+        },
+        subtitle: {
+            text:''
+                   // 'Source: <a href="#" target="_blank">Website</a>'
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Project count'
+            }
+        }
     });
-  }
-  
-  function advance() {
-    clearTimeout(timeout);
-    timeout = setTimeout(function() {
-      if (currentIndex < ($slides.length - 1)) {
-        move(currentIndex + 1);
-      } else {
-        move(0);
-      }
-    }, 4000);
-  }
-  
-  $('.next_btn').on('click', function() {
-    if (currentIndex < ($slides.length - 1)) {
-      move(currentIndex + 1);
-    } else {
-      move(0);
-    }
-  });
-  
-  $('.previous_btn').on('click', function() {
-    if (currentIndex !== 0) {
-      move(currentIndex - 1);
-    } else {
-      move(3);
-    }
-  });
-  
-  $.each($slides, function(index) {
-    var $button = $('<a class="slide_btn">&bull;</a>');
+</script>
+
+<script>
+    $(document).ready(function(){
+        if($('#dstgng').length > 0 ){
+            $('#dstgng').modal('show');
+        }    
+    });
+
     
-    if (index === currentIndex) {
-      $button.addClass('active');
-    }
-    $button.on('click', function() {
-      move(index);
-    }).appendTo('.slide_buttons');
-    bulletArray.push($button);
-  });
-  
-  advance();
-});
 </script>
 
 </body>
