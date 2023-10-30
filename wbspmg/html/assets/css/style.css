@@ -136,12 +136,12 @@ h6 {
 .logo{
 display: flex!impotant;
   align-items: center!impotant;
-  height: 120px;
+  height:auto;
   margin-top: 17px;
 }
 .logo1{
 
-  margin-top: 56px;
+  margin-top: 37px;
 }
 /*--------------------------------------------------------------
 # Header
@@ -165,7 +165,7 @@ background: linear-gradient(322deg, rgba(149,82,222,1) 0%, rgba(19,171,207,1) 50
  background:-moz-linear-gradient(left,#82009f 0,#5d34af 50%,#00ceab 100%);
  background:-webkit-linear-gradient(left,#82009f 0,#5d34af 50%,#00ceab 100%);
  background:linear-gradient(to right,#82009f 0,#5d34af 50%,#00ceab 100%);
- margin-bottom: 5px;
+ margin-bottom: 6px;
 }
 
 @media (max-width: 992px) {
@@ -2722,8 +2722,8 @@ margin: 0px;
 /*background:#1fa6dc;*/
 background: rgb(52,6,102);
 background: linear-gradient(90deg, rgba(52,6,102,1) 0%, rgba(19,124,207,1) 50%, rgba(34,13,117,1) 100%);
-	padding:11px 0px 6px 19px ;
-	
+	/*padding:11px 0px 6px 19px ;*/
+	padding:8px ;	
 border-radius: 4px;
 }
 .use-body1{
@@ -2737,7 +2737,13 @@ border-radius: 4px;
 box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
 overflow: auto;
 }
-
+.carousel{ 	-webkit-box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
+-moz-box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
+box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
+}
+.header_banner{
+	background:#cff1ff;
+}
 .use-body2{
 	background:#fff;
 	padding:27px 20px;
@@ -2770,7 +2776,7 @@ margin-right: 12px;
 
 
 .use-title1 h3{
-	  font-size:20px;
+	  font-size:17px;
   color: #fff;
     font-weight:600;
 	line-height:28px;
@@ -2778,10 +2784,10 @@ margin-right: 12px;
 }
 
 .use-title1 h3 i{
-font-size: 34px;
+font-size: 28px;
 color: #fff;
 font-weight: 600;
-margin-right: 20px;
+margin-right: 8px;
 float: left;
 }
 .who-img {
@@ -2976,7 +2982,16 @@ margin-right: 16px;
 	color:#0e6ead;
 	font-weight:bold;
 	/*font-size:71px;*/
-	font-size:20px;
+	font-size:18px;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+}
+#topbar h4{
+	color:#0e6ead;
+	font-weight:bold;
+	/*font-size:71px;*/
+	font-size:17px;
 	text-align:center;
 	margin:0px;
 	padding:0px;
@@ -4883,3 +4898,217 @@ text-align: right;
   color: #fff;
 }
 
+
+
+
+
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+    .gfg-div {
+        background-color: #63c971;
+        color: #fff;
+    }
+}
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px) 
+    and (max-device-width: 1024px) {
+    .use-body1{
+	background:#a0cdfe;
+	padding-bottom:28px;
+	padding:30px 20px;
+	/*height: 430px;*/
+	height: 296px;
+	-webkit-box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
+-moz-box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
+box-shadow: -1px 9px 5px 0px rgba(219,219,219,0.9);
+overflow: auto;
+}
+}
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) 
+    and (orientation: portrait) {
+     .use-body1{
+	height: 130px;
+}
+.logo1 {
+  margin-top: 15px;
+}
+#topbar h1 {
+  font-size: 15px;
+
+}
+#topbar h4 {
+  font-size: 14px;
+
+}
+#topbar h5 {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.bar {
+  width: 100%;
+  padding:13px 0;
+  font-size: 18px;
+  height: 89px;
+}
+.bn-label {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 52px;
+ font-size: 27px;
+  padding: 0px 0px;
+  right: 0px;
+  text-align: center;
+}
+.marquee {
+  top: 39px;
+}
+}
+ 
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) 
+    and (orientation: landscape) {
+      .use-body1{
+	height: 180px;
+}
+}
+ 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen
+    and (max-device-width: 640px) {
+    .use-body1{
+	height: 180px;
+}
+}
+ 
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+     .use-body1{
+	height: 130px;
+}
+.logo1 {
+  margin-top: 15px;
+}
+#topbar h1 {
+  font-size: 15px;
+
+}
+#topbar h4 {
+  font-size: 14px;
+
+}
+#topbar h5 {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.bar {
+  width: 100%;
+  padding:13px 0;
+  font-size: 18px;
+  height: 89px;
+}
+.bn-label {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 52px;
+ font-size: 27px;
+  padding: 0px 0px;
+  right: 0px;
+  text-align: center;
+}
+.marquee {
+  top: 39px;
+}
+}
+ 
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) 
+    and (device-width: 320px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+     .use-body1{
+	height: 130px;
+}
+.logo1 {
+  margin-top: 15px;
+}
+#topbar h1 {
+  font-size: 15px;
+
+}
+#topbar h4 {
+  font-size: 14px;
+
+}
+#topbar h5 {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.bar {
+  width: 100%;
+  padding:13px 0;
+  font-size: 18px;
+  height: 89px;
+}
+.bn-label {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 52px;
+ font-size: 27px;
+  padding: 0px 0px;
+  right: 0px;
+  text-align: center;
+}
+.marquee {
+  top: 39px;
+}
+}
+ 
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) 
+    and (min-device-width: 375px) 
+    and (-webkit-min-device-pixel-ratio: 3) {
+     .use-body1{
+	height: 130px;
+}
+.logo1 {
+  margin-top: 15px;
+}
+#topbar h1 {
+  font-size: 15px;
+
+}
+#topbar h4 {
+  font-size: 14px;
+
+}
+#topbar h5 {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.bar {
+  width: 100%;
+  padding:13px 0;
+  font-size: 18px;
+  height: 89px;
+}
+.bn-label {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 52px;
+ font-size: 27px;
+  padding: 0px 0px;
+  right: 0px;
+  text-align: center;
+}
+.marquee {
+  top: 39px;
+}
+};
