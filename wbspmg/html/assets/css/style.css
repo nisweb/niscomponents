@@ -4913,6 +4913,11 @@ text-align: right;
 
 
 /* For Desktop View */
+@media screen and (min-width: 1400px) {
+  .use-body1 {
+    height: 294px;
+  }
+}
 
 @media screen and (min-width: 1366px) {
  
