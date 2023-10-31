@@ -4935,6 +4935,29 @@ text-align: right;
   font-size: 14px;
 }
 	}
+	
+@media screen and (min-width: 1359px) {
+ 
+#topbar h1 {
+  font-size: 22px;
+
+}
+ #topbar h5 {
+  font-size: 14px;
+
+}
+.logo1 {
+  margin-top: 74px;
+}
+.use-body1 {
+  height: 250px;
+
+}
+.use-title1 h3 {
+  font-size: 14px;
+}
+	}	
+	
 /* For Tablet View */
 @media screen and (min-device-width: 768px) 
     and (max-device-width: 1024px) {
