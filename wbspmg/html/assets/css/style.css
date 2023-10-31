@@ -141,7 +141,11 @@ display: flex!impotant;
 }
 .logo1{
 
-  margin-top: 37px;
+  margin-top: 55px;
+}
+.logo2{
+
+  margin-top: 14px;
 }
 /*--------------------------------------------------------------
 # Header
@@ -2776,7 +2780,7 @@ margin-right: 12px;
 
 
 .use-title1 h3{
-	  font-size:17px;
+	  font-size:16px;
   color: #fff;
     font-weight:600;
 	line-height:28px;
@@ -2982,10 +2986,15 @@ margin-right: 16px;
 	color:#0e6ead;
 	font-weight:bold;
 	/*font-size:71px;*/
-	font-size:18px;
+	font-size:24px;
 	text-align:center;
 	margin:0px;
 	padding:0px;
+}
+#topbar h1 span i  {
+  color: #0c73ff;
+  font-weight: 600;
+  font-style: italic;
 }
 #topbar h4{
 	color:#0e6ead;
@@ -3000,7 +3009,7 @@ margin-right: 16px;
 	color:#092867;
 	font-weight:bold;
 	/*font-size:71px;*/
-	font-size:14px;
+	font-size:16px;
 	text-align:center;
 	margin:0px;
 	padding:0px;
@@ -4904,11 +4913,12 @@ text-align: right;
 
 
 /* For Desktop View */
-@media screen and (min-width: 1024px) {
-    .gfg-div {
-        background-color: #63c971;
-        color: #fff;
-    }
+@media screen and (max-device-width: 1440px) 
+    and (orientation: portrait) {
+    .use-body1 {
+    height: 296px;
+  }
+}
 }
  
 /* For Tablet View */
@@ -4985,7 +4995,7 @@ overflow: auto;
 }
 }
  
-/* For iPhone 4 Portrait or Landscape View */
+/* For iPhone 4 Portrait or Landscape View 
 @media screen and (min-device-width: 320px) 
     and (-webkit-min-device-pixel-ratio: 2) {
      .use-body1{
@@ -5026,7 +5036,7 @@ overflow: auto;
   top: 39px;
 }
 }
- 
+ */
 /* For iPhone 5 Portrait or Landscape View */
 @media (device-height: 568px) 
     and (device-width: 320px) 
