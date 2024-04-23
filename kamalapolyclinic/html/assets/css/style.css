@@ -190,7 +190,7 @@ background:#e70f29;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
-  display: inline-block;
+  display: none;
 }
 .appointment-btn:hover {
   background: #166ab5;
@@ -685,6 +685,12 @@ color:#e70f29;
   font-weight: 700;
   margin: 0 0 30px 0;
 }
+.why-us .icon-boxes .icon-box h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+  font-family:arial;
+}
 .why-us .icon-boxes .icon-box p {
   font-size: 15px;
   color: #000;
@@ -790,6 +796,12 @@ color:#e70f29;
   margin-bottom: 20px;
   transform-style: preserve-3d;
 }
+.services .icon-box ol {
+  text-align: left;
+  margin: 0px;
+  padding: 0px 0px 0px 7px;
+}
+
 .services .icon-box .icon i {
   color: #fff;
   font-size: 28px;
@@ -818,6 +830,7 @@ color:#e70f29;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  word-break: break-all;
 }
 .services .icon-box:hover {
   background: #1977cc;
@@ -832,7 +845,7 @@ color:#e70f29;
 .services .icon-box:hover .icon::before {
   background: #3291e6;
 }
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .icon-box:hover h4 a, .services .icon-box:hover p, .icon-box:hover ol  {
   color: #fff;
 }
 
@@ -1394,6 +1407,13 @@ color:#e70f29;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+#footer .footer-top .footer-contact p b {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: arial;
   color: #fff;
 }
 #footer .footer-top h4 {
