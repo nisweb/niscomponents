@@ -26,8 +26,74 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">
 
+	<!-- Include Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css">-->
+<style type="text/css">
+
+	
+		a {
+
+			text-decoration: none;
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		table, th, td {
+		   border: 1px solid #bbb;
+		   text-align: left;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		th {
+			background-color: #ddd;
+		}
+		th,td {
+			padding: 5px;
+		}
+		button {
+			cursor: pointer;
+		}
+		/*Initial style sort*/
+		.tablemanager th.sorterHeader {
+			cursor: pointer;
+		}
+		.tablemanager th.sorterHeader:after {
+			content: " \f0dc";
+			font-family: "FontAwesome";
+		}
+		/*Style sort desc*/
+		.tablemanager th.sortingDesc:after {
+			content: " \f0dd";
+			font-family: "FontAwesome";
+		}
+		/*Style sort asc*/
+		.tablemanager th.sortingAsc:after {
+			content: " \f0de";
+			font-family: "FontAwesome";
+		}
+		/*Style disabled*/
+		.tablemanager th.disableSort {
+
+		}
+		#for_numrows {
+			padding: 10px;
+			float: left;
+		}
+		#for_filter_by {
+			padding: 10px;
+			float: right;
+		}
+		#pagesControllers {
+			display: block;
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body class="contact-page">
@@ -90,35 +156,26 @@
 </div>
 
 <div class="container">
-
-    <div id="table_id_wrapper" class="dataTables_wrapper no-footer webinar_table">
-	<div class="dataTables_length" id="table_id_length">
-	<label>Show <select name="table_id_length" aria-controls="table_id" class="">
-	<option value="10">10</option><option value="25">25</option>
-	<option value="50">50</option><option value="100">100</option></select> entries</label></div>
-	<div id="table_id_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="table_id"></label></div>
-	<table id="table_id" class="display dataTable no-footer" aria-describedby="table_id_info">
-
-        <thead>
-
-            <tr><th class="sorting sorting_asc" tabindex="0" aria-controls="table_id" rowspan="1" colspan="1" style="width: 69.7667px;" aria-sort="ascending" aria-label="Webinar: activate to sort column descending">Webinar</th><th class="sorting" tabindex="0" aria-controls="table_id" rowspan="1" colspan="1" style="width: 129.4px;" aria-label="Date: activate to sort column ascending">Date</th><th class="sorting" tabindex="0" aria-controls="table_id" rowspan="1" colspan="1" style="width: 862.633px;" aria-label="Description: activate to sort column ascending">Description</th><th class="sorting" tabindex="0" aria-controls="table_id" rowspan="1" colspan="1" style="width: 90.2px;" aria-label="Details: activate to sort column ascending">Details</th></tr>
-
-        </thead>
-
-        <tbody>
-
-        <tr class="odd">
-
-                <td class="sorting_1">Webinar- 01</td>
-
-                <td>29th June, 2020</td>
-
-                <td>Webinar was organized titled "Fallacy of the One China Narrative" on 29th June 2020.</td>
-
-                <td>                                                                                                         
-				  <a href="#" class="button red giant" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-download-alt"></i> View Details</a>
-	            </td>
-             <!-- Modal -->
+<div class="webinar_table">
+	<!-- Table start -->
+    <table class="tablemanager">
+    	<thead>
+    		<tr>
+			
+				<th>Webinar</th>
+				<th>Date</th>
+		        <th>Description</th>
+				<th class="disableFilterBy">Details</th>
+			</tr>
+    	</thead>
+		<tbody>
+			<tr class="odd">
+				
+				<td class="prova">Webinar- 01</td>
+				<td class="prova">29th June, 2020</td>
+			    <td class="prova">Webinar was organized titled "Fallacy of the One China Narrative" on 29th June 2020.</td>
+				<td class="prova">	  <a href="#" class="button red giant" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="icon-download-alt"></i> View Details</a></td>
+			             <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -137,9 +194,10 @@
     </div>
   </div>
 </div>
-            </tr>
-			
-			<tr class="even">
+			</tr>
+	
+	
+				<tr class="even">
 
                 <td class="sorting_1">Webinar- 02</td>
 
@@ -168,7 +226,7 @@
   </div>
 </div>
             </tr>
-			<tr class="odd">
+					<tr class="odd">
 
                 <td class="sorting_1">Webinar- 03</td>
 
@@ -226,7 +284,7 @@
   </div>
 </div>
             </tr>
-			
+				
 			<tr class="odd">
 
                 <td class="sorting_1">Webinar- 05</td>
@@ -257,7 +315,7 @@
   </div>
 </div>
             </tr>
-			
+					
 			<tr class="even">
 
               <td class="sorting_1">Webinar- 06</td>
@@ -287,8 +345,7 @@
   </div>
 </div>
           </tr>
-		  
-		  <tr class="odd">
+				  <tr class="odd">
 
             <td class="sorting_1">Webinar- 07</td>
 
@@ -318,7 +375,7 @@
 </div>
         </tr>
 		
-		<tr class="even">
+				<tr class="even">
 
           <td class="sorting_1">Webinar- 08</td>
 
@@ -348,8 +405,8 @@
   </div>
 </div>
       </tr>
-	  
-	  <tr class="odd">
+		
+			  <tr class="odd">
 
         <td class="sorting_1">Webinar- 09</td>
 
@@ -379,11 +436,11 @@
   </div>
 </div>
     </tr>
-	
-	</tbody>
-
-    </table><div class="dataTables_info" id="table_id_info" role="status" aria-live="polite">Showing 1 to 9 of 9 entries</div><div class="dataTables_paginate paging_simple_numbers" id="table_id_paginate"><a class="paginate_button previous disabled" aria-controls="table_id" aria-disabled="true" aria-role="link" data-dt-idx="previous" tabindex="-1" id="table_id_previous">Previous</a><span><a class="paginate_button current" aria-controls="table_id" aria-role="link" aria-current="page" data-dt-idx="0" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="table_id" aria-disabled="true" aria-role="link" data-dt-idx="next" tabindex="-1" id="table_id_next">Next</a></div></div>
-
+		
+		
+		</tbody>
+	</table>
+  </div>  
 </div>
 
     </section><!-- /Contact Section -->
@@ -410,10 +467,10 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+	<script type="text/javascript" src="assets/js/tableManager.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+  <!--<script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>-->
     <script>
 
         $(document).ready( function () {
@@ -423,6 +480,28 @@
                             } );
 
     </script>
+
+
+<script type="text/javascript">
+		// basic usage
+		$('.tablemanager').tablemanager({
+			firstSort: [[3,0],[2,0],[1,'asc']],
+			disable: ["last"],
+			appendFilterby: true,
+			dateFormat: [[4,"mm-dd-yyyy"]],
+			debug: true,
+			vocabulary: {
+    voc_filter_by: 'Filter By',
+    voc_type_here_filter: 'Filter...',
+    voc_show_rows: 'Show Per Page'
+  },
+			pagination: true,
+			showrows: [5,10,20,50,100],
+			disableFilterBy: [1]
+		});
+		// $('.tablemanager').tablemanager();
+	</script>
+	
 </body>
 
 </html>
