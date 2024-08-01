@@ -1,5 +1,0 @@
-;/*FB_PKG_DELIM*/
-
-__d("useIsVideoHomePlayerOriginFromTracePolicy",[],(function(a,b,c,d,e,f){"use strict";function a(a){var b=["comet.watch.catalog","comet.watch.explore","comet.watch.feed","comet.watch.injection","comet.watch.latest","comet.watch.notifications","comet.watch.playlist","comet.watch.saved","comet.watch.search","comet.watch.sports","comet.watch.live.injection","comet.watch.live","comet.watch.music","comet.watch.lancelet"];return b.includes(a)}f["default"]=a}),66);
-__d("CometWatchAndScrollControlNUXContext",["react"],(function(a,b,c,d,e,f,g){"use strict";a=d("react");b={isVideoPlayerWatchAndScrollControlNUXVisible:!1,setIsVideoPlayerWatchAndScrollControlNUXVisible:null};c=a.createContext(b);g["default"]=c}),98);
-__d("CometWatchAndScrollTriggerContext",["react"],(function(a,b,c,d,e,f,g){"use strict";a=d("react");b={isControlShown:!1,isTriggerDisabled:!1,setIsControlShown:null,setIsTriggerDisabled:null};c=a.createContext(b);g["default"]=c}),98);
