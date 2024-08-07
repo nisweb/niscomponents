@@ -627,10 +627,20 @@ section {
 {
 	border-radius:30px;
 	font-size:10px;
+}
 
-	
-	}
-
+.more1 {
+ 
+  color: #c61637;
+  font-size: 14px;
+  font-weight: bold;
+}
+.more1:hover {
+ 
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -1071,6 +1081,7 @@ box-shadow: -2px 8px 10px 0px rgba(185,179,179,0.75);
   height: 100%;
   border-radius: 0px;
 }
+
 .services .icon {
   margin: 0 auto 20px auto;
   padding-top: 10px;
