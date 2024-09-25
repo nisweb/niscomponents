@@ -82,10 +82,7 @@
     justify-content: center;
     font-weight: normal;
 }
-p {
 
-  text-align: justify;
-}
 
 /*** Navbar ***/
 .sticky-top {
@@ -102,40 +99,19 @@ p {
     left: 0;
 }
 
-.navbar-brand img {
-  position: relative;
-  width: 53px;
-  top: 0px;
-  bottom: 0;
-
-}
-.navbar_menu {
-  border: 1px solid rgb(204, 204, 204);
-  top: -150px;
-}
 .navbar .navbar-nav .nav-link {
-   /* margin-right:20px;
+    margin-right:20px;
 	margin-top:30px;
     padding: 10px 0;
-    color: var(--dark);*/
+    color: var(--dark);
     font-weight: 600;
     text-transform: capitalize;
     outline: none;
-	padding: 12px 19px;
-	text-transform: uppercase;
-  font-weight: bold;
-  color: #000;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color:#fff;
-	background: #9e6b22;
-}
-.logo-text {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 0 10px;
+    color: var(--primary);
 }
 
 .navbar .dropdown-toggle::after {
@@ -146,21 +122,16 @@ p {
     vertical-align: middle;
     margin-left: 8px;
 }
-.dropdown-menu {
-  min-width: 16rem!important;
-}
+
 @media (max-width: 991.98px) {
     .navbar .navbar-brand {
         width: 126px;
         height: 100px;
     }
- .navbar .navbar-brand img{
-        width: 35%;
-        height:auto;
-    }
+
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
-        padding: 10px 10px;
+        padding: 10px 0;
     }
 
     .navbar .navbar-nav {
@@ -187,11 +158,7 @@ p {
         opacity: 1;
     }
 }
-.logo .logo-text {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0 0 10px;
-}
+
 
 /*** Header ***/
 .carousel-caption {
@@ -493,104 +460,3 @@ p {
   width: 100%;
   opacity: 1;
 }
-
-/*-------vishnupur_mela----------*/
-.header .lead {
-  max-width: 620px;
-}
-
-/** Below CSS is completely optional **/
-
-.gallery-item {
-  width: 200px;
-  padding: 5px;
-}
-
-
-.lg-show-in .lg-outer.lg-hide-items .lg-toolbar {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-/*----tranport--------------------*/
-
-.reachContainer {
-  width: 100%;
-  margin-bottom: 0.5%; 
- 
-  }
-  .reachContainer .iconContainer {
-    width: 10%;
-    float: left; }
-    .reachContainer .iconContainer span {
-      display: block;
-      height: 60px;
-      width: 60px;
-      background: #414242;
-      border-radius: 50%;
-      font-size: 3em;
-      text-align: center;
-      line-height: 60px;
-      color: #ffffff; }
-  .reachContainer .txtContainer {
-    width: 90%;
-    float: left;
-    padding-left: 1.5em; }
-	
-		.reachContainer .txtContainer1 {
-  
-    width: 100%; } 
-	}
-
-.reachContainer .iconContainer span.iconColor2 {
-  background: #414242; }
-
-.reachContainer .iconContainer span.iconColor3 {
-  background: #414242; }
-
-.reachContainer .iconContainer span.iconColor4 {
-  background: #414242; }
-
-@media (max-width: 940px) {
-  .reachContainer .iconContainer {
-    float: left;
-    width: 17%; }
-  .reachContainer .txtContainer {
-    float: left;
-    padding-left: 1em;
-    width: 80%; } 
-		.reachContainer .txtContainer1 {
-  
-    width: 100%; } 
-	}
-	}
-@media (max-width: 768px) {
-  .reachContainer .iconContainer {
-    float: left;
-    width: 10%; }
-  .reachContainer .txtContainer {
-    float: left;
-    padding-left: 1em;
-    width: 90%; } 
-		.reachContainer .txtContainer1 {
-  
-    width: 100%; } 
-	}
-	}
-@media (max-width: 500px) {
-  .reachContainer .iconContainer {
-    float: left;
-    width: 17%; }
-  .reachContainer .txtContainer {
-    float: left;
-    padding-left: 1em;
-    width: 80%; } 
-	
-	.reachContainer .txtContainer1 {
-  
-    width: 100%; } 
-	}
-.contrast .reachContainer .iconContainer span.iconColor, .contrast .reachContainer .iconContainer span.iconColor2, .contrast .reachContainer .iconContainer span.iconColor3, .contrast .reachContainer .iconContainer span.iconColor4 {
-  background: #000;
-  border: 1px solid #fff;
-  color: #fff; }
