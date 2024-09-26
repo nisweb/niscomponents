@@ -40,8 +40,16 @@
     visibility: visible;
     opacity: 1;
 }
-
-
+/*
+p{
+	text-align:justify;
+}
+.store-item p{
+	text-align:center;
+}
+.section-title p{
+	text-align:center;
+} */
 /*** Button ***/
 .btn {
     transition: .5s;
@@ -202,7 +210,9 @@
 	/*background: rgba(0, 40, 70, .7);*/
     z-index: 1;
 }
-
+.carousel-caption p{
+	text-align:center;
+}
 .carousel-control-prev,
 .carousel-control-next {
     width: 15%;
