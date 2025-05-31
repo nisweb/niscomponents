@@ -34,7 +34,6 @@
 <body>
 
 
-
    <!-- Topbar Start -->
     <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
         <div class="row gx-0 align-items-center">
@@ -117,15 +116,16 @@
 	
     <!-- Navbar End -->
 
+
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-4 text-white animated slideInDown mb-4">Gallery</h1>
+            <h1 class="display-4 text-white animated slideInDown mb-4">About PMU</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    
-                    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                    <li class="breadcrumb-item"><a href="#">About</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About PMU</li>
                 </ol>
             </nav>
         </div>
@@ -133,181 +133,92 @@
     <!-- Page Header End -->
 
 
-    <!-- objectives Start -->
-<div class="container-xxl py-6">
-            <div class="container">
-                <div class="row g-5">
-				 <div class="container">
-    <header>
-      <h1>Gallery</h1>
-      <p>PMU</p>
-    </header>
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h1 class="display-6 mb-5">About Programme Monitoring Unit (PMU)</h1>
+                       
+                        <p class="mb-4">  
+						West Bengal, with a population of about 9.13 Crore residents, is the fourth most populous state in the country. Around 67% of the population of the State resides in rural areas, while 33% resides in urban area. Women make up a significant proportion, totalling 4.45 crore, accounting for 48.7% of the state's total population. Children constitute about 1.06 crore, nearly 12% of the overall populace. Additionally, West Bengal is home to 2.14 crore individuals from Scheduled Castes and 0.53 Crore from Scheduled Tribes, with women forming a substantial part of these communities. The youth population of the State aged 15-29 years is about 2.58 Crore which is almost 28.26% of the total population of the State. The Government of West Bengal is dedicated towards social justice and inclusive growth through proactive social welfare schemes aimed at enhancing the lives of women, children, youth and other vulnerable groups. 
+						</p>
+						 <p class="mb-4">  
+						  The state is administratively divided into 23 districts, which are further segmented into 345 blocks, and 4,10,006 villages administered through 3,339 Gram Panchayats. This administrative structure facilitates the implementation of various social welfare schemes at the grassroots level, ensuring that benefits reach the intended beneficiaries effectively and timely.
+						</p>
+						 <p class="mb-4">  
+						  The Government of West Bengal prioritises the advancement of social welfare, as highlighted in the State’s budget for 2024-25, with a particular focus on women empowerment, education, health, and rural development, reflecting the state's commitment to nurturing human capital and supporting its rural population. The state's dedication to nurturing an inclusive society is reflected in its targeted efforts to uplift marginalized populations, including women, children, senior citizens, persons with disabilities, transgender individuals, and those affected by homelessness or addiction. 
+						</p>
+					
 
-    <div class="gallery-controls">
-      <div class="search-box">
-        <input type="text" id="search" placeholder="Search images...">
-        <i class="fas fa-search"></i>
-      </div>
-
-      <div class="category-filters">
-        <button class="filter-btn active" data-category="all">All</button>
-        <button class="filter-btn" data-category="district">District</button>
-        <button class="filter-btn" data-category="blocks">Blocks</button>
-        <button class="filter-btn" data-category="city">City</button>
-      </div>
-
-      <div class="sort-options">
-        <select id="sort">
-          <option value="default">Sort by</option>
-          <option value="name">Name</option>
-          <option value="category">Category</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="gallery">
-      <div class="gallery-item" data-category="nature">
-        <div class="gallery-item-inner">
-         
-		  <img class="img-fluid" src="img/district.jpg" alt="District" loading="lazy">
-          <div class="gallery-item-overlay">
-            <i class="fas fa-search-plus"></i>
-          </div>
-        </div>
-        <div class="gallery-item-info">
-          <h3>District</h3>
-          <span class="category">District Name</span>
-        </div>
-      </div>
-      <div class="gallery-item" data-category="architecture">
-        <div class="gallery-item-inner">
-         
-          <img class="img-fluid" src="img/block1.jpg" alt="Block" loading="lazy">
-		  
-		  <div class="gallery-item-overlay">
-            <i class="fas fa-search-plus"></i>
-          </div>
-        </div>
-        <div class="gallery-item-info">
-          <h3>Blocks</h3>
-          <span class="category">Blocks Name</span>
-        </div>
-      </div>
-      <div class="gallery-item" data-category="nature">
-        <div class="gallery-item-inner">
-           <img class="img-fluid" src="img/district1.jpg" alt="District" loading="lazy">
-          <div class="gallery-item-overlay">
-            <i class="fas fa-search-plus"></i>
-          </div>
-        </div>
-        <div class="gallery-item-info">
-          <h3>District</h3>
-          <span class="category">District Name</span>
-        </div>
-      </div>
-      <div class="gallery-item" data-category="city">
-        <div class="gallery-item-inner">
-          <img class="img-fluid" src="img/city1.jpg" alt="City" loading="lazy">
-          <div class="gallery-item-overlay">
-            <i class="fas fa-search-plus"></i>
-          </div>
-        </div>
-        <div class="gallery-item-info">
-          <h3>City </h3>
-          <span class="category">Hooghly</span>
-        </div>
-      </div>
-      <div class="gallery-item" data-category="nature">
-        <div class="gallery-item-inner">
-          <img class="img-fluid" src="img/district2.jpg" alt="District" loading="lazy">
-          <div class="gallery-item-overlay">
-            <i class="fas fa-search-plus"></i>
-          </div>
-        </div>
-        <div class="gallery-item-info">
-          <h3>District</h3>
-          <span class="category">District Name</span>
-        </div>
-      </div>
-      <div class="gallery-item" data-category="architecture">
-        <div class="gallery-item-inner">
-           <img class="img-fluid" src="img/block.jpg" alt="Block" loading="lazy">
-          <div class="gallery-item-overlay">
-            <i class="fas fa-search-plus"></i>
-          </div>
-        </div>
-        <div class="gallery-item-info">
-          <h3>Blocks</h3>
-          <span class="category">Blocks Name</span>
-        </div>
-      </div>
-      <div class="gallery-item" data-category="city">
-        <div class="gallery-item-inner">
-           <img class="img-fluid" src="img/city.jpg" alt="City" loading="lazy">
-          <div class="gallery-item-overlay">
-            <i class="fas fa-search-plus"></i>
-          </div>
-        </div>
-        <div class="gallery-item-info">
-          <h3>City </h3>
-          <span class="category">Howrah</span>
-        </div>
-      </div>
-      <div class="gallery-item" data-category="nature">
-        <div class="gallery-item-inner">
-           <img class="img-fluid" src="img/district3.jpg" alt="District" loading="lazy">
-          <div class="gallery-item-overlay">
-            <i class="fas fa-search-plus"></i>
-          </div>
-        </div>
-        <div class="gallery-item-info">
-          <h3>District</h3>
-          <span class="category">District Name</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Lightbox -->
-  <div class="lightbox">
-    <div class="lightbox-content">
-      <img src="" alt="Lightbox Image">
-      <div class="lightbox-caption"></div>
-      <div class="lightbox-info">
-        <span class="image-size"></span>
-        <span class="image-resolution"></span>
-      </div>
-    </div>
-    <button class="lightbox-close">
-      <i class="fas fa-times"></i>
-    </button>
-    <button class="lightbox-prev">
-      <i class="fas fa-chevron-left"></i>
-    </button>
-    <button class="lightbox-next">
-      <i class="fas fa-chevron-right"></i>
-    </button>
-    <button class="lightbox-zoom-in">
-      <i class="fas fa-search-plus"></i>
-    </button>
-    <button class="lightbox-zoom-out">
-      <i class="fas fa-search-minus"></i>
-    </button>
-    <button class="lightbox-rotate">
-      <i class="fas fa-redo"></i>
-    </button>
-    <button class="lightbox-fullscreen">
-      <i class="fas fa-expand"></i>
-    </button>
-    <button class="lightbox-download">
-      <i class="fas fa-download"></i>
-    </button>
-  </div>
-				</div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid w-100 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid w-100 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    <!-- objective End -->
-
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+					 	 <p class="mb-4">  
+						Central to these efforts, the Lakshmir Bhandar Scheme, provides one-time financial assistance to economically weaker women for essential purchases, fostering empowerment. The Jai Bangla Scheme on the other hand consolidates multiple pension schemes people are entitled to, aiming to streamline administration and distribution to elderly, widows, and persons with disabilities. It has introduced new schemes like Taposili Bandhu for elderly scheduled caste population and Jai Johar for the scheduled tribe population, enhancing social security and inclusivity. Kanyashree Prakalpa, is another flagship scheme acclaimed for preventing child marriage and empowering adolescent girls. The SABLA scheme in West Bengal targets adolescent girls' health, nutrition, anaemia prevention, and empowers them with life skills and vocational training. The Anandadhara scheme anchored by the West Bengal SRLM, aims to alleviate poverty by promoting self-employment and skilled wage opportunities for poor households emphasizing on social mobilization, institution building, skill development, financial inclusion, and livelihood promotion. The state's commitment extends to social security measures, including various pensions for senior citizens and disability allowances, as well as support for pregnant and lactating women through the Integrated Child Development Services (ICDS).  
+						</p>
+						 <p class="mb-4">  
+						There is an unprecedented scope and opportunity to position the Government of West Bengal and its Departments, including the various pro-people policies, vision and concurrent governance model as a ‘people-centric welfare based’ approach across the country. Further, with the advent of digital communications, multimedia and smart technologies, the Hon'ble Chief Minister, the Departments and the overall vision, execution and perspectives of Government of West Bengal (GoWB), need to be ably communicated, both across West Bengal and in the country.
+						</p>
+						 <p class="mb-4">  
+						The Panchayat Raj Institution is the apex body at the village level that plays a pivotal role in the grassroots monitoring of welfare schemes, decentralizing governance by engaging communities in decision making process, gathering crucial feedback and ensuring scheme alignment with local needs. These institutions play a pivotal role in effective scheme implementation, bridging government initiatives with local realities for impactful community development.
+						</p>
+						 <p class="mb-4">  
+						With the implementation of numerous social welfare schemes in the state, regular and timely beneficiary feedback is vital for good governance and ensuring that the beneficiaries are satisfied with the scheme delivery and benefits. The perception of beneficiaries about schemes, governance and grievance redressal mechanisms not only helps in improving the service delivery but also empowers informed decision-making, ensuring that the welfare schemes are responsive and impactful for the intended beneficiaries. Periodic perception and aspiration focused studies involving beneficiaries foster transparency, responsiveness, and grassroot participation while ensuring the effectiveness of the social welfare schemes by keeping them relevant and aligned with the evolving needs of the beneficiaries. These regular and periodic assessments studies will also help identify key service delivery challenges and gaps, giving opportunity to the state government for necessary course correction for performance improvements. The continuous stream of feedback from people and communities across the state will also provide valuable evidence and insights which when corroborated with administrative and programmatic data and reports, will strengthen and support the implementation of evidence-based policy decisions, improving service delivery, governance, and overall perception of people about the State Government’s welfare schemes through key strategic communication frameworks. 
+						</p>
+						
+					</div>
+		  </div>
+		  </div>
+		   <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+					 
+						 <p class="mb-4">  
+						It is in this context, to ensure regular and timely feedback from programme beneficiaries and key stakeholders on the ground, the Government of West Bengal has notified the setting up of a ‘Programme Management Unit’ (PMU) under the Department of Panchayats and Rural Development Department’ Notification No. 42-CS/2024 dt. 8th July, 2024 for close monitoring of priority schemes/programmes in coordination with different departments, implementing agencies and district administration. The key aim of this PMU is to undertake primary and secondary evaluation and evidence gathering, undertake data insights and analytics, and provide actionable policy recommendations to ensure timely execution and implementation of key welfare schemes implemented by the state government. This PMU constituted under the Department of Panchayati Raj and Rural Development has begun working on some well thought out and long-term strategies, focused on data-driven policy making and governance through critical real-time research and monitoring for faster decision-making process, and effective usage of digital communications and social media platforms for strategic communications and improved accountability.
+						</p>
+					</div>
+					<div class="row g-5 align-items-center">
+					<div class="col-6 text-end">
+                            <img class="img-fluid w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid w-100 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg">
+                        </div>
+						</div>
+		  </div>
+		     <div class="col-lg-6">
+                    <div class="row g-3">
+                     <img class="img-fluid border border-success"  wow zoomIn" data-wow-delay="0.3s" src="img/notification.jpg">
+              
+                    </div>
+                </div>
+		  </div>
+		
+		</div>
+    </div>
+    <!-- About End -->
 
 
     <!-- Footer Start -->
@@ -390,6 +301,7 @@
 
     <!-- Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
