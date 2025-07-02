@@ -715,17 +715,18 @@ section, .section {
   margin: 0 0 0 2em;
 }
 .numberlist a {
-  position: relative;
+    position: relative;
   display: block;
-  padding: 0.4em 0.4em 0.4em 2em;
+  padding: 0.2em 0em 0.4em 2em;
   *padding: 0.4em;
-  margin: 0.5em 0;
-  background: #fff;
-  color: #444;
+  margin: 1em 0;
+  background: #00b4ff;
+  color: #000;
   text-decoration: none;
   -moz-border-radius: 0.3em;
   -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
+  font-size: 20px;
 }
 .numberlist a:hover {
   background: #d8dfea;
@@ -749,7 +750,7 @@ section, .section {
   background: -webkit-linear-gradient(#507ec7, #426eb5);
   height: 2em;
   width: 2em;
-  line-height: 2em;
+  line-height: 1.4em;
   border: 0.3em solid #fff;
   text-align: center;
   font-weight: bold;
@@ -1480,4 +1481,9 @@ section, .section {
 .tf-tree li.tf-dashed-children>.tf-node-content:before {
   border-left-style:solid
 }
+
+    .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
 
