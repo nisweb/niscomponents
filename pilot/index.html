@@ -747,6 +747,84 @@ h1.demo-title a {
 .section-gray {
   background: #f4f6f9;
 }
+/*-------------*/
+/* ========= Floating Language (Left) ========= */
+.floating-language{
+    position:fixed;
+    top:45%;
+    left:-85px;              /* hidden initially */
+    background:#ffffff;
+    border-radius:0 8px 8px 0;
+    box-shadow:0 6px 16px rgba(0,0,0,.18);
+    overflow:hidden;
+    z-index:9999;
+    animation:slideInLeft 1s ease forwards;
+    animation-delay:.5s;
+}
+
+@keyframes slideInLeft{
+    from{ left:-85px; opacity:0 }
+    to{ left:0; opacity:1 }
+}
+
+.floating-language a{
+    display:block;
+    padding:10px 14px;
+    font-size:14px;
+    font-weight:600;
+    color:#0b5ed7;
+    text-decoration:none;
+    border-bottom:1px solid #e5e5e5;
+    background:#fff;
+    transition:all .3s ease;
+}
+
+.floating-language a:last-child{
+    border-bottom:none;
+}
+
+.floating-language a:hover{
+    background:#0b5ed7;
+    color:#fff;
+    padding-left:22px;     /* subtle slide */
+}
+
+/* ========= Floating Register (Right) ========= */
+.floating-register{
+    position:fixed;
+    top:50%;
+    right:-160px;           /* hidden initially */
+    transform:translateY(-50%);
+    background:#0b5ed7;
+    color:#fff;
+    padding:14px 24px;
+    font-weight:600;
+    font-size:15px;
+    text-decoration:none;
+    border-radius:8px 0 0 8px;
+    box-shadow:0 6px 16px rgba(0,0,0,.25);
+    z-index:9999;
+    animation:slideInRight 1s ease forwards, pulse 2.5s infinite;
+    animation-delay:.7s;
+}
+
+@keyframes slideInRight{
+    from{ right:-160px; opacity:0 }
+    to{ right:0; opacity:1 }
+}
+
+/* Soft attention pulse (Govt safe) */
+@keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(11,94,215,.6); }
+    70%{ box-shadow:0 0 0 12px rgba(11,94,215,0); }
+    100%{ box-shadow:0 0 0 0 rgba(11,94,215,0); }
+}
+
+.floating-register:hover{
+    background:#084298;
+    padding-right:30px;    /* slight expand */
+}
+
     </style>
 </head>
 <body>
@@ -764,6 +842,18 @@ h1.demo-title a {
     </div>
 </section>
 </div></div>
+
+<div class="floating-language">
+    <a href="#" title="বাংলা">বাংলা</a>
+    <a href="#" title="हिंदी">हिंदी</a>
+    <a href="#" title="English">EN</a>
+</div>
+
+<!-- Floating Register Button -->
+<a href="#" class="floating-register">
+    Register Now
+</a>
+
 
 <div class="container">
   <div class="row">
