@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pilot-X | Business Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #004aad, #007bff);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        h2 {
+            color: #004aad;
+            margin-bottom: 15px;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            background: white;
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-left: 5px solid #007bff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+      
+        .pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .plan {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .plan h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .plan p {
+            font-size: 15px;
+        }
+        .plan button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #007bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .plan button:hover {
+            background: #0056b3;
+        }
+        .billing {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #00037e;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+        }
+		
+		
+		
+		
+/*------------------*/
+.advantages-box{
+  background: linear-gradient(135deg,#1f3c88,#5f9cff);
+  padding: 12px 65px;
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(59,130,246,0.25);
+}
+
+.advantages-title{
+  color:#fff;
+  font-size:26px;
+  font-weight:800;
+  text-align:center;
+  margin-bottom:25px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.advantage-item{
+  background:#00037e;
+  border-left: 5px solid #38bdf8;
+  padding: 15px 18px;
+  border-radius: 12px;
+  margin-bottom:15px;
+  color:#e5e7eb;
+  font-size:16px;
+  line-height:1.5;
+  transition: all 0.4s ease;
+  position:relative;
+}
+
+.advantage-item::before{
+  content:"✔";
+  position:absolute;
+  left:-30px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#ffd800;
+  font-size:20px;
+}
+
+.advantage-item:hover{
+  transform: translateX(8px);
+  box-shadow: 0 0 15px rgba(56,189,248,0.4);
+}
+		
+		
+/*-----pricing--------*/
+		h1.demo-title {
+  text-align: center;
+font-size: 32px;
+  color: #1f3c88;
+  margin-bottom:45px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1.demo-title a {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing-table {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.pricing-table .ptable-item {
+  width: 33.33%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .pricing-table .ptable-item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-table .ptable-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-table .ptable-item {
+    width: 100%;
+  }
+}
+
+.pricing-table .ptable-single {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.pricing-table .ptable-header,
+.pricing-table .ptable-body,
+.pricing-table .ptable-footer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pricing-table .ptable-status ,
+.pricing-table .ptable-title,
+.pricing-table .ptable-price,
+.pricing-table .ptable-description,
+.pricing-table .ptable-action {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-table .ptable-single {
+  background: #f6f8fa;
+}
+
+.pricing-table .ptable-single:hover {
+  box-shadow: 0 0 10px #999999;
+}
+
+.pricing-table .ptable-header {
+  margin: 0 30px;
+  padding: 30px 0 45px 0;
+  width: auto;
+  background: #00037e;
+}
+
+.pricing-table .ptable-header::before,
+.pricing-table .ptable-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #f6f8fa;
+}
+
+.pricing-table .ptable-header::before {
+  right: 50%;
+  border-right: 250px solid transparent;
+}
+
+.pricing-table .ptable-header::after {
+  left: 50%;
+  border-left: 250px solid transparent;
+}
+
+.pricing-table .ptable-item.featured-item .ptable-header {
+  background: #FF6F61;
+}
+
+.pricing-table .ptable-status {
+  margin-top: -30px;
+}
+
+.pricing-table .ptable-status span {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  padding: 5px 0;
+  text-align: center;
+  color: #FF6F61;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  background: #2A293E;
+}
+
+.pricing-table .ptable-status span::before,
+.pricing-table .ptable-status span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #FF6F61;
+}
+
+.pricing-table .ptable-status span::before {
+  right: 50%;
+  border-right: 25px solid transparent;
+}
+
+.pricing-table .ptable-status span::after {
+  left: 50%;
+  border-left: 25px solid transparent;
+}
+
+.pricing-table .ptable-title h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.pricing-table .ptable-price h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.pricing-table .ptable-price h2 small {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 16px;
+  margin-left: -15px;
+}
+
+.pricing-table .ptable-price h2 span {
+  margin-left: 3px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing-table .ptable-body {
+  padding: 20px 0;
+}
+
+.pricing-table .ptable-description ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-table .ptable-description ul li {
+  color: #2A293E;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 7px;
+  border-bottom: 1px solid #dedede;
+}
+
+.pricing-table .ptable-description ul li:last-child {
+  border: none;
+}
+
+.pricing-table .ptable-footer {
+  padding-bottom: 30px;
+}
+
+.pricing-table .ptable-action a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #FF6F61;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: #00037e;
+  text-transform: uppercase;
+}
+
+.pricing-table .ptable-action a:hover {
+  color: #2A293E;
+  background: #FF6F61;
+}
+
+.pricing-table .ptable-item.featured-item .ptable-action a {
+  color: #2A293E;
+  background: #FF6F61;
+}
+
+.pricing-table .ptable-item.featured-item .ptable-action a:hover {
+  color: #FF6F61;
+  background: #2A293E;
+}
+
+/*-----free Banner-------*/
+.offer-banner{
+  position: relative;
+  padding: 25px 50px;
+  border-radius: 15px;
+  background: linear-gradient(270deg, #ff0080, #ff8c00, #ffd700);
+  background-size: 600% 600%;
+  animation: gradientMove 6s ease infinite;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+  overflow: hidden;
+   margin: 25px 0;
+   display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.offer-banner::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+  animation: shine 2.5s infinite;
+}
+
+.offer-text{
+  position: relative;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: pulse 1.8s infinite;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+@keyframes gradientMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@keyframes pulse{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.08)}
+}
+
+@keyframes shine{
+  0%{left:-100%}
+  100%{left:100%}
+}
+/*----payment------*/
+.billing-card {
+            background: #ffffff;
+            
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .billing-card h2 {
+            margin: 0 0 20px;
+            text-align: center;
+            color: #1f3c88;
+            font-size: 22px;
+			text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+        }
+
+        .billing-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .billing-item:last-child {
+            border-bottom: none;
+        }
+
+        .label {
+            color: #555;
+            font-size: 15px;
+        }
+
+        .value {
+            font-weight: 600;
+            color: #111;
+        }
+
+        .auto {
+            color: #007bff;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .paid {
+            color: #28a745;
+        }
+
+        .due {
+            color: #dc3545;
+        }
+
+        .footer-note {
+            margin-top: 18px;
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+        }
+/*-------support----------*/
+.support-card {
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 18px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+		margin-bottom: 43px;
+    }
+
+    .support-card h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #1f3c88;
+        font-size: 22px;
+    }
+
+    .support-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        background: #f8faff;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .support-item:hover {
+        background: #e9f1ff;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .whatsapp {
+        background: #25D366;
+    }
+
+    .sms {
+        background: #007bff;
+    }
+
+    .support-text h4 {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .support-text p {
+        margin: 3px 0 0;
+        font-size: 13px;
+        color: #777;
+    }
+
+/*---------------*/
+/* SECTION */
+.features-section {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 20px;
+    text-align: center;
+    animation: fadeUp 1s ease forwards;
+}
+
+.features-section h2 {
+    font-size: 32px;
+    color: #1f3c88;
+    margin-bottom: 10px;
+	text-transform: uppercase;
+  font-weight: bold;
+}
+
+.features-section p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 45px;
+}
+
+/* GRID */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.feature-card {
+    background: #fff;
+    padding: 28px 22px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+   /* animation: cardFloat 1s ease forwards;*/
+	
+}
+
+.feature-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(0,123,255,0.08), transparent);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.feature-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+}
+
+/* ICON */
+.feature-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.register { background: #007bff; }
+.upload   { background: #28a745; }
+.download { background: #ff9800; }
+.easy     { background: #9c27b0; }
+
+/* TEXT */
+.feature-card h4 {
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cardFloat {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(0,0,0,0.2); }
+    70%  { box-shadow: 0 0 0 14px rgba(0,0,0,0); }
+    100% { box-shadow: 0 0 0 0 rgba(0,0,0,0); }
+}	
+/* ================= HERO ================= */
+.hero{
+    min-height:50vh;
+    background:linear-gradient(135deg,#1f3c88,#5f9cff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+}
+.hero::before,.hero::after{
+    content:"";
+    position:absolute;
+    width:300px;height:300px;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    animation:float 8s infinite alternate;
+}
+.hero::before{top:-80px;left:-80px}
+.hero::after{bottom:-80px;right:-80px;animation-delay:3s}
+
+.hero-content{
+    max-width:850px;
+    padding:20px;
+    animation:fadeUp 1.2s ease forwards;
+}
+.hero h1{
+    font-size:64px;
+    margin-bottom:15px;
+}
+.hero h1 span{color:#ffd369}
+.hero p{
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:35px;
+    color:#eef3ff;
+}
+.hero a{
+    text-decoration:none;
+    padding:14px 36px;
+    border-radius:30px;
+    font-weight:600;
+    margin:6px;
+    display:inline-block;
+    transition:.3s;
+}
+.btn-primary{
+    background:#ffd369;
+    color:#1f3c88;
+}
+.btn-primary:hover{transform:translateY(-4px)}
+.btn-outline{
+    border:2px solid #fff;
+    color:#fff;
+}
+.btn-outline:hover{
+    background:#fff;
+    color:#1f3c88;
+}	
+.section-gray {
+  background: #f4f6f9;
+}
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+<section class="hero">
+    <div class="hero-content">
+        <h1><span>Pilot</span>-X</h1>
+        <p>
+            Smart Business &amp; Product Management Platform  
+            to manage products, users, and growth — all in one place.
+        </p>
+        <a href="#" class="btn-primary">Get Started</a>
+        <a href="#" class="btn-outline">Learn More</a>
+    </div>
+</section>
+</div></div>
+
+<div class="container">
+  <div class="row">
+<section class="features-section">
+    <h2>Platform Features</h2>
+    <p>Powerful features designed for ease, accessibility, and growth</p>
+
+    <div class="features-grid">
+
+        <div class="feature-card">
+            <div class="feature-icon register">👤</div>
+            <h4>Open Registration</h4>
+            <p>Anyone can register on the platform quickly without any complexity.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon upload">📦</div>
+            <h4>Product Upload</h4>
+            <p>Registered users can upload and manage their products seamlessly.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon download">⬇️</div>
+            <h4>Free App Access</h4>
+            <p>Anyone can download, install, and start using the app instantly.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon easy">✨</div>
+            <h4>User-Friendly Interface</h4>
+            <p>Simple, clean, and intuitive design for all types of users.</p>
+        </div>
+
+    </div>
+</section>
+</div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+	<div class="advantages-box">
+  <div class="advantages-title">Advantages</div>
+
+  <div class="advantage-item">
+    Systematic & fully automated billing system ensuring faster transactions
+  </div>
+
+  <div class="advantage-item">
+    Secure and well-organized customer database management
+  </div>
+
+  <div class="advantage-item">
+    Accurate payment tracking with minimized human errors
+  </div>
+</div>
+	</div>
+    <div class="col-md-4">
+	   <div class="billing-card">
+        <h2>Payment & Billing Info</h2>
+
+        <div class="billing-item">
+            <span class="label">Total Bill</span>
+            <span class="value auto">Auto Calculated</span>
+        </div>
+
+        <div class="billing-item">
+            <span class="label">Paid Amount</span>
+            <span class="value paid">Tracked in System</span>
+        </div>
+
+        <div class="billing-item">
+            <span class="label">Due Amount</span>
+            <span class="value due">Automatically Updated</span>
+        </div>
+
+        <div class="footer-note">
+            All billing details are system generated
+        </div>
+    </div>
+
+  
+	</div>
+  </div>
+  </div>
+
+
+
+<div class="container">
+
+  <div class="row">
+<section>
+<h1 class="demo-title">
+  Pricing Plans
+</h1>
+<div class="pricing-table">
+  <div class="ptable-item">
+    <div class="ptable-single">
+      <div class="ptable-header">
+        <div class="ptable-title">
+          <h2>Free</h2>
+        </div>
+      
+      </div>
+      <div class="ptable-body">
+        <div class="ptable-description">
+          <ul>
+            <li>Basic features</li>
+            <li>Limited usage</li>
+           
+          </ul>
+        </div>
+      </div>
+      <div class="ptable-footer">
+        <div class="ptable-action">
+          <a href="">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ptable-item featured-item">
+    <div class="ptable-single">
+      <div class="ptable-header">
+         <div class="ptable-title">
+          <h2>Basic</h2>
+        </div>
+      </div>
+      <div class="ptable-body">
+        <div class="ptable-description">
+          <ul>
+            <li>More features</li>
+            <li>Standard billing system</li>
+           
+          </ul>
+        </div>
+      </div>
+      <div class="ptable-footer">
+        <div class="ptable-action">
+          <a href="">Choose Plan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ptable-item">
+    <div class="ptable-single">
+      <div class="ptable-header">
+        <div class="ptable-title">
+          <h2>Deluxe</h2>
+        </div>
+       
+      </div>
+      <div class="ptable-body">
+        <div class="ptable-description">
+          <ul>
+            <li>All premium features</li>
+            <li>Advanced reports & support</li>
+              
+          </ul>
+        </div>
+      </div>
+      <div class="ptable-footer">
+        <div class="ptable-action">
+          <a href="">Choose Plan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+</div>
+</div>
+<div class="container">
+
+  <div class="row">
+  <h2 class="text-center">Support &amp; Communication</h2>
+<p class="section-subtitle text-center">Instant help &amp; notifications</p>
+<div class="support-card">
+  
+
+    <div class="support-item">
+        <div class="icon whatsapp">💬</div>
+        <div class="support-text">
+            <h4>WhatsApp Support</h4>
+            <p>Instant help & real-time assistance</p>
+        </div>
+    </div>
+
+    <div class="support-item">
+        <div class="icon sms">📩</div>
+        <div class="support-text">
+            <h4>SMS Notification System</h4>
+            <p>Automatic alerts & important updates</p>
+        </div>
+    </div>
+</div>
+</div></div>
+<footer>
+    <p>© 2026. All Rights Reserved.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
