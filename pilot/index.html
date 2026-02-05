@@ -141,7 +141,10 @@
   transform: translateX(8px);
   box-shadow: 0 0 15px rgba(56,189,248,0.4);
 }
-		
+	
+.section-subtitle {
+  margin-top: 60px;
+}	
 		
 /*-----pricing--------*/
 		h1.demo-title {
@@ -151,6 +154,7 @@ font-size: 32px;
   margin-bottom:45px;
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 60px
 }
 
 h1.demo-title a {
@@ -167,20 +171,20 @@ h1.demo-title a {
 }
 
 .pricing-table .ptable-item {
-  width: 33.33%;
+  width: auto;
   padding: 0 15px;
   margin-bottom: 30px;
 }
 
 @media (max-width: 992px) {
   .pricing-table .ptable-item {
-    width: 33.33%;
+    width: auto;
   }
 }
 
 @media (max-width: 768px) {
   .pricing-table .ptable-item {
-    width: 50%;
+    width: auto;
   }
 }
 
@@ -945,12 +949,11 @@ h1.demo-title a {
 
 <div class="container">
 
-  <div class="row">
-<section>
 <h1 class="demo-title">
   Pricing Plans
 </h1>
-<div class="pricing-table">
+<div class="row pricing-table">
+ <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
   <div class="ptable-item">
     <div class="ptable-single">
       <div class="ptable-header">
@@ -975,7 +978,8 @@ h1.demo-title a {
       </div>
     </div>
   </div>
-
+</div>
+ <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
   <div class="ptable-item featured-item">
     <div class="ptable-single">
       <div class="ptable-header">
@@ -999,7 +1003,8 @@ h1.demo-title a {
       </div>
     </div>
   </div>
-
+</div>
+ <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
   <div class="ptable-item">
     <div class="ptable-single">
       <div class="ptable-header">
@@ -1025,9 +1030,10 @@ h1.demo-title a {
     </div>
   </div>
 </div>
-
-</section>
 </div>
+
+
+
 </div>
 <div class="container">
 
