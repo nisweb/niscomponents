@@ -569,7 +569,7 @@ h1.demo-title a {
 /* SECTION */
 .features-section {
     max-width: 1100px;
-    margin: 70px auto;
+    margin: 30px auto;
     padding: 20px;
     text-align: center;
     animation: fadeUp 1s ease forwards;
@@ -828,6 +828,136 @@ h1.demo-title a {
     background:#084298;
     padding-right:30px;    /* slight expand */
 }
+/*------offer box-------------*/
+.offer-banner{
+    width:100%;
+    background:linear-gradient(90deg,#0d6efd,#084298);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 20px;
+    gap:15px;
+    animation:slideDown 0.8s ease;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Text */
+.offer-text{
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    animation:textMove 2s infinite;
+}
+
+.offer-text strong{
+    color:#ffc107;
+}
+
+/* FREE Badge */
+.badge{
+    background:#dc3545;
+    padding:5px 10px;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:bold;
+    animation:pulse 1.5s infinite;
+}
+
+/* CTA Button */
+.offer-cta{
+    background:#198754;
+    color:#fff;
+    padding:10px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    white-space:nowrap;
+    transition:0.3s;
+    animation:blink 2.5s infinite;
+}
+
+.offer-cta:hover{
+    background:#157347;
+    transform:scale(1.05);
+}
+
+/* Animations */
+@keyframes slideDown{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+}
+
+@keyframes blink{
+    0%,100%{opacity:1;}
+    50%{opacity:0.6;}
+}
+
+@keyframes textMove{
+    0%{transform:translateX(0);}
+    50%{transform:translateX(5px);}
+    100%{transform:translateX(0);}
+}
+
+/* Mobile */
+@media(max-width:768px){
+    .offer-banner{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+/* CTA */
+.pro-btn{
+    background:#ffdd57;
+    color:#000;
+    padding:14px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+    animation:ctaGlow 2.5s infinite;
+    white-space:nowrap;
+}
+
+.pro-btn:hover{
+    transform:scale(1.08);
+    background:#ffe98a;
+}
+
+/* ANIMATIONS */
+@keyframes bgShift{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.15);}
+    100%{transform:scale(1);}
+}
+
+@keyframes ctaGlow{
+    0%,100%{
+        box-shadow:0 0 0 rgba(255,221,87,0);
+    }
+    50%{
+        box-shadow:0 0 20px rgba(255,221,87,0.8);
+    }
+}
 
     </style>
 </head>
@@ -887,17 +1017,29 @@ h1.demo-title a {
 
         <div class="feature-card">
             <div class="feature-icon easy">✨</div>
-            <h4>User-Friendly Interface</h4>
-            <p>Simple, clean, and intuitive design for all types of users.</p>
+            <h4>Generate Bills</h4>
+            <p>Quickly generate bills to customers and stay connected</p>
         </div>
 
     </div>
 </section>
 </div>
 </div>
-
-
 <div class="container">
+  <div class="row">
+<div class="offer-banner">
+    <div class="offer-text">
+        <span class="badge">FREE</span>
+        <strong>First 100 Users</strong> Get Free & Instant Access
+    </div>
+
+    <a href="#" class="offer-cta pro-btn">
+        Get This Offer Now
+    </a>
+</div>
+</div>
+</div>
+<div class="container mt-5">
   <div class="row">
     <div class="col-md-8">
 	<div class="advantages-box">
