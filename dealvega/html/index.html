@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>dealvega</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--  CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+</head>
+
+<body>
+<!------social icon--->
+<div id="st-2" class=" st-sticky-share-buttons st-left st-toggleable st-has-labels st-show-total "><div class="st-total ">
+  <span class="st-label">127</span>
+  <span class="st-shares">
+    Shares
+  </span>
+</div><div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+  <img alt="facebook sharing button" src="https://platform-cdn.sharethis.com/img/facebook.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-btn" data-network="twitter" style="display: inline-block;">
+  <img alt="twitter sharing button" src="https://platform-cdn.sharethis.com/img/twitter.svg">
+  <span class="st-label">Post</span>
+</div><div class="st-btn" data-network="pinterest" style="display: inline-block;">
+  <img alt="pinterest sharing button" src="https://platform-cdn.sharethis.com/img/pinterest.svg">
+  <span class="st-label">Pin</span>
+</div><div class="st-btn" data-network="email" style="display: inline-block;">
+  <img alt="email sharing button" src="https://platform-cdn.sharethis.com/img/email.svg">
+  <span class="st-label">Email</span>
+</div><div class="st-btn st-last" data-network="sharethis" style="display: inline-block;">
+  <img alt="sharethis sharing button" src="https://platform-cdn.sharethis.com/img/sharethis.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-toggle">
+  <div class="st-left">
+    <img alt="arrow_left sharing button" src="https://platform-cdn.sharethis.com/img/arrow_left.svg">
+  </div>
+  <div class="st-right">
+    <img alt="arrow_right sharing button" src="https://platform-cdn.sharethis.com/img/arrow_right.svg">
+  </div>
+</div></div>
+  <!-- ======= Top Bar ======= -->
+
+  <!-- Topbar -->
+<div id="topbar" class="fixed-top mt-2 d-flex align-items-center bg-light">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="assets/img/DealVegalogo.jpg" alt="Logo" class="img-fluid">
+    </a>
+
+    <!-- Right Side -->
+    <div class="d-flex align-items-center gap-2">
+
+      <!-- Search -->
+      <form class="d-flex">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for products">
+          <button class="btn btn-outline-secondary" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </form>
+
+      <!-- Login -->
+      <button class="btn green" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <i class="fa fa-plus" aria-hidden="true"></i> Submit Deal
+      </button>
+
+      <!-- Register -->
+      <button class="btn white" data-bs-toggle="modal" data-bs-target="#registerModal">
+        <i class="fas fa-sign-in-alt"></i> Login / Register
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label>Username</label>
+            <input type="name" class="form-control">
+          </div>
+           
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control">
+          </div>
+		  <div class="mb-3">
+             <a href="https://www.dealvega.com/my-account/lost-password/" class="alignright">Lost Password?</a>
+          </div>
+		  <div class="mt-5 d-flex">
+		  <label for="rehub_remember"><input name="rehub_remember" id="rehub_remember" type="checkbox" value="forever">
+							Remember me</label>
+							</div>
+			  <div class="mt-2 d-flex">				
+		  <button class="btn login w-100">Login</button>
+		  </div>
+		  <div class="rehub-login-popup-footer">Don't have an account? 
+											<span class="act-rehub-login-popup color_link" data-type="register">Sign Up</span>
+										</div>
+		  
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label>Username</label>
+            <input type="name" class="form-control">
+          </div>
+           
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control">
+          </div>
+		  <div class="mb-3">
+             <a href="https://www.dealvega.com/my-account/lost-password/" class="alignright">Lost Password?</a>
+          </div>
+		  <div class="mt-5 d-flex">
+		  <label for="rehub_remember"><input name="rehub_remember" id="rehub_remember" type="checkbox" value="forever">
+							Remember me</label>
+							</div>
+			  <div class="mt-2 d-flex">				
+		  <button class="btn login w-100">Login</button>
+		  </div>
+		  <div class="rehub-login-popup-footer">Don't have an account? 
+											<span class="act-rehub-login-popup color_link" data-type="register">Sign Up</span>
+										</div>
+		  
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+     
+    
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#mobile_tablets">Mobiles & Tablets</a></li>
+          <li><a class="nav-link scrollto" href="#laptop">Laptops, Computers & Accessories
+</a></li>
+          <li><a class="nav-link scrollto " href="#clothing">Clothing & Accessories
+</a></li>
+         
+         
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>Shopping Resources</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Laptop Buying Guide – How to Choose the Right Laptop</a></li>
+                  <li><a href="#">101 Evergreen Halloween Outfits – Cheap Halloween Costumes Ideas</a></li>
+                  <li><a href="#">Buy Now Pay Later Websites [No Interest – No Credit  Check]</a></li>
+                  <li><a href="#">Shop in the U.S.A. – Worldwide Shipping :: Cheap International Shipping Guideline</a></li>
+                  
+                </ul>
+              </li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Cameras, Audio & Video</a></li>
+              <li><a href="#">Car, Motorbike & Industrial</a></li>
+			  <li><a href="#">Handbags & Luggages</a></li>
+			  <li><a href="#">Health, Beauty & Gourmet</a></li>
+			  <li><a href="#">Jewellery, Watches & Eyewear</a></li>
+			  <li><a href="#">Shoes</a></li>
+			  <li><a href="#">Sports, Fitness & Outdoor</a></li>
+			  <li><a href="#">Toys & Baby Products</a></li>
+			  
+			  
+            </ul>
+          </li>
+		   <li><a href="blog.html">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+  <section id="about" class="about">
+<div class="container py-4">
+
+
+    <div class="row">
+
+        <!-- Product Section -->
+        <div class="col-lg-9">
+		    <!-- Top Section -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        
+        <!-- Tabs -->
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <button class="nav-link active tab-btn" onclick="filterProduct('all')">Show all</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link tab-btn" onclick="filterProduct('hot')">Most hot</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link tab-btn" onclick="filterProduct('popular')">Popular</button>
+            </li>
+			<li class="nav-item">
+                <button class="nav-link tab-btn" onclick="filterProduct('discussed')">Discussed</button>
+            </li>
+        </ul>
+
+        <!-- Category Dropdown (Top optional) -->
+        <select class="form-select w-auto" onchange="filterCategory(this.value)">
+           <option value="all">Choose category</option>
+			<option value="all">All categories</option>
+            <option value="fashion">Back to School</option>
+            <option value="electronics">Black Friday & Cyber Monday Offers</option>
+            <option value="shoes">Books</option>
+			<option value="shoes">Cameras, Audio & Video</option>
+			<option value="shoes">Car, Motorbike & Industrial</option>
+			<option value="shoes">Clothing & Accessories</option>
+			<option value="shoes">Consumer Electronics</option>
+			<option value="shoes">Contact Lens</option>
+			<option value="shoes">Flower</option>
+			<option value="shoes">Food & Beverages</option>
+			<option value="shoes">Furniture & Fittings</option>
+			<option value="shoes">Gifts & Wishes</option>
+			<option value="shoes">Halloween</option>
+			<option value="shoes">Handbags & Luggages</option>
+			<option value="shoes">Health, Beauty & Gourmet</option>
+			<option value="shoes">Home, Kitchen and Pets</option>
+			<option value="shoes">Jewellery, Watches & Eyewear</option>
+			<option value="shoes">Laptops, Computers & Accessories</option>
+			<option value="shoes">Mobiles & Tablets</option>
+			<option value="shoes">Movies, Music & Video Games</option>
+			<option value="shoes">Other</option>
+			<option value="shoes">Shoes</option>
+			<option value="shoes">Sports, Fitness & Outdoor</option>
+			<option value="shoes">Toys & Baby Products</option>
+			<option value="shoes">Travel</option>
+		
+        </select>
+
+    </div>
+
+
+			
+			
+			 <div class="row g-4" id="productContainer">
+
+    <!-- Card 1 -->
+    <div class="col-md-3 product-item" data-type="hot" data-category="fashion">
+      <div class="product-card">
+	  
+	  <a class="product-img img-centered-flex rh-flex-center-align rh-flex-justify-center" href="https://www.dealvega.com/end-of-season-sale-up-to-65-off-clearance-at-stacy-adams/">
+                                              
+        <img decoding="async" width="211" height="150" src="https://www.dealvega.com/wp-content/uploads/2021/01/Wingtip-Oxford.png" class="" alt="Wingtip Oxford" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/Wingtip-Oxford.png 649w, https://www.dealvega.com/wp-content/uploads/2021/01/Wingtip-Oxford-1536x1093.png 1536w, https://www.dealvega.com/wp-content/uploads/2021/01/Wingtip-Oxford-2048x1458.png 2048w" sizes="(max-width: 211px) 100vw, 211px">                                  
+       
+            </a>
+         <div class="price">
+          <div class="price-left"> <span class="old-price"></span></div>
+          <a class="admin" href="https://www.dealvega.com/author/rony/" title="Rony">
+           <img alt="" src="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=22&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=44&amp;d=mm&amp;r=g 2x" class="avatar avatar-22 photo" height="22" width="22"> </a>
+		</div>
+        <h6 class="mt-2">End of Season Sale! Up to 65% off Clearance at Stacy </h6>
+        <small><a href="https://www.dealvega.com/category/shoes/" class="cat">Shoes</a></small>
+		<div class="date_for_grid floatright">
+                <span class="date_ago">
+               <i class="far fa-clock"></i>5 years ago                                    </span>        
+            </div>
+        <div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 1</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+
+       <div class="col-md-3 product-item" data-type="popular" data-category="electronics">
+      <div class="product-card">
+	
+			<a class="product-img img-centered-flex rh-flex-center-align rh-flex-justify-center" href="https://www.dealvega.com/fun-learn-take-10-off-with-coupon-code-10-off-at-puzzle-master/">
+                                              
+                                            <img decoding="async" width="150" height="150" src="https://www.dealvega.com/wp-content/uploads/2021/01/Bermuda-Triangle-.png" class="" alt="Bermuda Triangle" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/Bermuda-Triangle-.png 640w, https://www.dealvega.com/wp-content/uploads/2021/01/Bermuda-Triangle--1536x1536.png 1536w, https://www.dealvega.com/wp-content/uploads/2021/01/Bermuda-Triangle--2048x2048.png 2048w" sizes="(max-width: 150px) 100vw, 150px">                                  
+            
+            </a>
+			
+         <div class="price">
+          <div class="price-left"> <span class="old-price"></span></div>
+          <a class="admin" href="https://www.dealvega.com/author/rony/" title="Rony">
+           <img alt="" src="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=22&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=44&amp;d=mm&amp;r=g 2x" class="avatar avatar-22 photo" height="22" width="22"> </a>
+		</div>
+        <h6 class="mt-2">Fun & Learn! Take 10% OFF with coupon code 10-OFF at  </h6>
+        <small>
+         <a href="https://www.dealvega.com/category/sports-fitness-outdoor/puzzles-board-games/" class="cat">Puzzles &amp; Board Games</a></small>
+		<div class="date_for_grid floatright">
+                <span class="date_ago">
+               <i class="far fa-clock"></i>5 years ago                                    </span>        
+            </div>
+        <div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 1</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+	
+	<!-- Card 3 -->
+    <div class="col-md-3 product-item position-relative" data-type="hot" data-category="shoes">
+     
+      <div class="product-card">
+	  <span class="grid_onsale">-70%</span>
+    
+			  <a class="img-centered-flex rh-flex-center-align rh-flex-justify-center" href="https://www.dealvega.com/1-2-carat-tw-diamond-engraved-antique-band-in-10k-white-gold-299-shipped/">
+                                              
+                                            <img decoding="async" width="150" height="150" src="https://www.dealvega.com/wp-content/uploads/2021/01/12-Carat-TW-Diamond-Engraved-Antique-Band-in-10K-White-Gold-.jpg" class="" alt="1/2 Carat TW Diamond Engraved Antique Band in 10K White Gold" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/12-Carat-TW-Diamond-Engraved-Antique-Band-in-10K-White-Gold-.jpg 200w, https://www.dealvega.com/wp-content/uploads/2021/01/12-Carat-TW-Diamond-Engraved-Antique-Band-in-10K-White-Gold--1536x1536.jpg 1536w, https://www.dealvega.com/wp-content/uploads/2021/01/12-Carat-TW-Diamond-Engraved-Antique-Band-in-10K-White-Gold--2048x2048.jpg 2048w" sizes="(max-width: 150px) 100vw, 150px">                                  
+              
+            </a>
+		<div class="price">
+          <div class="price-left">$299 <span class="old-price">$999</span></div>
+         <a class="admin" href="https://www.dealvega.com/author/rony/" title="Rony">
+                                <img alt="" src="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=22&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=44&amp;d=mm&amp;r=g 2x" class="avatar avatar-22 photo" height="22" width="22">                                </a>
+		</div>
+        <h6>1/2 Carat TW Diamond Engraved Antique Band in </h6>
+        <small>
+         <a href="https://www.dealvega.com/category/jewellery-watches-eyewear/" class="cat">Jewellery, Watches &amp; Eyewear</a> </small>
+        <div class="date_for_grid floatright">
+                <span class="date_ago">
+               <i class="far fa-clock"></i>5 years ago                                    </span>        
+            </div>
+		<div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 1</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-3 product-item" data-type="discussed" data-category="fashion">
+      <div class="product-card">
+	  
+      <a class="img-centered-flex rh-flex-center-align rh-flex-justify-center" href="https://www.dealvega.com/art-of-tea-ceremonial-grade-matcha-tin-valentines-day-gift/">
+                                              
+                                            <img loading="lazy" decoding="async" width="129" height="150" src="https://www.dealvega.com/wp-content/uploads/2021/01/Art-of-Tea-Ceremonial-Grade-Matcha-Tin-.jpg" class="" alt="Art of Tea Ceremonial Grade Matcha Tin" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/Art-of-Tea-Ceremonial-Grade-Matcha-Tin-.jpg 800w, https://www.dealvega.com/wp-content/uploads/2021/01/Art-of-Tea-Ceremonial-Grade-Matcha-Tin--1324x1536.jpg 1324w, https://www.dealvega.com/wp-content/uploads/2021/01/Art-of-Tea-Ceremonial-Grade-Matcha-Tin--1766x2048.jpg 1766w" sizes="(max-width: 129px) 100vw, 129px">                                  
+                               
+                  
+            </a>
+		<div class="price">
+          <div class="price-left">$30 </div>
+         <a class="admin" href="https://www.dealvega.com/author/rony/" title="Rony">
+           <img alt="" src="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=22&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=44&amp;d=mm&amp;r=g 2x" class="avatar avatar-22 photo" height="22" width="22">                                </a>
+		</div>
+        <h6>Art of Tea Ceremonial Grade Matcha Tin, Valentine’s Day</h6>
+        <small><a href="https://www.dealvega.com/category/gifts-wishes/valentines-day/" class="cat">Valentine's Day</a></small>
+		<div class="date_for_grid floatright">
+                <span class="date_ago">
+               <i class="far fa-clock"></i>5 years ago                                    </span>        
+            </div>
+        <div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 0</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-md-3 product-item" data-type="hot" data-category="fashion">
+      <div class="product-card">
+	  
+	    <a class="img-centered-flex rh-flex-center-align rh-flex-justify-center" href="https://www.dealvega.com/fun-valentines-toys-games-for-kids-50-off-favorites-15-off-coupon/">
+                                              
+                                            <img loading="lazy" decoding="async" width="136" height="150" src="https://www.dealvega.com/wp-content/uploads/2021/01/Felt-Unicorn-Roller-with-Wooden-Wheels.jpg" class="" alt="Felt Unicorn Roller with Wooden Wheels" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/Felt-Unicorn-Roller-with-Wooden-Wheels.jpg 1200w, https://www.dealvega.com/wp-content/uploads/2021/01/Felt-Unicorn-Roller-with-Wooden-Wheels-1396x1536.jpg 1396w, https://www.dealvega.com/wp-content/uploads/2021/01/Felt-Unicorn-Roller-with-Wooden-Wheels-1862x2048.jpg 1862w" sizes="(max-width: 136px) 100vw, 136px">                                  
+                               
+                  
+            </a>
+         <div class="price">
+          <div class="price-left"> <span class="old-price"></span></div>
+          <a class="admin" href="https://www.dealvega.com/author/rony/" title="Rony">
+           <img alt="" src="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=22&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=44&amp;d=mm&amp;r=g 2x" class="avatar avatar-22 photo" height="22" width="22"> </a>
+		</div>
+        <h6 class="mt-2">Fun Valentine’s Toys & Games for Kids, 50% Off </h6>
+        <small><a href="https://www.dealvega.com/category/toys-baby-products/toys/" class="cat">Toys</a></small>
+		<div class="date_for_grid floatright">
+                <span class="date_ago">
+               <i class="far fa-clock"></i>5 years ago                                    </span>        
+            </div>
+        <div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 1</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+
+       <div class="col-md-3 product-item" data-type="popular" data-category="electronics">
+      <div class="product-card">
+	
+			<a class="product-img img-centered-flex rh-flex-center-align rh-flex-justify-center" href="https://www.dealvega.com/fun-learn-take-10-off-with-coupon-code-10-off-at-puzzle-master/">
+                                              
+                                            <img decoding="async" width="150" height="150" src="https://www.dealvega.com/wp-content/uploads/2021/01/Bermuda-Triangle-.png" class="" alt="Bermuda Triangle" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/Bermuda-Triangle-.png 640w, https://www.dealvega.com/wp-content/uploads/2021/01/Bermuda-Triangle--1536x1536.png 1536w, https://www.dealvega.com/wp-content/uploads/2021/01/Bermuda-Triangle--2048x2048.png 2048w" sizes="(max-width: 150px) 100vw, 150px">                                  
+            
+            </a>
+			
+         <div class="price">
+          <div class="price-left"> <span class="old-price"></span></div>
+          <a class="admin" href="https://www.dealvega.com/author/rony/" title="Rony">
+           <img alt="" src="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=22&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=44&amp;d=mm&amp;r=g 2x" class="avatar avatar-22 photo" height="22" width="22"> </a>
+		</div>
+        <h6 class="mt-2">Fun & Learn! Take 10% OFF with coupon code 10-OFF at  </h6>
+        <small>
+         <a href="https://www.dealvega.com/category/sports-fitness-outdoor/puzzles-board-games/" class="cat">Puzzles &amp; Board Games</a></small>
+		<div class="date_for_grid floatright">
+                <span class="date_ago">
+               <i class="far fa-clock"></i>5 years ago                                    </span>        
+            </div>
+        <div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 1</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+	
+	<!-- Card 7 -->
+    <div class="col-md-3 product-item position-relative" data-type="hot" data-category="shoes">
+     
+      <div class="product-card">
+	  <span class="grid_onsale">-70%</span>
+    
+			  <a class="img-centered-flex rh-flex-center-align rh-flex-justify-center" href="https://www.dealvega.com/1-2-carat-tw-diamond-engraved-antique-band-in-10k-white-gold-299-shipped/">
+                                              
+                                            <img decoding="async" width="150" height="150" src="https://www.dealvega.com/wp-content/uploads/2021/01/12-Carat-TW-Diamond-Engraved-Antique-Band-in-10K-White-Gold-.jpg" class="" alt="1/2 Carat TW Diamond Engraved Antique Band in 10K White Gold" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/12-Carat-TW-Diamond-Engraved-Antique-Band-in-10K-White-Gold-.jpg 200w, https://www.dealvega.com/wp-content/uploads/2021/01/12-Carat-TW-Diamond-Engraved-Antique-Band-in-10K-White-Gold--1536x1536.jpg 1536w, https://www.dealvega.com/wp-content/uploads/2021/01/12-Carat-TW-Diamond-Engraved-Antique-Band-in-10K-White-Gold--2048x2048.jpg 2048w" sizes="(max-width: 150px) 100vw, 150px">                                  
+              
+            </a>
+		<div class="price">
+          <div class="price-left">$299 <span class="old-price">$999</span></div>
+         <a class="admin" href="https://www.dealvega.com/author/rony/" title="Rony">
+                                <img alt="" src="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=22&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/5cf83de4728844c454dba974993a39b0b7bd3e8422fc567d5e48f516afb0a9c2?s=44&amp;d=mm&amp;r=g 2x" class="avatar avatar-22 photo" height="22" width="22">                                </a>
+		</div>
+        <h6>1/2 Carat TW Diamond Engraved Antique Band in </h6>
+        <small>
+         <a href="https://www.dealvega.com/category/jewellery-watches-eyewear/" class="cat">Jewellery, Watches &amp; Eyewear</a> </small>
+        <div class="date_for_grid floatright">
+                <span class="date_ago">
+               <i class="far fa-clock"></i>5 years ago                                    </span>        
+            </div>
+		<div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 1</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="col-md-3 product-item" data-type="discussed" data-category="fashion">
+      <div class="product-card">
+	  <span class="grid_onsale">-70%</span>
+      <a class="img-centered-flex rh-flex-center-align rh-flex-justify-center" href="https://www.dealvega.com/art-of-tea-ceremonial-grade-matcha-tin-valentines-day-gift/">
+                                              
+                                            <img loading="lazy" decoding="async" width="129" height="150" src="https://www.dealvega.com/wp-content/uploads/2021/01/Art-of-Tea-Ceremonial-Grade-Matcha-Tin-.jpg" class="" alt="Art of Tea Ceremonial Grade Matcha Tin" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/Art-of-Tea-Ceremonial-Grade-Matcha-Tin-.jpg 800w, https://www.dealvega.com/wp-content/uploads/2021/01/Art-of-Tea-Ceremonial-Grade-Matcha-Tin--1324x1536.jpg 1324w, https://www.dealvega.com/wp-content/uploads/2021/01/Art-of-Tea-Ceremonial-Grade-Matcha-Tin--1766x2048.jpg 1766w" sizes="(max-width: 129px) 100vw, 129px">                                  
+                               
+                  
+            </a>
+		<div class="price">$30</div>
+        <h6>Art of Tea Ceremonial Grade Matcha Tin, Valentine’s Day</h6>
+        <small><a href="https://www.dealvega.com/category/gifts-wishes/valentines-day/" class="cat">Valentine's Day</a></small>
+		<div class="date_for_grid floatright">
+                <span class="date_ago">
+               <i class="far fa-clock"></i>5 years ago                                    </span>        
+            </div>
+        <div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 0</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Card 9 -->
+    <div class="col-md-3 product-item" data-type="hot" data-category="fashion">
+      <div class="product-card">
+	  <span class="grid_onsale">-40%</span>
+        <img src="https://via.placeholder.com/200" class="product-img">
+        <h6 class="mt-2">End of Season Sale! Up to 65% off Clearance</h6>
+        <small>SHOES</small>
+        <div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 1</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="col-md-3 product-item position-relative" data-type="popular" data-category="electronics">
+      <div class="ribbon">BEST PRICE</div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" class="product-img">
+        <div class="price">$63.98 <span class="old-price">$120.00</span></div>
+        <h6 class="mt-2">Up to 45% off Clearance Footwear</h6>
+        <small>SHOES</small>
+        <div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 1</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="col-md-3 product-item position-relative" data-type="hot" data-category="shoes">
+     
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" class="product-img">
+        <div class="price">
+          <div class="price-left">$299 <span class="old-price">$999</span></div>
+          <img src="https://via.placeholder.com/22" class="price-icon" alt="icon">
+        </div>
+        <h6>Diamond Engraved Band</h6>
+        <small>JEWELLERY</small>
+        <div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 1</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="col-md-3 product-item" data-type="discussed" data-category="fashion">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" class="product-img">
+        <div class="price">$30</div>
+        <h6>Matcha Tea Tin</h6>
+        <small>VALENTINE</small>
+        <div class="card-footer">
+          <span><i class="fa fa-thumbs-up"></i> 0</span>
+          <span><i class="fa fa-comment"></i> 0</span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+	
+<div class="pagination justify-content-center align-items-center mt-5"><ul class="page-numbers">
+<li class="active"><a href="https://www.dealvega.com/">1</a></li>
+<li><a href="https://www.dealvega.com/page/2/">2</a></li>
+<li><a href="https://www.dealvega.com/page/3/">3</a></li>
+<li class="hellip_paginate_link"><span>…</span></li>
+<li><a href="https://www.dealvega.com/page/175/">175</a></li>
+<li class="next_paginate_link"><a href="https://www.dealvega.com/page/2/">Next Page »</a></li>
+</ul>
+</div>	
+			
+			
+			
+			
+			
+			
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-3">
+          
+		</div>
+
+    </div>
+
+</div>
+  </Section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+    
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+    <p>No widgets added. You can disable footer widget area in theme options - footer options</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DealVega.com - 2016 - 2026</span></strong>. All Rights Reserved
+      </div>
+   
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script>
+
+let currentType = "all";
+let currentCategory = "all";
+
+function filterProduct(type) {
+    currentType = type;
+    applyFilter();
+}
+
+function filterCategory(category) {
+    currentCategory = category;
+    applyFilter();
+}
+
+function applyFilter() {
+    let products = document.querySelectorAll(".product-item");
+
+    products.forEach(product => {
+        let type = product.getAttribute("data-type");
+        let category = product.getAttribute("data-category");
+
+        let typeMatch = (currentType === "all" || currentType === type);
+        let categoryMatch = (currentCategory === "all" || currentCategory === category);
+
+        if (typeMatch && categoryMatch) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+}
+
+</script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

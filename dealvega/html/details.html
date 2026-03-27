@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>dealvega</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--  CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+</head>
+
+<body>
+<!------social icon--->
+<div id="st-2" class=" st-sticky-share-buttons st-left st-toggleable st-has-labels st-show-total "><div class="st-total ">
+  <span class="st-label">127</span>
+  <span class="st-shares">
+    Shares
+  </span>
+</div><div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+  <img alt="facebook sharing button" src="https://platform-cdn.sharethis.com/img/facebook.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-btn" data-network="twitter" style="display: inline-block;">
+  <img alt="twitter sharing button" src="https://platform-cdn.sharethis.com/img/twitter.svg">
+  <span class="st-label">Post</span>
+</div><div class="st-btn" data-network="pinterest" style="display: inline-block;">
+  <img alt="pinterest sharing button" src="https://platform-cdn.sharethis.com/img/pinterest.svg">
+  <span class="st-label">Pin</span>
+</div><div class="st-btn" data-network="email" style="display: inline-block;">
+  <img alt="email sharing button" src="https://platform-cdn.sharethis.com/img/email.svg">
+  <span class="st-label">Email</span>
+</div><div class="st-btn st-last" data-network="sharethis" style="display: inline-block;">
+  <img alt="sharethis sharing button" src="https://platform-cdn.sharethis.com/img/sharethis.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-toggle">
+  <div class="st-left">
+    <img alt="arrow_left sharing button" src="https://platform-cdn.sharethis.com/img/arrow_left.svg">
+  </div>
+  <div class="st-right">
+    <img alt="arrow_right sharing button" src="https://platform-cdn.sharethis.com/img/arrow_right.svg">
+  </div>
+</div></div>
+  <!-- ======= Top Bar ======= -->
+
+  <!-- Topbar -->
+<div id="topbar" class="fixed-top mt-2 d-flex align-items-center bg-light">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="assets/img/DealVegalogo.jpg" alt="Logo" class="img-fluid">
+    </a>
+
+    <!-- Right Side -->
+    <div class="d-flex align-items-center gap-2">
+
+      <!-- Search -->
+      <form class="d-flex">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for products">
+          <button class="btn btn-outline-secondary" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </form>
+
+      <!-- Login -->
+      <button class="btn green" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <i class="fa fa-plus" aria-hidden="true"></i> Submit Deal
+      </button>
+
+      <!-- Register -->
+      <button class="btn white" data-bs-toggle="modal" data-bs-target="#registerModal">
+        <i class="fas fa-sign-in-alt"></i> Login / Register
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label>Username</label>
+            <input type="name" class="form-control">
+          </div>
+           
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control">
+          </div>
+		  <div class="mb-3">
+             <a href="https://www.dealvega.com/my-account/lost-password/" class="alignright">Lost Password?</a>
+          </div>
+		  <div class="mt-5 d-flex">
+		  <label for="rehub_remember"><input name="rehub_remember" id="rehub_remember" type="checkbox" value="forever">
+							Remember me</label>
+							</div>
+			  <div class="mt-2 d-flex">				
+		  <button class="btn login w-100">Login</button>
+		  </div>
+		  <div class="rehub-login-popup-footer">Don't have an account? 
+											<span class="act-rehub-login-popup color_link" data-type="register">Sign Up</span>
+										</div>
+		  
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label>Username</label>
+            <input type="name" class="form-control">
+          </div>
+           
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control">
+          </div>
+		  <div class="mb-3">
+             <a href="https://www.dealvega.com/my-account/lost-password/" class="alignright">Lost Password?</a>
+          </div>
+		  <div class="mt-5 d-flex">
+		  <label for="rehub_remember"><input name="rehub_remember" id="rehub_remember" type="checkbox" value="forever">
+							Remember me</label>
+							</div>
+			  <div class="mt-2 d-flex">				
+		  <button class="btn login w-100">Login</button>
+		  </div>
+		  <div class="rehub-login-popup-footer">Don't have an account? 
+											<span class="act-rehub-login-popup color_link" data-type="register">Sign Up</span>
+										</div>
+		  
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+     
+    
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#mobile_tablets">Mobiles & Tablets</a></li>
+          <li><a class="nav-link scrollto" href="#laptop">Laptops, Computers & Accessories
+</a></li>
+          <li><a class="nav-link scrollto " href="#clothing">Clothing & Accessories
+</a></li>
+         
+         
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>Shopping Resources</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Laptop Buying Guide – How to Choose the Right Laptop</a></li>
+                  <li><a href="#">101 Evergreen Halloween Outfits – Cheap Halloween Costumes Ideas</a></li>
+                  <li><a href="#">Buy Now Pay Later Websites [No Interest – No Credit  Check]</a></li>
+                  <li><a href="#">Shop in the U.S.A. – Worldwide Shipping :: Cheap International Shipping Guideline</a></li>
+                  
+                </ul>
+              </li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Cameras, Audio & Video</a></li>
+              <li><a href="#">Car, Motorbike & Industrial</a></li>
+			  <li><a href="#">Handbags & Luggages</a></li>
+			  <li><a href="#">Health, Beauty & Gourmet</a></li>
+			  <li><a href="#">Jewellery, Watches & Eyewear</a></li>
+			  <li><a href="#">Shoes</a></li>
+			  <li><a href="#">Sports, Fitness & Outdoor</a></li>
+			  <li><a href="#">Toys & Baby Products</a></li>
+			  
+			  
+            </ul>
+          </li>
+		   <li><a href="blog.html">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main" class="details-box">
+  <section id="about" class="about mt-2">
+<div class="container py-4">
+
+
+    <div class="row">
+
+        <!-- details Section -->
+        <div class="col-lg-12">
+
+			<!-- Title -->
+<div class="title">
+End of Season Sale! Up to 65% off Clearance at Stacy Adams
+</div>
+
+<!-- Meta -->
+<div class="meta d-flex gap-3">
+<span class="floatleft authortimemeta lineheight20 fontbold">
+
+</span>
+<span>👤 
+Rony<br><small>January 25, 2021</small> </span>
+
+<span>⚡ 227 Views</span>
+<span>👞 Shoes</span>
+</div>
+
+<!-- Image -->
+<img decoding="async" width="100%" height="500" src="https://www.dealvega.com/wp-content/uploads/2021/01/Wingtip-Oxford.png" class="" alt="Wingtip Oxford" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_220_150.png" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/Wingtip-Oxford.png 649w, https://www.dealvega.com/wp-content/uploads/2021/01/Wingtip-Oxford-1536x1093.png 1536w, https://www.dealvega.com/wp-content/uploads/2021/01/Wingtip-Oxford-2048x1458.png 2048w">
+<!-- Green Offer -->
+<div class="offer-box">
+<div>
+			<i class="fas fa-link" ></i>&nbsp;<a href="https://www.dealvega.com/go/13202126010218205924">Stacy Adams</a> offers 25% off with promo code <strong>LNK2FCFW</strong>. Moreover, get extra 10% off on your first order. For example, pictured WingTip Oxford drops from $125.00 to $69.90 to $53 only with free shipping using this code. These shoes feature contrast suede leather inlay along the collar, leather linings for added breathability, fully cushioned insole with Memory Foam for all-day comfort and non-leather outsole for durability. This is the best total price we could discover on these shoes from Stacy Adams. Different styles are listed on clearance. Valid 1/25 – 1/31.<br>
+
+			</div>
+</div>
+
+<!-- Offers -->
+<div class="mt-2"><b>Offers</b></div>
+
+<p> <i class="fas fa-arrow-circle-right" style="color:orange; font-size:14px; margin-right:10px;"></i>Get up to 65% off clearance when you use your 25% off promo code: LNK2FCFW. Valid 1/25 – 1/31.</p>
+
+<!-- How to get -->
+<div class="simple-box">
+<b>HOW TO GET IT</b><br>
+Use code <b>LNK2FCFW</b> at checkout
+</div>
+
+
+
+<!-- Social -->
+<div class="share-box">
+
+<a href="#" class="btn-share save">
+<i class="fa fa-heart"></i>
+Save
+<span class="count">0</span>
+</a>
+
+<a href="#" class="btn-share facebook">
+<i class="fab fa-facebook-f"></i>
+Facebook
+</a>
+
+<a href="#" class="btn-share twitter">
+<i class="fab fa-twitter"></i>
+Twitter
+</a>
+
+<a href="#" class="btn-share pinterest">
+<i class="fab fa-pinterest-p"></i>
+</a>
+
+<a href="#" class="btn-share email">
+<i class="fa fa-envelope"></i>
+</a>
+
+</div>
+
+
+<!-- Related -->
+<div class="related mb-5">
+<h4><b>Related Deals</b></h4>
+
+<div class="row mt-3">
+
+<div class="col-md-3">
+<div class="product-card">
+<div class="heart active"><i class="far fa-heart"></i></div>
+<span class="re-line-badge re-line-table-badge badge_4"><span>Best price</span></span>
+<a href="https://www.dealvega.com/up-to-45-off-clearance-footwear-from-salomon/" class="img-fluid">
+                                                <img width="220" height="220" src="https://www.dealvega.com/wp-content/uploads/2021/01/SALOMON-Mens-Evasion-2-CS-WP-Hiking-Shoes-.jpg" class="img-fluid" alt="SALOMON Men's Evasion 2 CS WP Hiking Shoes" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" decoding="async" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/SALOMON-Mens-Evasion-2-CS-WP-Hiking-Shoes-.jpg 1000w, https://www.dealvega.com/wp-content/uploads/2021/01/SALOMON-Mens-Evasion-2-CS-WP-Hiking-Shoes--1536x1536.jpg 1536w, https://www.dealvega.com/wp-content/uploads/2021/01/SALOMON-Mens-Evasion-2-CS-WP-Hiking-Shoes--2048x2048.jpg 2048w" sizes="(max-width: 220px) 100vw, 220px"></a>
+<p>Up to 45% off Clearance Footwear from Salomon</p>
+<div class="price">$63.98</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="product-card">
+<div class="heart active"><i class="far fa-heart"></i></div>
+<a href="https://www.dealvega.com/merrell-footwear-clearance-get-up-to-60-off/" class="img-fluid">
+ <img width="220" height="220" src="https://www.dealvega.com/wp-content/uploads/2021/01/MERRELL-Womens-Siren-Edge-Hiking-Shoes-BlackPurple-.jpg" class="img-fluid" alt="MERRELL Women's Siren Edge Hiking Shoes, Black/Purple" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" decoding="async" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/MERRELL-Womens-Siren-Edge-Hiking-Shoes-BlackPurple-.jpg 1000w, https://www.dealvega.com/wp-content/uploads/2021/01/MERRELL-Womens-Siren-Edge-Hiking-Shoes-BlackPurple--1536x1536.jpg 1536w, https://www.dealvega.com/wp-content/uploads/2021/01/MERRELL-Womens-Siren-Edge-Hiking-Shoes-BlackPurple--2048x2048.jpg 2048w" sizes="(max-width: 220px) 100vw, 220px"> </a>
+<p>Merrell Footwear Clearance Get Up to 60% OFF</p>
+<div class="price"></div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="product-card">
+<div class="heart active"><i class="far fa-heart"></i></div>
+<a href="https://www.dealvega.com/60-off-clearance-sale-florsheim/" class="img-fluid">
+<img width="299" height="220" src="https://www.dealvega.com/wp-content/uploads/2021/01/Montinaro-Cap-Toe-Oxford-110.00-79.90-79.90.png" class="img-fluid" alt="Montinaro Cap Toe Oxford $110.00 $79.90 79.90" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" decoding="async" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/Montinaro-Cap-Toe-Oxford-110.00-79.90-79.90.png 560w, https://www.dealvega.com/wp-content/uploads/2021/01/Montinaro-Cap-Toe-Oxford-110.00-79.90-79.90-1536x1130.png 1536w, https://www.dealvega.com/wp-content/uploads/2021/01/Montinaro-Cap-Toe-Oxford-110.00-79.90-79.90-2048x1507.png 2048w" sizes="(max-width: 299px) 100vw, 299px">                                    </a>
+<p>60% off Clearance Sale at Florsheim</p>
+<div class="price">$79.90</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="product-card">
+<div class="heart active"><i class="far fa-heart"></i></div>
+<a href="https://www.dealvega.com/extra-20-off-hiking-boots-shoes-running-sneakers/" class="img-fluid">
+                                                <img width="220" height="220" src="https://www.dealvega.com/wp-content/uploads/2020/12/MERRELL-Mens-Chameleon-7-Stretch-Low-Hiking-Shoes-1-1.jpg" class="img-fluid" alt="MERRELL Men's Chameleon 7 Stretch Low Hiking Shoes" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" decoding="async" srcset="https://www.dealvega.com/wp-content/uploads/2020/12/MERRELL-Mens-Chameleon-7-Stretch-Low-Hiking-Shoes-1-1.jpg 1000w, https://www.dealvega.com/wp-content/uploads/2020/12/MERRELL-Mens-Chameleon-7-Stretch-Low-Hiking-Shoes-1-1-1536x1536.jpg 1536w, https://www.dealvega.com/wp-content/uploads/2020/12/MERRELL-Mens-Chameleon-7-Stretch-Low-Hiking-Shoes-1-1-2048x2048.jpg 2048w" sizes="(max-width: 220px) 100vw, 220px">                                    </a>
+<p>EXTRA 20% OFF Hiking Boots, Shoes & Running Sneakers</p>
+<div class="price">$71.98</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+			
+			
+			
+			
+			
+        </div>
+
+
+    </div>
+
+</div>
+  
+  </Section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+    
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+    <p>No widgets added. You can disable footer widget area in theme options - footer options</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DealVega.com - 2016 - 2026</span></strong>. All Rights Reserved
+      </div>
+   
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script>
+
+let currentType = "all";
+let currentCategory = "all";
+
+function filterProduct(type) {
+    currentType = type;
+    applyFilter();
+}
+
+function filterCategory(category) {
+    currentCategory = category;
+    applyFilter();
+}
+
+function applyFilter() {
+    let products = document.querySelectorAll(".product-item");
+
+    products.forEach(product => {
+        let type = product.getAttribute("data-type");
+        let category = product.getAttribute("data-category");
+
+        let typeMatch = (currentType === "all" || currentType === type);
+        let categoryMatch = (currentCategory === "all" || currentCategory === category);
+
+        if (typeMatch && categoryMatch) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+}
+
+</script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

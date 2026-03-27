@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>dealvega</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--  CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+</head>
+
+<body>
+<!------social icon--->
+<div id="st-2" class=" st-sticky-share-buttons st-left st-toggleable st-has-labels st-show-total "><div class="st-total ">
+  <span class="st-label">127</span>
+  <span class="st-shares">
+    Shares
+  </span>
+</div><div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+  <img alt="facebook sharing button" src="https://platform-cdn.sharethis.com/img/facebook.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-btn" data-network="twitter" style="display: inline-block;">
+  <img alt="twitter sharing button" src="https://platform-cdn.sharethis.com/img/twitter.svg">
+  <span class="st-label">Post</span>
+</div><div class="st-btn" data-network="pinterest" style="display: inline-block;">
+  <img alt="pinterest sharing button" src="https://platform-cdn.sharethis.com/img/pinterest.svg">
+  <span class="st-label">Pin</span>
+</div><div class="st-btn" data-network="email" style="display: inline-block;">
+  <img alt="email sharing button" src="https://platform-cdn.sharethis.com/img/email.svg">
+  <span class="st-label">Email</span>
+</div><div class="st-btn st-last" data-network="sharethis" style="display: inline-block;">
+  <img alt="sharethis sharing button" src="https://platform-cdn.sharethis.com/img/sharethis.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-toggle">
+  <div class="st-left">
+    <img alt="arrow_left sharing button" src="https://platform-cdn.sharethis.com/img/arrow_left.svg">
+  </div>
+  <div class="st-right">
+    <img alt="arrow_right sharing button" src="https://platform-cdn.sharethis.com/img/arrow_right.svg">
+  </div>
+</div></div>
+  <!-- ======= Top Bar ======= -->
+
+  <!-- Topbar -->
+<div id="topbar" class="fixed-top mt-2 d-flex align-items-center bg-light">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="assets/img/DealVegalogo.jpg" alt="Logo" class="img-fluid">
+    </a>
+
+    <!-- Right Side -->
+    <div class="d-flex align-items-center gap-2">
+
+      <!-- Search -->
+      <form class="d-flex">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for products">
+          <button class="btn btn-outline-secondary" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </form>
+
+      <!-- Login -->
+      <button class="btn green" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <i class="fa fa-plus" aria-hidden="true"></i> Submit Deal
+      </button>
+
+      <!-- Register -->
+      <button class="btn white" data-bs-toggle="modal" data-bs-target="#registerModal">
+        <i class="fas fa-sign-in-alt"></i> Login / Register
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label>Username</label>
+            <input type="name" class="form-control">
+          </div>
+           
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control">
+          </div>
+		  <div class="mb-3">
+             <a href="https://www.dealvega.com/my-account/lost-password/" class="alignright">Lost Password?</a>
+          </div>
+		  <div class="mt-5 d-flex">
+		  <label for="rehub_remember"><input name="rehub_remember" id="rehub_remember" type="checkbox" value="forever">
+							Remember me</label>
+							</div>
+			  <div class="mt-2 d-flex">				
+		  <button class="btn login w-100">Login</button>
+		  </div>
+		  <div class="rehub-login-popup-footer">Don't have an account? 
+											<span class="act-rehub-login-popup color_link" data-type="register">Sign Up</span>
+										</div>
+		  
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label>Username</label>
+            <input type="name" class="form-control">
+          </div>
+           
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control">
+          </div>
+		  <div class="mb-3">
+             <a href="https://www.dealvega.com/my-account/lost-password/" class="alignright">Lost Password?</a>
+          </div>
+		  <div class="mt-5 d-flex">
+		  <label for="rehub_remember"><input name="rehub_remember" id="rehub_remember" type="checkbox" value="forever">
+							Remember me</label>
+							</div>
+			  <div class="mt-2 d-flex">				
+		  <button class="btn login w-100">Login</button>
+		  </div>
+		  <div class="rehub-login-popup-footer">Don't have an account? 
+											<span class="act-rehub-login-popup color_link" data-type="register">Sign Up</span>
+										</div>
+		  
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+     
+    
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#mobile_tablets">Mobiles & Tablets</a></li>
+          <li><a class="nav-link scrollto" href="#laptop">Laptops, Computers & Accessories
+</a></li>
+          <li><a class="nav-link scrollto " href="#clothing">Clothing & Accessories
+</a></li>
+         
+         
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>Shopping Resources</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Laptop Buying Guide – How to Choose the Right Laptop</a></li>
+                  <li><a href="#">101 Evergreen Halloween Outfits – Cheap Halloween Costumes Ideas</a></li>
+                  <li><a href="#">Buy Now Pay Later Websites [No Interest – No Credit  Check]</a></li>
+                  <li><a href="#">Shop in the U.S.A. – Worldwide Shipping :: Cheap International Shipping Guideline</a></li>
+                  
+                </ul>
+              </li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Cameras, Audio & Video</a></li>
+              <li><a href="#">Car, Motorbike & Industrial</a></li>
+			  <li><a href="#">Handbags & Luggages</a></li>
+			  <li><a href="#">Health, Beauty & Gourmet</a></li>
+			  <li><a href="#">Jewellery, Watches & Eyewear</a></li>
+			  <li><a href="#">Shoes</a></li>
+			  <li><a href="#">Sports, Fitness & Outdoor</a></li>
+			  <li><a href="#">Toys & Baby Products</a></li>
+			  
+			  
+            </ul>
+          </li>
+		   <li><a href="blog.html">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main" class="products-box">
+  <section id="about" class="about mt-2">
+<div class="container py-4">
+<h2>Mobiles & Tablets</h2>
+
+  <div class="products">
+  <div class="row">
+    <!-- Card 1 -->
+	<div class="col-md-3">
+    <div class="card">
+        <div class="heart active">❤</div>
+        <a href="https://www.dealvega.com/21-off-on-smartphone-laptop-home-appliances-protection-plans/" class="">
+                                                <img fetchpriority="high" width="330" height="220" src="https://www.dealvega.com/wp-content/uploads/2021/01/Smartphone-Protection-Plan.jpg" class="" alt="Smartphone Protection Plan" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" decoding="async" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/Smartphone-Protection-Plan.jpg 625w, https://www.dealvega.com/wp-content/uploads/2021/01/Smartphone-Protection-Plan-1536x1025.jpg 1536w, https://www.dealvega.com/wp-content/uploads/2021/01/Smartphone-Protection-Plan-2048x1366.jpg 2048w" sizes="(max-width: 330px) 100vw, 330px">                                    </a>
+		<div class="title">21% off on Smartphone, Laptop, Home Appliances Protection Plans</div>
+        <div class="bottom">
+            <div class="category"><a href="#">Winter Gears</a></div>
+            <div class="price">$2.20</div>
+        </div>
+    </div>
+</div>
+    <!-- Card 2 -->
+	<div class="col-md-3">
+    <div class="card">
+        <div class="heart">♡</div>
+        <a href="https://www.dealvega.com/cell-phone-stand-10-only-gift-of-executives/" class="">
+                                                <img width="146" height="220" src="https://www.dealvega.com/wp-content/uploads/2021/01/Lamicall-Cell-Phone-Stand.jpg" class="" alt="Lamicall Cell Phone Stand" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" decoding="async" srcset="https://www.dealvega.com/wp-content/uploads/2021/01/Lamicall-Cell-Phone-Stand.jpg 850w, https://www.dealvega.com/wp-content/uploads/2021/01/Lamicall-Cell-Phone-Stand-1021x1536.jpg 1021w, https://www.dealvega.com/wp-content/uploads/2021/01/Lamicall-Cell-Phone-Stand-1361x2048.jpg 1361w" sizes="(max-width: 146px) 100vw, 146px">                                    </a>
+		<div class="title">Cell Phone Stand $10 Only, Gift of Executives</div>
+        <div class="bottom">
+            <div class="category"><a href="#">Gifts & Wishes</a></div>
+              <div class="price">$9.99</div>
+		</div>
+    </div>
+</div>
+    <!-- Card 3 -->
+	<div class="col-md-3">
+    <div class="card">
+        <div class="heart">♡</div>
+       <a href="https://www.dealvega.com/20-off-smartphone-laptop-home-appliances-protection-plan/" class="">
+                                                <img width="113" height="220" src="https://www.dealvega.com/wp-content/uploads/2020/12/brokenmobile.png" class="" alt="Broken Mobile" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" decoding="async" srcset="https://www.dealvega.com/wp-content/uploads/2020/12/brokenmobile.png 410w, https://www.dealvega.com/wp-content/uploads/2020/12/brokenmobile-787x1536.png 787w, https://www.dealvega.com/wp-content/uploads/2020/12/brokenmobile-1050x2048.png 1050w" sizes="(max-width: 113px) 100vw, 113px">                                    </a>
+		<div class="title">EMS Nor'easter 3-in-1 Jacket for Men's & Women's 50% Off</div>
+        <div class="bottom">
+            <div class="category"><a href="#">Mobiles</a></div>
+            <div class="price">$4.80</div>
+        </div>
+    </div>
+</div>
+    <!-- Card 4 -->
+	<div class="col-md-3">
+    <div class="card">
+        <div class="heart">♡</div>
+       <a href="https://www.dealvega.com/20-off-super-christmas-holiday-deal/" class="">
+                                                <img loading="lazy" width="220" height="220" src="https://www.dealvega.com/wp-content/uploads/2020/12/Chritmas20.png" class="" alt="Everything Breaks Coupon" emptyimage="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" no_thumb="https://www.dealvega.com/wp-content/themes/rehub-theme/images/default/noimage_336_220.png" decoding="async" srcset="https://www.dealvega.com/wp-content/uploads/2020/12/Chritmas20.png 600w, https://www.dealvega.com/wp-content/uploads/2020/12/Chritmas20-1536x1536.png 1536w, https://www.dealvega.com/wp-content/uploads/2020/12/Chritmas20-2048x2048.png 2048w" sizes="(max-width: 220px) 100vw, 220px">                                    </a>
+		<div class="title"> 20% Off Super Christmas Holiday Deal</div>
+        <div class="bottom">
+            <div class="category"><a href="#">Mobiles & Tablets</a></div>
+            <div class="price">$22.50</div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="pagination justify-content-center align-items-center mt-5"><ul class="page-numbers">
+<li class="active"><a href="https://www.dealvega.com/">1</a></li>
+<li><a href="https://www.dealvega.com/page/2/">2</a></li>
+<li><a href="https://www.dealvega.com/page/3/">3</a></li>
+<li class="hellip_paginate_link"><span>…</span></li>
+<li><a href="https://www.dealvega.com/page/175/">175</a></li>
+<li class="next_paginate_link"><a href="https://www.dealvega.com/page/2/">Next Page »</a></li>
+</ul>
+</div>
+</div>
+  
+  </Section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+    
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+    <p>No widgets added. You can disable footer widget area in theme options - footer options</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DealVega.com - 2016 - 2026</span></strong>. All Rights Reserved
+      </div>
+   
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script>
+
+let currentType = "all";
+let currentCategory = "all";
+
+function filterProduct(type) {
+    currentType = type;
+    applyFilter();
+}
+
+function filterCategory(category) {
+    currentCategory = category;
+    applyFilter();
+}
+
+function applyFilter() {
+    let products = document.querySelectorAll(".product-item");
+
+    products.forEach(product => {
+        let type = product.getAttribute("data-type");
+        let category = product.getAttribute("data-category");
+
+        let typeMatch = (currentType === "all" || currentType === type);
+        let categoryMatch = (currentCategory === "all" || currentCategory === category);
+
+        if (typeMatch && categoryMatch) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+}
+
+</script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

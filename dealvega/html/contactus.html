@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>dealvega</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--  CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+</head>
+
+<body>
+<!------social icon--->
+<div id="st-2" class=" st-sticky-share-buttons st-left st-toggleable st-has-labels st-show-total "><div class="st-total ">
+  <span class="st-label">127</span>
+  <span class="st-shares">
+    Shares
+  </span>
+</div><div class="st-btn st-first" data-network="facebook" style="display: inline-block;">
+  <img alt="facebook sharing button" src="https://platform-cdn.sharethis.com/img/facebook.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-btn" data-network="twitter" style="display: inline-block;">
+  <img alt="twitter sharing button" src="https://platform-cdn.sharethis.com/img/twitter.svg">
+  <span class="st-label">Post</span>
+</div><div class="st-btn" data-network="pinterest" style="display: inline-block;">
+  <img alt="pinterest sharing button" src="https://platform-cdn.sharethis.com/img/pinterest.svg">
+  <span class="st-label">Pin</span>
+</div><div class="st-btn" data-network="email" style="display: inline-block;">
+  <img alt="email sharing button" src="https://platform-cdn.sharethis.com/img/email.svg">
+  <span class="st-label">Email</span>
+</div><div class="st-btn st-last" data-network="sharethis" style="display: inline-block;">
+  <img alt="sharethis sharing button" src="https://platform-cdn.sharethis.com/img/sharethis.svg">
+  <span class="st-label">Share</span>
+</div><div class="st-toggle">
+  <div class="st-left">
+    <img alt="arrow_left sharing button" src="https://platform-cdn.sharethis.com/img/arrow_left.svg">
+  </div>
+  <div class="st-right">
+    <img alt="arrow_right sharing button" src="https://platform-cdn.sharethis.com/img/arrow_right.svg">
+  </div>
+</div></div>
+  <!-- ======= Top Bar ======= -->
+
+  <!-- Topbar -->
+<div id="topbar" class="fixed-top mt-2 d-flex align-items-center bg-light">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="assets/img/DealVegalogo.jpg" alt="Logo" class="img-fluid">
+    </a>
+
+    <!-- Right Side -->
+    <div class="d-flex align-items-center gap-2">
+
+      <!-- Search -->
+      <form class="d-flex">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for products">
+          <button class="btn btn-outline-secondary" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </form>
+
+      <!-- Login -->
+      <button class="btn green" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <i class="fa fa-plus" aria-hidden="true"></i> Submit Deal
+      </button>
+
+      <!-- Register -->
+      <button class="btn white" data-bs-toggle="modal" data-bs-target="#registerModal">
+        <i class="fas fa-sign-in-alt"></i> Login / Register
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label>Username</label>
+            <input type="name" class="form-control">
+          </div>
+           
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control">
+          </div>
+		  <div class="mb-3">
+             <a href="https://www.dealvega.com/my-account/lost-password/" class="alignright">Lost Password?</a>
+          </div>
+		  <div class="mt-5 d-flex">
+		  <label for="rehub_remember"><input name="rehub_remember" id="rehub_remember" type="checkbox" value="forever">
+							Remember me</label>
+							</div>
+			  <div class="mt-2 d-flex">				
+		  <button class="btn login w-100">Login</button>
+		  </div>
+		  <div class="rehub-login-popup-footer">Don't have an account? 
+											<span class="act-rehub-login-popup color_link" data-type="register">Sign Up</span>
+										</div>
+		  
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label>Username</label>
+            <input type="name" class="form-control">
+          </div>
+           
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control">
+          </div>
+		  <div class="mb-3">
+             <a href="https://www.dealvega.com/my-account/lost-password/" class="alignright">Lost Password?</a>
+          </div>
+		  <div class="mt-5 d-flex">
+		  <label for="rehub_remember"><input name="rehub_remember" id="rehub_remember" type="checkbox" value="forever">
+							Remember me</label>
+							</div>
+			  <div class="mt-2 d-flex">				
+		  <button class="btn login w-100">Login</button>
+		  </div>
+		  <div class="rehub-login-popup-footer">Don't have an account? 
+											<span class="act-rehub-login-popup color_link" data-type="register">Sign Up</span>
+										</div>
+		  
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+     
+    
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#mobile_tablets">Mobiles & Tablets</a></li>
+          <li><a class="nav-link scrollto" href="#laptop">Laptops, Computers & Accessories
+</a></li>
+          <li><a class="nav-link scrollto " href="#clothing">Clothing & Accessories
+</a></li>
+         
+         
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>Shopping Resources</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Laptop Buying Guide – How to Choose the Right Laptop</a></li>
+                  <li><a href="#">101 Evergreen Halloween Outfits – Cheap Halloween Costumes Ideas</a></li>
+                  <li><a href="#">Buy Now Pay Later Websites [No Interest – No Credit  Check]</a></li>
+                  <li><a href="#">Shop in the U.S.A. – Worldwide Shipping :: Cheap International Shipping Guideline</a></li>
+                  
+                </ul>
+              </li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Cameras, Audio & Video</a></li>
+              <li><a href="#">Car, Motorbike & Industrial</a></li>
+			  <li><a href="#">Handbags & Luggages</a></li>
+			  <li><a href="#">Health, Beauty & Gourmet</a></li>
+			  <li><a href="#">Jewellery, Watches & Eyewear</a></li>
+			  <li><a href="#">Shoes</a></li>
+			  <li><a href="#">Sports, Fitness & Outdoor</a></li>
+			  <li><a href="#">Toys & Baby Products</a></li>
+			  
+			  
+            </ul>
+          </li>
+		   <li><a href="blog.html">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+  <section id="about" class="about mt-2">
+
+<div class="container py-4">
+<div class="row">
+    <!-- LEFT -->
+	<div class="col-md-9">
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+
+        <div class="form-group">
+            <label>Your Name (required)</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Your Email (required)</label>
+            <input type="email">
+        </div>
+
+        <div class="form-group">
+            <label>Subject</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Your Message</label>
+            <textarea></textarea>
+        </div>
+
+        <button class="btn">SEND</button>
+
+        <div class="info">
+            Email : connect@dealvega.com
+        </div>
+    </div>
+     </div>
+    <!-- RIGHT -->
+	<div class="col-md-3">
+    <div class="sidebar_contact">
+        <h3>GET THE BEST DEALS IN YOUR INBOX</h3>
+
+        <label>First Name</label>
+        <input type="text" placeholder="Name">
+
+        <label>Email address:</label>
+        <input type="email" placeholder="Your email address">
+
+        <button class="signup-btn">Sign up</button>
+
+        <div class="small-text">
+            Don't worry we don't spam
+        </div>
+
+        <div class="right-info">
+            <p><b>DealVega.com</b></p>
+            <p><i class="fas fa-arrow-circle-right" style="color:orange; font-size:14px; margin-right:6px;"></i>Contact Email: connect@dealvega.com</p>
+            <p><i class="fas fa-arrow-circle-right" style="color:orange; font-size:14px; margin-right:6px;"></i>Web: https://www.dealvega.com</p>
+        </div>
+    </div>
+     </div>
+</div>
+</div>
+
+
+
+
+  
+  </Section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+ <footer id="footer">
+
+    
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+    <p>No widgets added. You can disable footer widget area in theme options - footer options</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DealVega.com - 2016 - 2026</span></strong>. All Rights Reserved
+      </div>
+   
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script>
+
+let currentType = "all";
+let currentCategory = "all";
+
+function filterProduct(type) {
+    currentType = type;
+    applyFilter();
+}
+
+function filterCategory(category) {
+    currentCategory = category;
+    applyFilter();
+}
+
+function applyFilter() {
+    let products = document.querySelectorAll(".product-item");
+
+    products.forEach(product => {
+        let type = product.getAttribute("data-type");
+        let category = product.getAttribute("data-category");
+
+        let typeMatch = (currentType === "all" || currentType === type);
+        let categoryMatch = (currentCategory === "all" || currentCategory === category);
+
+        if (typeMatch && categoryMatch) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+}
+
+</script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
