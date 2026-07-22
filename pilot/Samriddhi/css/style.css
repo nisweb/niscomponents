@@ -1057,6 +1057,8 @@ margin-top:15px;
 
 .feature-img img{
     transition:.5s;
+	border: 1px solid #ccc;
+    border-radius: 20px;
 }
 
 .feature-img:hover img{
