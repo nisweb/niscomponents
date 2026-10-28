@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gangasagar Directory | Digital Guide to Gangasagar</title>
+<meta name="description" content="Gangasagar Directory - Find essential services, accommodation, food, transport, health, emergency services and tourist places.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<style>
+/* ================= Language Changer ================= */
+/* ================= Vertical Sticky Language Changer ================= */
+
+.language-sticky {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.language-sticky a {
+    display: block;
+    padding: 10px 8px;
+
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+    border-bottom: 1px solid #eeeeee;
+    transition: all 0.3s ease;
+}
+
+.language-sticky a:last-child {
+    border-bottom: none;
+}
+
+.language-sticky a:hover {
+    color: #fff;
+    background: #e67e22;
+}
+
+.language-sticky a.active {
+    color: #fff;
+    background: #e67e22;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .language-sticky {
+        top: 55%;
+    }
+
+    .language-sticky a {
+        padding: 8px 6px;
+        font-size: 11px;
+    }
+}
+</style>
+</head>
+<body>
+<!-- Vertical Language Changer -->
+<div class="language-sticky">
+    <a href="#" class="active">বাংলা</a>
+    <a href="#">English</a>
+    <a href="#">हिन्दी</a>
+</div>
+<!--<div class="topbar py-2">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+    <div><a href="tel:18005325328"><i class="fa-solid fa-phone me-1"></i> Toll Free: 1800 532 5328</a></div>
+    <div class="d-flex gap-3">  <span>বাংলা | English | हिन्दी</span> </div>
+  </div>
+</div>-->
+<nav class="navbar navbar-expand-lg main-nav sticky-top">
+  <div class="container py-2"> 
+  <a class="brand" href="#"> 
+  <span class="brand-title d-block">Gangasagar Directory</span>
+   </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><i class="fa-solid fa-bars"></i></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+     
+        <li class="nav-item"><a class="nav-link" href="#map"><i class="fa-solid fa-map me-1"></i> 
+        Map View</a></li>
+        <li class="nav-item"><a class="nav-link" href="emergency"><i class="fa-solid fa-truck-medical me-1"></i> Emergency</a></li>
+           <li class="nav-item"><a class="nav-link" href="#listing_view.html"><i class="fas fa-list"></i> Listing View</a></li>
+            <li class="nav-item"><a class="nav-link" href="#details.html"><i class="fas fa-info-circle"></i> Details </a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.gangasagardirectory.in/ngolist"><i class="fas fa-landmark"></i> Officers & Agencies</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-map" href="https://www.gangasagardirectory.in/LoginController/index"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--<header class="hero">
+  <div class="container hero-content"> <span class="badge-soft"><i class="fa-solid fa-sparkles"></i> Your digital guide to Gangasagar</span>
+    <h1>Find Everything You Need at Gangasagar</h1>
+    <p>Discover food, accommodation, transport, health services, emergency facilities and important tourist places — all in one place.</p>
+    <div class="search-box"> <i class="fa-solid fa-magnifying-glass align-self-center ms-3" style="color:#78909c"></i>
+      <input id="searchInput" type="search" placeholder="Search for Food, ATM, Hospital, Hotel, Ferry...">
+      <button onclick="focusServices()">Search</button>
+    </div>
+    <div class="quick-links"> <a href="#services"><i class="fa-solid fa-grid-2 me-1"></i> All Services</a> <a href="#map"><i class="fa-solid fa-map me-1"></i> Map View</a> <a href="#emergency"><i class="fa-solid fa-truck-medical me-1"></i> Emergency</a> </div>
+  </div>
+</header>-->
+
+
+
+<section class="hero-slider">
+
+    <div class="slides">
+
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <img src="img/banner-1.jpg" alt="Banner 1">
+
+            <div class="slide-overlay"></div>
+
+            <div class="slide-content">
+                <span class="small-title">WELCOME TO OUR WEBSITE</span>
+                <h1>Discover Something<br><strong>Beautiful & Amazing</strong></h1>
+                <p>
+                    Explore our services and discover the best solutions
+                    designed especially for you.
+                </p>
+
+                <a href="#" class="banner-btn">
+                    Explore More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <img src="img/banner-2.jpg" alt="Banner 2">
+
+            <div class="slide-overlay"></div>
+
+            <div class="slide-content">
+                <span class="small-title">SMART SOLUTIONS</span>
+                <h1>Simple, Smart &<br><strong>Powerful Services</strong></h1>
+                <p>
+                    Modern technology and innovative solutions
+                    for a better experience.
+                </p>
+
+                <a href="#" class="banner-btn">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <img src="img/banner-3.jpg" alt="Banner 3">
+
+            <div class="slide-overlay"></div>
+
+            <div class="slide-content">
+                <span class="small-title">EXPLORE WITH US</span>
+                <h1>Experience The<br><strong>Difference Today</strong></h1>
+                <p>
+                    Quality, innovation and trust — all in one place.
+                </p>
+
+                <a href="#" class="banner-btn">
+                    Get Started <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Previous / Next -->
+    <button class="slider-arrow prev" onclick="changeSlide(-1)">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <button class="slider-arrow next" onclick="changeSlide(1)">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+
+    <!-- Dots -->
+  <div class="slider-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+   
+
+
+</section>
+<!-- Toll Free Section -->
+<section class="tollfree-section">
+    <div class="container">
+        <div class="tollfree-card">
+
+            <div class="tollfree-icon">
+                <span class="pulse-ring"></span>
+                <i class="fa-solid fa-phone-volume"></i>
+            </div>
+
+            <div class="tollfree-content">
+                <span class="tollfree-label">
+                    <i class="fa-solid fa-headset"></i>
+                    24×7 Visitor Assistance
+                </span>
+
+                <h2>Need Help at Gangasagar?</h2>
+
+                <p>
+                    For any assistance, information or emergency support,
+                    please call our Toll Free Number.
+                </p>
+
+                <a href="tel:18005325328" class="tollfree-number">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Toll Free: <strong>1800 532 5328</strong></span>
+                </a>
+            </div>
+
+            <div class="call-animation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</section>
+<main>
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Gangasagar</div>
+        <h2>Nearby Services</h2>
+        <p>Quickly find essential facilities and attractions around Gangasagar. The categories below are based on the existing directory services.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid"> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/list/17" data-name="food court restaurant food">
+        <div class="cat-icon"><i class="fa-solid fa-utensils"></i></div>
+        <h3>Food Court</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="pharmacy diagnostic medicine health">
+        <div class="cat-icon"><i class="fa-solid fa-pills"></i></div>
+        <h3>Pharmacy / Diagnostic</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="toilet washroom public toilet">
+        <div class="cat-icon"><i class="fa-solid fa-restroom"></i></div>
+        <h3>Public Toilets</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="water drinking water">
+        <div class="cat-icon"><i class="fa-solid fa-droplet"></i></div>
+        <h3>Drinking Water</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="atm cash bank">
+        <div class="cat-icon"><i class="fa-solid fa-building-columns"></i></div>
+        <h3>ATM</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="pilgrim accommodation hotel lodge stay">
+        <div class="cat-icon"><i class="fa-solid fa-bed"></i></div>
+        <h3>Pilgrim Accommodation</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="health center hospital doctor">
+        <div class="cat-icon"><i class="fa-solid fa-hospital"></i></div>
+        <h3>Health Center</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="help kiosk information">
+        <div class="cat-icon"><i class="fa-solid fa-circle-question"></i></div>
+        <h3>May I Help You</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="petrol pump fuel">
+        <div class="cat-icon"><i class="fa-solid fa-gas-pump"></i></div>
+        <h3>Petrol Pump</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="parking car">
+        <div class="cat-icon"><i class="fa-solid fa-square-parking"></i></div>
+        <h3>Parking</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="ferry ghat boat transport">
+        <div class="cat-icon"><i class="fa-solid fa-ship"></i></div>
+        <h3>Ferry Ghat</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="bus stand bus transport">
+        <div class="cat-icon"><i class="fa-solid fa-bus"></i></div>
+        <h3>Bus Stand</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="railway station train">
+        <div class="cat-icon"><i class="fa-solid fa-train-subway"></i></div>
+        <h3>Railway Station</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="tourist places tourism">
+        <div class="cat-icon"><i class="fa-solid fa-camera-retro"></i></div>
+        <h3>Tourist Places</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="police station emergency">
+        <div class="cat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Police Station</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="fire station emergency">
+        <div class="cat-icon"><i class="fa-solid fa-fire-extinguisher"></i></div>
+        <h3>Fire Station</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="sea beach beach tourism">
+        <div class="cat-icon"><i class="fa-solid fa-umbrella-beach"></i></div>
+        <h3>Sea Beach</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="lost found booth">
+        <div class="cat-icon"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+        <h3>Lost & Found</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="bharat sevashram sangha">
+        <div class="cat-icon"><i class="fa-solid fa-hands-praying"></i></div>
+        <h3>Bharat Sevashram Sangha</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="bandhan certificate e parichay kiosk">
+        <div class="cat-icon"><i class="fa-solid fa-id-card"></i></div>
+        <h3>e-Parichay Kiosk</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="iskcon temple">
+        <div class="cat-icon"><i class="fa-solid fa-om"></i></div>
+        <h3>ISKCON</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="ramkrishna mission">
+        <div class="cat-icon"><i class="fa-solid fa-dharmachakra"></i></div>
+        <h3>Ramkrishna Mission</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="sagar arati">
+        <div class="cat-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+        <h3>Sagar Arati</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="kapilmuni temple temple">
+        <div class="cat-icon"><i class="fa-solid fa-gopuram"></i></div>
+        <h3>Kapilmuni Temple</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="sagar prabachan">
+        <div class="cat-icon"><i class="fa-solid fa-microphone"></i></div>
+        <h3>Sagar Prabachan</h3>
+        </a> <a class="category-card" href="https://www.gangasagardirectory.in/amenity/category" data-name="environment mela environment">
+        <div class="cat-icon"><i class="fa-solid fa-leaf"></i></div>
+        <h3>Environment Mela</h3>
+        </a> </div>
+      <div id="noResult" class="no-result hidden">No service found. Try another search.</div>
+    </div>
+  </section>
+  <!--<section class="section pt-0" id="map">
+    <div class="container">
+      <div class="map-panel">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <div class="map-copy">
+              <div class="kicker" style="color:#ffcf8b">Navigation</div>
+              <h2>Find Services Near You</h2>
+              <p>Use the directory's map view to locate facilities and important places around Gangasagar. Open the live map from the existing directory.</p>
+              <div class="map-actions"> <a class="btn-light2 text-decoration-none" href="https://www.gangasagardirectory.in/amenity/category"><i class="fa-solid fa-map-location-dot me-2"></i>Open Map View</a> <a class="btn-outline2 text-decoration-none" href="https://www.gangasagardirectory.in/amenity/category"><i class="fa-solid fa-list me-2"></i>Browse Directory</a> </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="mock-map"> <i class="fa-solid fa-location-dot pin p1"></i> <i class="fa-solid fa-location-dot pin p2"></i> <i class="fa-solid fa-location-dot pin p3"></i> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+  <!--<section class="section pt-0">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Quick Access</div>
+        <h2>Useful Information</h2>
+        <p>Important services are placed one click away for pilgrims, tourists and visitors.</p>
+      </div>
+      <div class="service-strip">
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-bed"></i></div>
+          <div>
+            <h3>Stay & Accommodation</h3>
+            <p>Find pilgrim accommodation and nearby places to stay.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-utensils"></i></div>
+          <div>
+            <h3>Food & Refreshment</h3>
+            <p>Locate food courts, restaurants, tea shops and more.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-route"></i></div>
+          <div>
+            <h3>Travel & Transport</h3>
+            <p>Find ferry ghats, bus stands, railway stations and parking.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div>
+            <h3>Health & Assistance</h3>
+            <p>Access health centers, pharmacies and help kiosks quickly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+  <section class="section pt-0" id="emergency">
+    <div class="container">
+      <div class="emergency">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="kicker">Important</div>
+            <h2>Emergency & Help</h2>
+            <p class="text-secondary mb-0">Keep essential contacts and assistance options easily accessible while visiting Gangasagar.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="emergency-grid"> <a href="tel:18005325328"><i class="fa-solid fa-phone-volume"></i><span>Toll Free<br>
+              <small>1800 532 5328</small></span></a> <a href="https://www.gangasagardirectory.in/amenity/category"><i class="fa-solid fa-shield-halved"></i><span>Police<br>
+              <small>Find nearby</small></span></a> <a href="https://www.gangasagardirectory.in/amenity/category"><i class="fa-solid fa-truck-medical"></i><span>Health<br>
+              <small>Find nearby</small></span></a> <a href="https://www.gangasagardirectory.in/amenity/category"><i class="fa-solid fa-fire-extinguisher"></i><span>Fire<br>
+              <small>Find nearby</small></span></a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    
+    <div class="footer-bottom d-flex justify-content-between flex-wrap"> <span>© 2027 Gangasagar Directory. All Rights Reserved.</span> <span>South 24 Parganas District Administration</span> </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+
+
+<script>
+const input=document.getElementById('searchInput');
+const cards=[...document.querySelectorAll('.category-card')];
+const noResult=document.getElementById('noResult');
+
+function filterServices(){
+  const q=input.value.trim().toLowerCase();
+  let count=0;
+  cards.forEach(card=>{
+    const text=(card.dataset.name+' '+card.innerText).toLowerCase();
+    const show=!q || text.includes(q);
+    card.classList.toggle('hidden',!show);
+    if(show) count++;
+  });
+  noResult.classList.toggle('hidden',count!==0);
+}
+input.addEventListener('input',filterServices);
+input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();document.getElementById('services').scrollIntoView({behavior:'smooth'});filterServices();}});
+function focusServices(){
+  document.getElementById('services').scrollIntoView({behavior:'smooth'});
+  setTimeout(()=>input.focus(),500);
+}
+</script>
+
+</section>
+
+
+<script>
+let slideIndex = 0;
+let autoSlide;
+
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+function showSlide(index) {
+
+    if (index >= slides.length) {
+        slideIndex = 0;
+    }
+
+    if (index < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    slides.forEach((slide) => {
+        slide.classList.remove("active");
+    });
+
+    dots.forEach((dot) => {
+        dot.classList.remove("active");
+    });
+
+    slides[slideIndex].classList.add("active");
+    dots[slideIndex].classList.add("active");
+}
+
+
+function changeSlide(direction) {
+    slideIndex += direction;
+    showSlide(slideIndex);
+    startAutoSlide();
+}
+
+
+function currentSlide(index) {
+    slideIndex = index;
+    showSlide(slideIndex);
+    startAutoSlide();
+}
+
+
+function startAutoSlide() {
+
+    clearInterval(autoSlide);
+
+    autoSlide = setInterval(function () {
+
+        slideIndex++;
+
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+
+        showSlide(slideIndex);
+
+    }, 5000);
+}
+
+
+showSlide(slideIndex);
+startAutoSlide();
+</script>
+</body>
+</html>
