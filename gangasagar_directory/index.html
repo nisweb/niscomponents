@@ -12,71 +12,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 <link href="css/style.css" type="text/css" rel="stylesheet">
 <style>
-/* ================= Language Changer ================= */
-/* ================= Vertical Sticky Language Changer ================= */
 
-.language-sticky {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 9999;
-
-    display: flex;
-    flex-direction: column;
-
-    background: #ffffff;
-    border-radius: 0 8px 8px 0;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-}
-
-.language-sticky a {
-    display: block;
-    padding: 10px 8px;
-
-    color: #333;
-    background: #fff;
-    text-decoration: none;
-
-    font-size: 13px;
-    font-weight: 600;
-    text-align: center;
-
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-
-    border-bottom: 1px solid #eeeeee;
-    transition: all 0.3s ease;
-}
-
-.language-sticky a:last-child {
-    border-bottom: none;
-}
-
-.language-sticky a:hover {
-    color: #fff;
-    background: #e67e22;
-}
-
-.language-sticky a.active {
-    color: #fff;
-    background: #e67e22;
-}
-
-
-/* Mobile */
-@media (max-width: 768px) {
-
-    .language-sticky {
-        top: 55%;
-    }
-
-    .language-sticky a {
-        padding: 8px 6px;
-        font-size: 11px;
-    }
-}
 </style>
 </head>
 <body>
@@ -100,11 +36,12 @@
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><i class="fa-solid fa-bars"></i></button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-     
+         <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-house-user me-1"></i>
+        Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#map"><i class="fa-solid fa-map me-1"></i> 
         Map View</a></li>
         <li class="nav-item"><a class="nav-link" href="emergency"><i class="fa-solid fa-truck-medical me-1"></i> Emergency</a></li>
-           <li class="nav-item"><a class="nav-link" href="#listing_view.html"><i class="fas fa-list"></i> Listing View</a></li>
+           <li class="nav-item"><a class="nav-link" href="listing.html"><i class="fas fa-list"></i> Listing View</a></li>
             <li class="nav-item"><a class="nav-link" href="#details.html"><i class="fas fa-info-circle"></i> Details </a></li>
         <li class="nav-item"><a class="nav-link" href="https://www.gangasagardirectory.in/ngolist"><i class="fas fa-landmark"></i> Officers & Agencies</a></li>
         <li class="nav-item ms-lg-2"><a class="btn btn-map" href="https://www.gangasagardirectory.in/LoginController/index"><i class="fas fa-sign-in-alt"></i>Login</a></li>
@@ -342,7 +279,7 @@
       <div id="noResult" class="no-result hidden">No service found. Try another search.</div>
     </div>
   </section>
-  <!--<section class="section pt-0" id="map">
+ <section class="section pt-0" id="map">
     <div class="container">
       <div class="map-panel">
         <div class="row align-items-center g-4">
@@ -355,17 +292,19 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="mock-map"> <i class="fa-solid fa-location-dot pin p1"></i> <i class="fa-solid fa-location-dot pin p2"></i> <i class="fa-solid fa-location-dot pin p3"></i> </div>
+            <div class="mock-map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29665.388443466672!2d88.080045!3d21.657104999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0305f788d98f81%3A0x86f780def9f18ec9!2sGangasagar%2C%20West%20Bengal%20743373!5e0!3m2!1sen!2sin!4v1793275983974!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> </div>
+          
+          
           </div>
         </div>
       </div>
     </div>
-  </section>-->
-  <!--<section class="section pt-0">
+  </section>
+<section class="section pt-0">
     <div class="container">
       <div class="section-head">
         <div class="kicker">Quick Access</div>
-        <h2>Useful Information</h2>
+        <h2>Useful Information Gangasagar </h2>
         <p>Important services are placed one click away for pilgrims, tourists and visitors.</p>
       </div>
       <div class="service-strip">
@@ -399,7 +338,7 @@
         </div>
       </div>
     </div>
-  </section>-->
+  </section>
   <section class="section pt-0" id="emergency">
     <div class="container">
       <div class="emergency">
