@@ -1,0 +1,857 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vehicle Services | Gangasagar</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+:root {
+    --primary: #ed7623;
+    --secondary: #f5a13b;
+    --dark: #263746;
+    --light: #fff8f0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Banner */
+.page-banner {
+    min-height: 330px;
+    background:
+    linear-gradient(rgba(15,35,45,.65),rgba(15,35,45,.60)),
+    url('images/vehicle-banner.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.page-banner h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+/* Common */
+.section-padding {
+    padding: 65px 0;
+}
+
+.section-title {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.title-line {
+    width: 65px;
+    height: 4px;
+    background: var(--primary);
+    margin: 12px auto 30px;
+    border-radius: 5px;
+}
+
+/* Cards */
+.vehicle-card {
+    background: #fff;
+    padding: 28px;
+    border-radius: 12px;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,.07);
+    border-bottom: 3px solid transparent;
+    transition: .3s;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+}
+
+.vehicle-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #fff0df;
+    color: var(--primary);
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.vehicle-card h4 {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 21px;
+}
+
+/* Route */
+.route-section {
+    background: var(--light);
+}
+
+.route-box {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 3px 15px rgba(0,0,0,.05);
+}
+
+.route-box i {
+    font-size: 32px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.route-arrow {
+    text-align: center;
+    color: var(--primary);
+    font-size: 24px;
+    padding-top: 55px;
+}
+
+/* Image */
+.vehicle-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Information */
+.info-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 18px rgba(0,0,0,.06);
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 13px;
+}
+
+.info-list i {
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+/* Journey */
+.journey-step {
+    background: white;
+    padding: 25px 18px;
+    text-align: center;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.06);
+}
+
+.step-number {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+/* FAQ */
+.accordion-item {
+    margin-bottom: 12px;
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #fff0df;
+    color: var(--primary);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* CTA */
+.travel-cta {
+    background: linear-gradient(120deg,#e96e1d,#f5a33c);
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.travel-cta h2 {
+    font-weight: 700;
+}
+
+@media(max-width:767px) {
+    .page-banner {
+        min-height: 230px;
+    }
+
+    .page-banner h1 {
+        font-size: 30px;
+    }
+
+    .section-padding {
+        padding: 45px 0;
+    }
+
+    .vehicle-image {
+        height: 240px;
+        margin-bottom: 20px;
+    }
+
+    .route-arrow {
+        padding: 5px;
+        transform: rotate(90deg);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Banner -->
+<section class="page-banner">
+    <div class="container">
+        <h1>Vehicle Services</h1>
+        <p>Convenient Road Transportation for a Comfortable Journey to Gangasagar</p>
+    </div>
+</section>
+
+<!-- Introduction -->
+<section class="section-padding">
+    <div class="container">
+
+        <div class="text-center">
+            <h2 class="section-title">Vehicle Transportation at Gangasagar</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <p>
+            Vehicle transportation plays an important role in
+            connecting pilgrims and visitors with different
+            destinations across Sagar Island. A range of
+            transportation options, including private cars,
+            taxis, local buses, shared vehicles and electric
+            rickshaws, helps visitors travel conveniently.
+        </p>
+
+        <p>
+            Visitors travelling from Kolkata can reach
+            Harwood Point (Lot No. 8), Kakdwip, by private
+            vehicle. From there, passengers can cross the
+            Muriganga River by ferry to Kachuberia and
+            continue towards Gangasagar using local
+            transportation.
+        </p>
+
+        <p>
+            Special vehicle movement, parking and traffic
+            management arrangements may also be introduced
+            during Gangasagar Mela to facilitate the smooth
+            movement of pilgrims.
+        </p>
+
+    </div>
+</section>
+
+<!-- Vehicle Options -->
+<section class="section-padding route-section">
+    <div class="container">
+
+        <div class="text-center">
+            <h2 class="section-title">Available Vehicle Services</h2>
+            <div class="title-line"></div>
+            <p>Choose a suitable transportation option for your journey.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="vehicle-card">
+                    <div class="vehicle-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                    <h4>Private Car Services</h4>
+                    <p>
+                        Private cars offer a comfortable travel
+                        option for families and groups travelling
+                        from Kolkata and other locations to
+                        Harwood Point or Namkhana.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="vehicle-card">
+                    <div class="vehicle-icon">
+                        <i class="fa-solid fa-taxi"></i>
+                    </div>
+                    <h4>Taxi & Cab Services</h4>
+                    <p>
+                        Taxi and cab facilities provide convenient
+                        transportation for individuals, families
+                        and visitors travelling to different
+                        locations around Gangasagar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="vehicle-card">
+                    <div class="vehicle-icon">
+                        <i class="fa-solid fa-van-shuttle"></i>
+                    </div>
+                    <h4>Shared Vehicle Services</h4>
+                    <p>
+                        Shared vehicles and local passenger
+                        transport options help pilgrims travel
+                        between ferry ghats, bus stands,
+                        accommodation areas and the temple.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="vehicle-card">
+                    <div class="vehicle-icon">
+                        <i class="fa-solid fa-truck-pickup"></i>
+                    </div>
+                    <h4>Local Trekker & Utility Vehicles</h4>
+                    <p>
+                        Local utility vehicles and shared
+                        transportation facilities support
+                        passenger movement and connectivity
+                        across different parts of Sagar Island.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="vehicle-card">
+                    <div class="vehicle-icon">
+                        <i class="fa-solid fa-bicycle"></i>
+                    </div>
+                    <h4>E-Rickshaw & Toto Services</h4>
+                    <p>
+                        E-rickshaws and local toto services
+                        are useful for short-distance travel,
+                        including hotel transfers, temple visits
+                        and nearby sightseeing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="vehicle-card">
+                    <div class="vehicle-icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <h4>Vehicle Ferry / LCT Services</h4>
+                    <p>
+                        Authorised vehicle-carrying vessels
+                        may provide transportation for eligible
+                        vehicles between Lot No. 8 and Kachuberia,
+                        subject to availability and permissions.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Main Route -->
+<section class="section-padding">
+    <div class="container">
+
+        <div class="text-center">
+            <h2 class="section-title">Road Connectivity to Gangasagar</h2>
+            <div class="title-line"></div>
+            <p>Travel from Kolkata towards the sacred destination.</p>
+        </div>
+
+        <div class="row align-items-center g-3">
+
+            <div class="col-md-3">
+                <div class="route-box">
+                    <i class="fa-solid fa-city"></i>
+                    <h5>Kolkata</h5>
+                    <p class="mb-0">Starting Point</p>
+                </div>
+            </div>
+
+            <div class="col-md-1">
+                <div class="route-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="route-box">
+                    <i class="fa-solid fa-car-side"></i>
+                    <h5>Kakdwip</h5>
+                    <p class="mb-0">Harwood Point (Lot No. 8)</p>
+                </div>
+            </div>
+
+            <div class="col-md-1">
+                <div class="route-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="route-box">
+                    <i class="fa-solid fa-ship"></i>
+                    <h5>Kachuberia</h5>
+                    <p class="mb-0">Ferry Crossing to Sagar Island</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+            <i class="fa-solid fa-arrow-down"
+               style="font-size:25px;color:#ed7623;"></i>
+            <h5 class="mt-3">Continue by Local Vehicle</h5>
+            <p>Reach Gangasagar, Kapil Muni Ashram and nearby destinations.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Local Transport -->
+<section class="section-padding route-section">
+    <div class="container">
+
+        <div class="row align-items-center g-4">
+
+            <div class="col-md-6">
+                <img src="images/local-vehicle.jpg"
+                     class="vehicle-image"
+                     alt="Local Vehicle Services at Gangasagar">
+            </div>
+
+            <div class="col-md-6">
+                <h2 class="section-title">Local Transportation on Sagar Island</h2>
+
+                <p>
+                    Local transportation services are available
+                    to help visitors travel between Kachuberia,
+                    Gangasagar Bus Stand, Kapil Muni Ashram,
+                    Snan Ghat and nearby locations.
+                </p>
+
+                <p>
+                    Depending on availability, passengers can
+                    choose from local buses, shared vehicles,
+                    taxis, trekkers and electric rickshaws.
+                </p>
+
+                <ul class="info-list">
+                    <li><i class="fa-solid fa-check-circle"></i>
+                        Kachuberia to Gangasagar connectivity</li>
+
+                    <li><i class="fa-solid fa-check-circle"></i>
+                        Local sightseeing transportation</li>
+
+                    <li><i class="fa-solid fa-check-circle"></i>
+                        Hotel and accommodation transfers</li>
+
+                    <li><i class="fa-solid fa-check-circle"></i>
+                        Short-distance passenger services</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Parking -->
+<section class="section-padding">
+    <div class="container">
+
+        <div class="row align-items-center g-4">
+
+            <div class="col-md-6">
+                <h2 class="section-title">Vehicle Parking Facilities</h2>
+
+                <p>
+                    Visitors travelling by private vehicles
+                    should use designated parking areas near
+                    the ferry terminals and other authorised
+                    locations.
+                </p>
+
+                <p>
+                    During Gangasagar Mela, special traffic
+                    regulations, vehicle restrictions and
+                    designated parking arrangements may be
+                    implemented by the administration to
+                    manage large-scale pilgrim movement.
+                </p>
+
+                <ul class="info-list">
+                    <li><i class="fa-solid fa-square-parking"></i>
+                        Designated parking areas</li>
+
+                    <li><i class="fa-solid fa-traffic-light"></i>
+                        Traffic management arrangements</li>
+
+                    <li><i class="fa-solid fa-car"></i>
+                        Vehicle entry regulations</li>
+
+                    <li><i class="fa-solid fa-shield-halved"></i>
+                        Follow authorised parking instructions</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <img src="images/vehicle-parking.jpg"
+                     class="vehicle-image"
+                     alt="Vehicle Parking Facilities">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Vehicle Ferry -->
+<section class="section-padding route-section">
+    <div class="container">
+
+        <div class="row align-items-center g-4">
+
+            <div class="col-md-6">
+                <img src="images/vehicle-ferry.jpg"
+                     class="vehicle-image"
+                     alt="Vehicle Ferry and LCT Service">
+            </div>
+
+            <div class="col-md-6">
+                <h2 class="section-title">Vehicle Ferry & LCT Services</h2>
+
+                <p>
+                    Vehicle-carrying vessels, including Landing
+                    Craft Tank (LCT) and other authorised
+                    arrangements, may facilitate the movement
+                    of eligible vehicles across the Muriganga
+                    River between Lot No. 8 and Kachuberia.
+                </p>
+
+                <p>
+                    Vehicle transportation is subject to
+                    vessel availability, vehicle dimensions,
+                    loading capacity, tide conditions and
+                    operational permissions.
+                </p>
+
+                <ul class="info-list">
+                    <li><i class="fa-solid fa-check-circle"></i>
+                        Vehicle transportation subject to availability</li>
+
+                    <li><i class="fa-solid fa-check-circle"></i>
+                        Authorised vehicle boarding facilities</li>
+
+                    <li><i class="fa-solid fa-check-circle"></i>
+                        Vehicle document verification</li>
+
+                    <li><i class="fa-solid fa-check-circle"></i>
+                        Follow ferry terminal instructions</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Mela Transport -->
+<section class="section-padding">
+    <div class="container">
+
+        <div class="text-center">
+            <h2 class="section-title">Vehicle Management During Gangasagar Mela</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <p>
+            During Gangasagar Mela, a large number of vehicles
+            arrive from different parts of the state to facilitate
+            the movement of pilgrims. The administration may
+            introduce special traffic management systems,
+            designated parking zones, vehicle entry restrictions
+            and transport arrangements.
+        </p>
+
+        <p>
+            These arrangements help regulate traffic flow,
+            reduce congestion and ensure the safe movement
+            of pilgrims and emergency service vehicles.
+        </p>
+
+        <div class="row g-4 mt-2">
+
+            <div class="col-md-4">
+                <div class="vehicle-card">
+                    <div class="vehicle-icon">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h4>Traffic Management</h4>
+                    <p>
+                        Organised vehicle movement and
+                        traffic regulation at important
+                        locations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="vehicle-card">
+                    <div class="vehicle-icon">
+                        <i class="fa-solid fa-square-parking"></i>
+                    </div>
+                    <h4>Parking Management</h4>
+                    <p>
+                        Designated vehicle parking
+                        arrangements for pilgrims
+                        and visitors.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="vehicle-card">
+                    <div class="vehicle-icon">
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <h4>Emergency Vehicles</h4>
+                    <p>
+                        Priority movement arrangements
+                        for ambulances and other
+                        emergency response vehicles.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Travel Guidelines -->
+<section class="section-padding route-section">
+    <div class="container">
+
+        <div class="text-center">
+            <h2 class="section-title">Important Travel Guidelines</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="info-box">
+
+            <ul class="info-list mb-0">
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Check vehicle entry restrictions and
+                    traffic advisories before starting your journey.
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Park vehicles only in designated
+                    and authorised parking areas.
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Carry valid driving licence, vehicle
+                    registration certificate and insurance documents.
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Confirm vehicle ferry availability
+                    and applicable charges in advance.
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Follow traffic signs, police instructions
+                    and local administrative guidelines.
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Allow additional travel time during
+                    Gangasagar Mela and peak pilgrimage periods.
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-padding">
+    <div class="container">
+
+        <div class="text-center">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="accordion" id="vehicleFAQ">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+                        1. Can I travel to Gangasagar by private car?
+                    </button>
+                </h2>
+
+                <div id="faq1" class="accordion-collapse collapse show"
+                    data-bs-parent="#vehicleFAQ">
+                    <div class="accordion-body">
+                        Yes. You can travel by private car
+                        up to Harwood Point (Lot No. 8),
+                        Kakdwip. From there, you can cross
+                        the river by passenger ferry and
+                        use local transportation on Sagar Island.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+                        2. Can private cars cross the Muriganga River?
+                    </button>
+                </h2>
+
+                <div id="faq2" class="accordion-collapse collapse"
+                    data-bs-parent="#vehicleFAQ">
+                    <div class="accordion-body">
+                        Ordinary passenger ferries do not
+                        carry private cars. Vehicle transfer
+                        may be possible through authorised
+                        vehicle-carrying vessels, subject to
+                        availability and operating permissions.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+                        3. Are local vehicles available at Kachuberia?
+                    </button>
+                </h2>
+
+                <div id="faq3" class="accordion-collapse collapse"
+                    data-bs-parent="#vehicleFAQ">
+                    <div class="accordion-body">
+                        Yes. Local buses, shared vehicles,
+                        taxis and other local transportation
+                        options are available subject to
+                        operational availability.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq4">
+                        4. Are E-Rickshaws available at Gangasagar?
+                    </button>
+                </h2>
+
+                <div id="faq4" class="accordion-collapse collapse"
+                    data-bs-parent="#vehicleFAQ">
+                    <div class="accordion-body">
+                        Yes. Local E-Rickshaw and toto services
+                        are available for short-distance travel
+                        and local transportation, depending
+                        on availability.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq5">
+                        5. Are special vehicle arrangements made during Mela?
+                    </button>
+                </h2>
+
+                <div id="faq5" class="accordion-collapse collapse"
+                    data-bs-parent="#vehicleFAQ">
+                    <div class="accordion-body">
+                        Yes. Special traffic regulations,
+                        parking arrangements and vehicle
+                        movement guidelines may be introduced
+                        by the administration during
+                        Gangasagar Mela.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="travel-cta">
+    <div class="container">
+        <h2>Plan Your Journey to Gangasagar</h2>
+
+        <p class="mb-4">
+            Explore convenient road and local transportation
+            options for a comfortable pilgrimage.
+        </p>
+
+        <a href="howtoreach.html"
+           class="btn btn-light px-4 py-2 fw-bold"
+           style="color:#e96e1d;">
+            <i class="fa-solid fa-route"></i>
+            How to Reach
+        </a>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
