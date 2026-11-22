@@ -94,7 +94,9 @@ header {
     box-shadow: 0 3px 12px rgba(0,0,0,.10);
     z-index: 9999;
 }
-
+.main-navbar .navbar-brand i {
+	display: none;
+}
 .main-navbar .navbar-brand {
     color: #e87516;
     font-weight: 800;
